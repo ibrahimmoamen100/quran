@@ -2,8 +2,8 @@
   "students": [
     {
       "id": "1734167825077",
-      "name": "معاذ شرف",
-      "password": "4508",
+      "name": "معاذ محمد",
+      "password": "1234",
       "currentSurah": "الزمر",
       "schedule": [
         {
@@ -17,18 +17,18 @@
       ],
       "evaluation": "ممتاز",
       "sessionsAttended": 0,
-      "paymentType": "perSession",
-      "notes": "ممتاز اللهم بارك , ومهذب في الحلقه وقدره استيعابو الايات جميله اللهم بارك",
+      "paymentType": "مجاني",
+      "notes": "ممتاز اللهم بارك , ومهذب في الحلقه وقدره استيعابو الايات جميله اللهم بارك\nلا تنسي الورد اليومي من الذكر",
       "photo": "/uploads/1734167825054-869269646.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T09:17:05.078Z",
-      "lastSurah": "النجم"
+      "lastSurah": "فصلت"
     },
     {
       "id": "1734168086134",
-      "name": "مالك شرف",
-      "password": "4508",
+      "name": "مالك محمد",
+      "password": "1234",
       "currentSurah": "الفرقان",
       "schedule": [
         {
@@ -42,13 +42,13 @@
       ],
       "evaluation": "ممتاز",
       "sessionsAttended": 0,
-      "paymentType": "perSession",
-      "notes": "ممتاز اللهم بارك و مريح في الحفظ وعنده قدر كبير من المعرفه اللهم بارك مقارنتا بعمره",
+      "paymentType": "مجاني",
+      "notes": "ممتاز اللهم بارك و مريح في الحفظ وعنده قدر كبير من المعرفه اللهم بارك مقارنتا بعمره\nلا تنسي الورد اليومي من الذكر",
       "photo": "/uploads/1734215975720-998687586.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T09:21:26.135Z",
-      "lastSurah": "النجم"
+      "lastSurah": "الزمر"
     },
     {
       "id": "1734215942371",
@@ -67,12 +67,13 @@
       ],
       "evaluation": "جيد جداً",
       "sessionsAttended": 0,
-      "paymentType": "perSession",
-      "notes": "حفظ سوره الطور\r\nالمراجعه : سوره التحريم + البلد\r\n",
+      "paymentType": "مجاني",
+      "notes": "مستواي كويس جدا بيستوعب بسرعه ولكن اوقات بيهزر في الحلقه \nيجب التأكيد علي حفظ المراجعه + الذكر المقرر عليهم \n",
       "photo": "/uploads/1734215942366-298097390.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "createdAt": "2024-12-14T22:39:02.371Z"
+      "createdAt": "2024-12-14T22:39:02.371Z",
+      "lastSurah": "سوره التحريم + البلد"
     },
     {
       "id": "1734216159737",
@@ -91,12 +92,13 @@
       ],
       "evaluation": "جيد جداً",
       "sessionsAttended": 0,
-      "paymentType": "perSession",
-      "notes": "حفظ سوره الحشر \r\nالمراجعه : المرسلات + البلد\r\n",
+      "paymentType": "مجاني",
+      "notes": "بيستوعب التفسير و الايات و بيركز في الحلقه \nولكن يجب التركيز علي سور المراجعه المقرره عليه \nبالاضافه الي الذكر اليومي ",
       "photo": "/uploads/1734216159733-717627170.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "createdAt": "2024-12-14T22:42:39.737Z"
+      "createdAt": "2024-12-14T22:42:39.737Z",
+      "lastSurah": "البلد + التحريم اول وجه "
     },
     {
       "id": "1734216333655",
@@ -111,18 +113,19 @@
       ],
       "evaluation": "جيد جداً",
       "sessionsAttended": 0,
-      "paymentType": "perSession",
-      "notes": "حفظ المدثر الي 30 \r\nالمراجعه : البلد\r\n",
+      "paymentType": "مجاني",
+      "notes": "كل ايه تقرائها 5 مرات يا سامر علشان تحفظ كويس \nو متنساش الذكر اليومي والمراجعه",
       "photo": "/uploads/1734216333651-164846466.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "createdAt": "2024-12-14T22:45:33.655Z"
+      "createdAt": "2024-12-14T22:45:33.655Z",
+      "lastSurah": "البلد"
     },
     {
       "id": "1734216497238",
       "name": "محمد اسامه",
       "password": "1234",
-      "currentSurah": "المدثر ",
+      "currentSurah": "المدثر الي 30",
       "schedule": [
         {
           "day": "الجمعة",
@@ -131,12 +134,13 @@
       ],
       "evaluation": "جيد",
       "sessionsAttended": 0,
-      "paymentType": "perSession",
-      "notes": "حفظ المدثر الي 30 \r\nالمراجعه : البلد ",
+      "paymentType": "مجاني",
+      "notes": "كل ايه تقرائها 5 مرات يا محمد علشان تحفظ كويس \nو متنساش الذكر اليومي \n",
       "photo": "/uploads/1734216497235-725325124.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "createdAt": "2024-12-14T22:48:17.238Z"
+      "createdAt": "2024-12-14T22:48:17.238Z",
+      "lastSurah": "البلد"
     },
     {
       "id": "1734216856227",
@@ -151,12 +155,13 @@
       ],
       "evaluation": "ضعيف",
       "sessionsAttended": 0,
-      "paymentType": "perSession",
-      "notes": "حفظ المدثر الي 30 \r\nالمراجعه : من الناس الي الاخلاص",
+      "paymentType": "مجاني",
+      "notes": "شد حيلك شويا يا سيف المره القادمه باذن الله هتسمع \nو متنساش الذكر اليومي \nعاوز تحفظ كويس كرر كل ايه 5 مرات اتعب شويا يا سيف",
       "photo": "/uploads/1734216856225-794253867.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "createdAt": "2024-12-14T22:54:16.227Z"
+      "createdAt": "2024-12-14T22:54:16.227Z",
+      "lastSurah": "البلد"
     },
     {
       "id": "1734217017651",
@@ -170,13 +175,14 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 5,
-      "paymentType": "monthly",
-      "notes": "حفظ عم \r\nالمراجعه : المطففين الي 13 + الناس + الفلق + الاخلاص",
+      "sessionsAttended": 0,
+      "paymentType": "شهري",
+      "notes": "سليمان شاطر جدا اللهم بارك \nولكن الملاحظه انه بيحاول يرائي علشان يبان انه الافضل دائما \nيجب توعيته اكثر علي المرائاه وتحذيره منها ",
       "photo": "/uploads/1734217017631-151036659.jpg",
-      "currentMonthPaid": true,
-      "lastPaymentDate": "2024-12-14T22:57:04.343Z",
-      "createdAt": "2024-12-14T22:56:57.651Z"
+      "currentMonthPaid": false,
+      "lastPaymentDate": null,
+      "createdAt": "2024-12-14T22:56:57.651Z",
+      "lastSurah": "البلد"
     },
     {
       "id": "1734217143624",
@@ -194,14 +200,14 @@
         }
       ],
       "evaluation": "جيد",
-      "sessionsAttended": 5,
-      "paymentType": "monthly",
-      "notes": "حفظ عم \nالمراجعه : المطففين الي 13 + الناس + الفلق + الاخلاص",
+      "sessionsAttended": 0,
+      "paymentType": "شهري",
+      "notes": "يحيي مهذب جدا في الحلقه ولكن احياناً بيسهو في الحلقه \nحفظه اقل شويا من سليمان , ولكن درجاته ليست سيئه \nوهذا لا يقل من شأنه ولكن الهدف تحسينه و تطويره ",
       "photo": "/uploads/1734217143620-390059418.jpg",
-      "currentMonthPaid": true,
-      "lastPaymentDate": "2024-12-14T22:59:09.006Z",
+      "currentMonthPaid": false,
+      "lastPaymentDate": null,
       "createdAt": "2024-12-14T22:59:03.625Z",
-      "lastSurah": "dfgd"
+      "lastSurah": "البلد"
     },
     {
       "id": "1734217237180",
@@ -220,12 +226,13 @@
       ],
       "evaluation": "جيد",
       "sessionsAttended": 8,
-      "paymentType": "monthly",
-      "notes": "حفظ عم \r\nالمراجعه : المطففين الي 13 + الناس + الفلق + الاخلاص",
+      "paymentType": "شهري",
+      "notes": "معاذ بيسهو كثير في الحلقه وخاصتا عند التفسير وصوته منخفض عند الترتيل خلفي \nولكن حفظه للأيات سريع \nولما بيركز بيكون مستواه ممتاز\nلا تنسى الذكر اليومي ",
       "photo": "/uploads/1734217237176-759354297.jpg",
-      "currentMonthPaid": true,
-      "lastPaymentDate": "2024-12-14T23:00:41.527Z",
-      "createdAt": "2024-12-14T23:00:37.180Z"
+      "currentMonthPaid": false,
+      "lastPaymentDate": null,
+      "createdAt": "2024-12-14T23:00:37.180Z",
+      "lastSurah": "البلد"
     },
     {
       "id": "1734217497335",
@@ -243,14 +250,14 @@
         }
       ],
       "evaluation": "جيد",
-      "sessionsAttended": 8,
-      "paymentType": "monthly",
-      "notes": "حفظ الرحمن كامله \r\nالمراجعه : المرسلات 19",
+      "sessionsAttended": 0,
+      "paymentType": "مجاني",
+      "notes": "بيتوتر اثناء التسميع و لا يعطي فرصه للتفكير بسبب التوتر \nلا تنسي الذكر اليومي ",
       "photo": "/uploads/1734217497332-246598079.jpg",
-      "currentMonthPaid": true,
-      "lastPaymentDate": "2024-12-14T23:05:02.978Z",
+      "currentMonthPaid": false,
+      "lastPaymentDate": null,
       "createdAt": "2024-12-14T23:04:57.335Z",
-      "lastSurah": " النجم"
+      "lastSurah": " البلد"
     },
     {
       "id": "1734217861054",
@@ -270,11 +277,12 @@
       "evaluation": "ممتاز",
       "sessionsAttended": 8,
       "paymentType": "monthly",
-      "notes": "حفظ ق \r\nالمراجعه : المرسلات الي 16",
+      "notes": "ممتازه و مجتهده في الحفظ و التدبر و الادب \nلا تنسي الذكر اليومي ",
       "photo": "/uploads/1734217861050-314931354.jpg",
       "currentMonthPaid": true,
       "lastPaymentDate": "2024-12-14T23:11:08.407Z",
-      "createdAt": "2024-12-14T23:11:01.054Z"
+      "createdAt": "2024-12-14T23:11:01.054Z",
+      "lastSurah": "البلد"
     },
     {
       "id": "1734218030299",
@@ -292,18 +300,19 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 8,
-      "paymentType": "monthly",
-      "notes": "حفظ سوره نوح \r\nالمراجعه : المطففين الي 26",
+      "sessionsAttended": 0,
+      "paymentType": "شهري",
+      "notes": "حمزه مستواه الفتره الاخيره ممتاز اللهم بارك \nولكن بيمل بسرعه من الحلقه أكنه في هاتف او لعب منتظره \nو بيتحجج بالمذاكر علشان يخلص بسرعه \nولكن قدره استيعابه للتفسير كويسه ",
       "photo": "/uploads/1734218030296-488917955.jpg",
-      "currentMonthPaid": true,
-      "lastPaymentDate": "2024-12-14T23:13:55.591Z",
-      "createdAt": "2024-12-14T23:13:50.300Z"
+      "currentMonthPaid": false,
+      "lastPaymentDate": null,
+      "createdAt": "2024-12-14T23:13:50.300Z",
+      "lastSurah": "البلد"
     },
     {
       "id": "1734262577575",
       "name": "محمد جميل",
-      "password": "01129320831",
+      "password": "1234",
       "currentSurah": "الفتح",
       "schedule": [
         {
@@ -317,17 +326,18 @@
       ],
       "evaluation": "جيد جداً",
       "sessionsAttended": 0,
-      "paymentType": "perSession",
-      "notes": "حفظ سوره الفتح كامله  | \r\nمراجعه : التحريم اول وجه",
+      "paymentType": "مجاني",
+      "notes": "محمد قدره استيعابه للتفسير جيده جدا \nوحفظه مؤخرا جيد جدا \nولكن حركي قليلا امام الكاميره وفي الحلقه بشكل عام\nلا تنسي الذكر اليومي ",
       "photo": "/uploads/1734262577561-872029113.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "createdAt": "2024-12-15T11:36:17.576Z"
+      "createdAt": "2024-12-15T11:36:17.576Z",
+      "lastSurah": "البلد"
     },
     {
       "id": "1734262969541",
       "name": "البراء احمد",
-      "password": "01117719044",
+      "password": "1234",
       "currentSurah": "النجم",
       "schedule": [
         {
@@ -340,19 +350,19 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 4,
-      "paymentType": "monthly",
-      "notes": "حفظ سوره النجم  | المراجعه : الاحزاب الوجه الثاني 2",
+      "sessionsAttended": 0,
+      "paymentType": "شهري",
+      "notes": "البراء مستواه كويس جدا ومهذب في الحلقه \nولكن احياناً اجده لم يحفظ ويأخذ درجات ليست جيده \nلا تنسي الذكر اليومي سأسأل عليه المره القادمه باذن الله",
       "photo": "/uploads/1734262969532-438353737.jpg",
-      "currentMonthPaid": true,
-      "lastPaymentDate": "2024-12-15T11:43:09.523Z",
+      "currentMonthPaid": false,
+      "lastPaymentDate": null,
       "createdAt": "2024-12-15T11:42:49.542Z",
-      "lastSurah": " النجم"
+      "lastSurah": " الاحزاب ثاني وجه"
     },
     {
       "id": "1734263567588",
       "name": "حمزه احمد",
-      "password": "01111774409",
+      "password": "1234",
       "currentSurah": "الصف",
       "schedule": [
         {
@@ -365,13 +375,14 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 5,
-      "paymentType": "monthly",
-      "notes": "حفظ سوره الصف || مراجعه : المدثر كامله",
+      "sessionsAttended": 0,
+      "paymentType": "مجاني",
+      "notes": "بيسأل كثير وليست مهمه ولديه فضول زائد \nولكن مستواه جيد في الحفظ وجيد جدا في التفسير و التدبر\nلا تنسي الذكر اليومي ",
       "photo": "/uploads/1734263567570-790157365.svg",
-      "currentMonthPaid": true,
-      "lastPaymentDate": "2024-12-15T11:52:57.123Z",
-      "createdAt": "2024-12-15T11:52:47.589Z"
+      "currentMonthPaid": false,
+      "lastPaymentDate": null,
+      "createdAt": "2024-12-15T11:52:47.589Z",
+      "lastSurah": "البلد"
     },
     {
       "id": "1734263774917",
@@ -397,6 +408,26 @@
       "lastPaymentDate": null,
       "createdAt": "2024-12-15T11:56:14.917Z",
       "lastSurah": " النجم"
+    },
+    {
+      "id": "1734405235563",
+      "name": "سشيشس",
+      "password": "سشيشسي",
+      "currentSurah": "شسيشسي",
+      "schedule": [
+        {
+          "day": "الإثنين",
+          "time": "12:12"
+        }
+      ],
+      "evaluation": "جديد",
+      "sessionsAttended": 0,
+      "paymentType": "perSession",
+      "notes": "لبابلابلا",
+      "photo": "/uploads/1734405235413-760245621.png",
+      "currentMonthPaid": false,
+      "lastPaymentDate": null,
+      "createdAt": "2024-12-17T03:13:55.563Z"
     }
   ]
 }
