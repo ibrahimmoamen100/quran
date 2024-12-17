@@ -399,7 +399,7 @@
           "time": "19:00"
         }
       ],
-      "evaluation": "جديد",
+      "evaluation": "جيد",
       "sessionsAttended": 0,
       "paymentType": "monthly",
       "notes": "لم يتم البدء بعد ",
@@ -420,14 +420,35 @@
           "time": "12:12"
         }
       ],
-      "evaluation": "جديد",
-      "sessionsAttended": 0,
+      "evaluation": "جيد جداً",
+      "sessionsAttended": 1,
       "paymentType": "perSession",
       "notes": "لبابلابلا",
       "photo": "/uploads/1734405235413-760245621.png",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "createdAt": "2024-12-17T03:13:55.563Z"
+      "createdAt": "2024-12-17T03:13:55.563Z",
+      "lastSurah": "البلد"
+    },
+    {
+      "id": "1734452736443",
+      "name": "ساجده محمد",
+      "password": "1234",
+      "currentSurah": "عبسى",
+      "schedule": [
+        {
+          "day": "الجمعة",
+          "time": "14:40"
+        }
+      ],
+      "evaluation": "جيد جداً",
+      "sessionsAttended": 0,
+      "paymentType": "perSession",
+      "notes": "مستواها ممتاز في الحفظ والتسميع ",
+      "photo": "/uploads/1734452736406-856202088.jpg",
+      "currentMonthPaid": false,
+      "lastPaymentDate": null,
+      "createdAt": "2024-12-17T16:25:36.443Z"
     }
   ]
 }

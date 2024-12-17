@@ -28,7 +28,7 @@
             padding: 20px;
             border: 1px solid #888;
             width: 80%;
-            max-width: 500px;
+            max-width: 1280px;
             border-radius: 8px;
             position: relative;
         }
@@ -195,7 +195,7 @@
         </div>
 
         <!-- Modal تعديل الطالب -->
-        <div id="editStudentModal" class="modal">
+        <div id="editStudentModal" class="modal w-4xl">
             <div class="modal-content">
                 <span class="close" onclick="closeEditModal()">&times;</span>
                 <h2 class="text-2xl font-bold mb-4">تعديل بيانات الطالب</h2>
@@ -230,9 +230,8 @@
                     <div>
                         <label class="block text-sm mb-1">نوع الدفع</label>
                         <select name="paymentType" class="w-full p-2 border rounded-md" onchange="toggleEditPaymentStatus(this)">
-                            <option value="مجاني">مجاني</option>
+                            <option value="بالحلقه">بالحلقه</option>
                             <option value="شهري">شهري</option>
-                            <option value="سنوي">سنوي</option>
                         </select>
                     </div>
                     <div>
@@ -249,9 +248,9 @@
                         <textarea name="notes" class="w-full p-2 border rounded-md" rows="3"></textarea>
                     </div>
                     <div>
-                        <label class="block text-sm mb-1">الصورة الحالية</label>
-                        <img id="currentPhoto" src="" alt="صورة الطالب" class="max-w-xs mt-2 hidden">
-                        <input type="file" name="photo" accept="image/*" class="mt-2">
+                        <label>الصورة الشخصية</label>
+                        <img id="currentPhoto" src="/images/default-avatar.png" alt="صورة الطالب" class="w-32 h-32 object-cover rounded-md mb-2">
+                        <input type="file" name="photo" accept="image/*" onchange="previewImage(this, 'currentPhoto')" class="w-full">
                     </div>
                     <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700">
                         حفظ التغييرات
@@ -311,52 +310,58 @@
                 form.querySelector('textarea[name="notes"]').value = student.notes || '';
                 // Don't populate password field for security, but keep the current password if not changed
                 form.querySelector('input[name="password"]').placeholder = 'اتركه فارغاً للاحتفاظ بكلمة المرور الحالية';
+                const currentPhoto = document.getElementById('currentPhoto');
+    if (student.photo) {
+        currentPhoto.src = `/uploads/${student.photo}`;
+    } else {
+        currentPhoto.src = '/images/default-avatar.png';
+    }
             }
 
             document.getElementById('editStudentForm').addEventListener('submit', async (e) => {
-                e.preventDefault();
-                const formData = new FormData(e.target);
-                const studentData = {
-                    name: formData.get('name'),
-                    currentSurah: formData.get('currentSurah'),
-                    lastSurah: formData.get('lastSurah'),
-                    evaluation: formData.get('evaluation'),
-                    paymentType: formData.get('paymentType'),
-                    notes: formData.get('notes')
-                };
+    e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
 
-                // Only include password if it's not empty
-                const newPassword = formData.get('password');
-                if (newPassword) {
-                    studentData.password = newPassword;
-                }
+    // إضافة البيانات الإضافية إلى FormData
+    if (!formData.get('currentSurah')) formData.set('currentSurah', '');
+    if (!formData.get('lastSurah')) formData.set('lastSurah', '');
+    if (!formData.get('evaluation')) formData.set('evaluation', 'جديد');
+    if (!formData.get('paymentType')) formData.set('paymentType', 'شهري');
+    if (!formData.get('notes')) formData.set('notes', '');
 
-                try {
-                    const token = localStorage.getItem('token');
-                    if (!token) {
-                        alert('الرجاء تسجيل الدخول أولاً');
-                        return;
-                    }
+    try {
+        const token = localStorage.getItem('token');
+        if (!token) {
+            alert('الرجاء تسجيل الدخول أولاً');
+            return;
+        }
 
-                    const response = await fetch(`/api/students/${selectedStudentId}`, {
-                        method: 'PUT',
-                        headers: {
-                            'Authorization': `Bearer ${token}`,
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify(studentData)
-                    });
+        console.log('Sending update for student:', selectedStudentId);
+        const response = await fetch(`/api/students/${selectedStudentId}`, {
+            method: 'PUT',
+            headers: {
+                'Authorization': `Bearer ${token}`
+            },
+            body: formData
+        });
 
-                    if (response.ok) {
-                        closeEditModal();
-                        loadStudents();
-                    } else {
-                        throw new Error('Failed to update student');
-                    }
-                } catch (error) {
-                    console.error('Error:', error);
-                }
-            });
+        if (response.ok) {
+            const updatedStudent = await response.json();
+            console.log('Student updated successfully:', updatedStudent);
+            alert('تم تحديث بيانات الطالب بنجاح');
+            closeEditModal();
+            loadStudents();
+        } else {
+            const errorData = await response.json();
+            console.error('Update failed:', errorData);
+            alert(errorData.message || 'حدث خطأ أثناء تحديث بيانات الطالب');
+        }
+    } catch (error) {
+        console.error('Error:', error);
+        alert('حدث خطأ أثناء تحديث بيانات الطالب');
+    }
+});
         </script>
 
         <script>
