@@ -100,7 +100,7 @@
     },
     {
       "id": "1734216333655",
-      "name": "سامر محمد",
+      "name": "سامر وليد",
       "password": "1234",
       "currentSurah": "المدثر",
       "schedule": [
@@ -112,11 +112,12 @@
       "evaluation": "جيد جداً",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "حفظ المدثر الي 30 \r\nالمراجعه : البلد\r\n",
+      "notes": "حفظ المدثر الي 30 \nالمراجعه : البلد\n",
       "photo": "/uploads/1734216333651-164846466.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "createdAt": "2024-12-14T22:45:33.655Z"
+      "createdAt": "2024-12-14T22:45:33.655Z",
+      "lastSurah": "البلد"
     },
     {
       "id": "1734216497238",
@@ -140,7 +141,7 @@
     },
     {
       "id": "1734216856227",
-      "name": "سيف محمد",
+      "name": "سيف وليد",
       "password": "1234",
       "currentSurah": "المدثر",
       "schedule": [
@@ -152,11 +153,12 @@
       "evaluation": "ضعيف",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "حفظ المدثر الي 30 \r\nالمراجعه : من الناس الي الاخلاص",
+      "notes": "حفظ المدثر الي 30 \nالمراجعه : من الناس الي الاخلاص",
       "photo": "/uploads/1734216856225-794253867.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "createdAt": "2024-12-14T22:54:16.227Z"
+      "createdAt": "2024-12-14T22:54:16.227Z",
+      "lastSurah": "البلد"
     },
     {
       "id": "1734217017651",
