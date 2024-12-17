@@ -302,7 +302,6 @@ app.put('/api/students/:id', upload.single('photo'), (req, res) => {
     try {
         console.log('Received update request for student:', req.params.id);
         console.log('Request body:', req.body);
-        console.log('File:', req.file);
 
         const data = readStudentsData();
         const studentId = req.params.id;
@@ -310,67 +309,70 @@ app.put('/api/students/:id', upload.single('photo'), (req, res) => {
         
         if (studentIndex === -1) {
             console.log('Student not found:', studentId);
-            return res.status(404).json({ message: 'الطالب غير موجود' });
+            return res.status(404).json({ error: 'Student not found' });
         }
 
         let updatedStudent = { ...data.students[studentIndex] };
 
-        // تحديث المعلومات الأساسية
-        updatedStudent = {
-            ...updatedStudent,
-            name: req.body.name || updatedStudent.name,
-            currentSurah: req.body.currentSurah || updatedStudent.currentSurah,
-            lastSurah: req.body.lastSurah || updatedStudent.lastSurah,
-            evaluation: req.body.evaluation || updatedStudent.evaluation,
-            paymentType: req.body.paymentType || updatedStudent.paymentType,
-            notes: req.body.notes || updatedStudent.notes
-        };
+        // Handle payment status update
+        if (req.body.currentMonthPaid !== undefined || req.body.sessionsAttended !== undefined) {
+            if (req.body.currentMonthPaid !== undefined) {
+                updatedStudent.currentMonthPaid = req.body.currentMonthPaid;
+                updatedStudent.lastPaymentDate = req.body.currentMonthPaid ? new Date().toISOString() : null;
+            }
+            if (req.body.sessionsAttended !== undefined) {
+                updatedStudent.sessionsAttended = req.body.sessionsAttended;
+            }
+        } 
+        // Handle full student update
+        else {
+            // Update basic info
+            updatedStudent = {
+                ...updatedStudent,
+                name: req.body.name || updatedStudent.name,
+                currentSurah: req.body.currentSurah || updatedStudent.currentSurah,
+                lastSurah: req.body.lastSurah || updatedStudent.lastSurah,
+                evaluation: req.body.evaluation || updatedStudent.evaluation,
+                paymentType: req.body.paymentType || updatedStudent.paymentType,
+                notes: req.body.notes || updatedStudent.notes
+            };
 
-        // معالجة تحديث كلمة المرور
-        if (req.body.password && req.body.password.trim() !== '') {
-            console.log('Updating password for student:', studentId);
-            updatedStudent.password = req.body.password.trim();
-        }
+            // Handle password update
+            if (req.body.password && req.body.password.trim() !== '') {
+                console.log('Updating password for student:', studentId);
+                updatedStudent.password = req.body.password.trim();
+            }
 
-        // معالجة تغيير نوع الدفع
-        if (req.body.paymentType && req.body.paymentType !== data.students[studentIndex].paymentType) {
-            updatedStudent.currentMonthPaid = false;
-            updatedStudent.lastPaymentDate = null;
-            updatedStudent.sessionsAttended = 0;
-        }
+            // Handle payment type change
+            if (req.body.paymentType && req.body.paymentType !== data.students[studentIndex].paymentType) {
+                updatedStudent.currentMonthPaid = false;
+                updatedStudent.lastPaymentDate = null;
+                updatedStudent.sessionsAttended = 0;
+            }
 
-        // معالجة تحديث الصورة
-        if (req.file) {
-            console.log('Updating photo:', req.file.filename);
-            // حذف الصورة القديمة إذا كانت موجودة
-            if (data.students[studentIndex].photo) {
-                const oldPhotoPath = path.join(__dirname, 'public', data.students[studentIndex].photo);
-                if (fs.existsSync(oldPhotoPath)) {
-                    try {
+            // Handle photo update
+            if (req.file) {
+                if (data.students[studentIndex].photo) {
+                    const oldPhotoPath = path.join(__dirname, 'public', data.students[studentIndex].photo);
+                    if (fs.existsSync(oldPhotoPath)) {
                         fs.unlinkSync(oldPhotoPath);
-                        console.log('Old photo deleted:', oldPhotoPath);
-                    } catch (error) {
-                        console.error('Error deleting old photo:', error);
                     }
                 }
+                updatedStudent.photo = '/uploads/' + req.file.filename;
             }
-            updatedStudent.photo = '/uploads/' + req.file.filename;
         }
 
-        // تحديث بيانات الطالب
+        // Update the student data
         data.students[studentIndex] = updatedStudent;
         
-        // حفظ البيانات
-        const success = writeStudentsData(data);
-        if (!success) {
-            throw new Error('Failed to write student data');
-        }
+        // Write to both files
+        writeStudentsData(data);
         
         console.log('Student updated successfully:', updatedStudent);
         res.json(updatedStudent);
     } catch (error) {
         console.error('Error updating student:', error);
-        res.status(500).json({ message: 'حدث خطأ أثناء تحديث بيانات الطالب: ' + error.message });
+        res.status(500).json({ error: 'Failed to update student', message: error.message });
     }
 });
 
