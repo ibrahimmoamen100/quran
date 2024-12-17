@@ -396,6 +396,26 @@
       "lastPaymentDate": null,
       "createdAt": "2024-12-15T11:56:14.917Z",
       "lastSurah": " النجم"
+    },
+    {
+      "id": "1734454578010",
+      "name": "سجدة وليد",
+      "password": "1234",
+      "currentSurah": "عبسى",
+      "schedule": [
+        {
+          "day": "الجمعة",
+          "time": "15:30"
+        }
+      ],
+      "evaluation": "جديد",
+      "sessionsAttended": 0,
+      "paymentType": "perSession",
+      "notes": "حفظها ممتاز وفهمها للتفسير كويس جدا اللهم بارك ولكن احيانا تأتي مش حفظه \r\nلاتنسي الذكر اليومي ",
+      "photo": "/uploads/1734454577969-149163034.jpg",
+      "currentMonthPaid": false,
+      "lastPaymentDate": null,
+      "createdAt": "2024-12-17T16:56:18.010Z"
     }
   ]
 }
