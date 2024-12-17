@@ -102,7 +102,7 @@
     },
     {
       "id": "1734216333655",
-      "name": "سامر محمد",
+      "name": "سامر وليد",
       "password": "1234",
       "currentSurah": "المدثر",
       "schedule": [
@@ -144,7 +144,7 @@
     },
     {
       "id": "1734216856227",
-      "name": "سيف محمد",
+      "name": "سيف وليد",
       "password": "1234",
       "currentSurah": "المدثر",
       "schedule": [
@@ -432,7 +432,7 @@
     },
     {
       "id": "1734452736443",
-      "name": "ساجده محمد",
+      "name": "سجدة وليد",
       "password": "1234",
       "currentSurah": "عبسى",
       "schedule": [
@@ -448,7 +448,8 @@
       "photo": "/uploads/1734452736406-856202088.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "createdAt": "2024-12-17T16:25:36.443Z"
+      "createdAt": "2024-12-17T16:25:36.443Z",
+      "lastSurah": "البلد"
     }
   ]
 }
