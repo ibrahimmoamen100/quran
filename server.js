@@ -400,16 +400,34 @@ app.delete('/api/students/:id', (req, res) => {
 app.post('/api/student/login', async (req, res) => {
     try {
         const { studentName, password } = req.body;
-        console.log('Login attempt for:', { studentName });
+        console.log('Login attempt for:', { studentName, password });
 
         // Read students data
         const studentsData = readStudentsData();
+        console.log('Total students found:', studentsData.students.length);
+        
+        // Normalize and clean the input name
+        const normalizeArabicText = (text) => {
+            return text.trim()
+                      .normalize('NFKC')  // Normalize Unicode representation
+                      .replace(/\s+/g, ' '); // Replace multiple spaces with single space
+        };
+
+        const normalizedInputName = normalizeArabicText(studentName);
         
         // Find student with matching credentials
-        const student = studentsData.students.find(s => 
-            s.name.trim().toLowerCase() === studentName.trim().toLowerCase() && 
-            s.password === password
-        );
+        const student = studentsData.students.find(s => {
+            const normalizedStoredName = normalizeArabicText(s.name);
+            console.log('Comparing:', {
+                storedName: s.name,
+                normalizedStoredName,
+                inputName: studentName,
+                normalizedInputName,
+                nameMatch: normalizedStoredName === normalizedInputName,
+                passwordMatch: s.password === password
+            });
+            return normalizedStoredName === normalizedInputName && s.password === password;
+        });
 
         if (!student) {
             console.log('Login failed: Invalid credentials');
