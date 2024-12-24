@@ -16,14 +16,14 @@
         }
       ],
       "evaluation": "ممتاز",
-      "sessionsAttended": 0,
-      "paymentType": "مجاني",
-      "notes": "الورد اليومي : 50 صلاه علي النبي ",
+      "sessionsAttended": 1,
+      "paymentType": "perSession",
+      "notes": "ممتاز اللهم بارك , ومهذب في الحلقه وقدره استيعابو الايات جميله اللهم بارك",
       "photo": "/uploads/1734167825054-869269646.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T09:17:05.078Z",
-      "lastSurah": "فصلت"
+      "lastSurah": "النجم"
     },
     {
       "id": "1734168086134",
@@ -43,7 +43,7 @@
       "evaluation": "ممتاز",
       "sessionsAttended": 0,
       "paymentType": "مجاني",
-      "notes": "الورد اليومي : 50 صلاه علي النبي ",
+      "notes": "ممتاز اللهم بارك و مريح في الحفظ وعنده قدر كبير من المعرفه اللهم بارك مقارنتا بعمره",
       "photo": "/uploads/1734215975720-998687586.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
@@ -232,7 +232,7 @@
       "id": "1734217497335",
       "name": "عمار ياسر",
       "password": "1234",
-      "currentSurah": "القمر",
+      "currentSurah": "الرحمن",
       "schedule": [
         {
           "day": "السبت",
@@ -244,14 +244,14 @@
         }
       ],
       "evaluation": "جيد",
-      "sessionsAttended": 0,
-      "paymentType": "مجاني",
-      "notes": "الورد اليومي : 50 صلاه علي النبي",
+      "sessionsAttended": 8,
+      "paymentType": "monthly",
+      "notes": "حفظ الرحمن كامله \r\nالمراجعه : المرسلات 19",
       "photo": "/uploads/1734217497332-246598079.jpg",
-      "currentMonthPaid": false,
-      "lastPaymentDate": null,
+      "currentMonthPaid": true,
+      "lastPaymentDate": "2024-12-14T23:05:02.978Z",
       "createdAt": "2024-12-14T23:04:57.335Z",
-      "lastSurah": " البلد"
+      "lastSurah": " النجم"
     },
     {
       "id": "1734217861054",
@@ -269,14 +269,13 @@
         }
       ],
       "evaluation": "ممتاز",
-      "sessionsAttended": 0,
-      "paymentType": "مجاني",
-      "notes": "الورد اليومي : 50 صلاه علي النبي ",
+      "sessionsAttended": 8,
+      "paymentType": "monthly",
+      "notes": "حفظ ق \r\nالمراجعه : المرسلات الي 16",
       "photo": "/uploads/1734217861050-314931354.jpg",
-      "currentMonthPaid": false,
-      "lastPaymentDate": null,
-      "createdAt": "2024-12-14T23:11:01.054Z",
-      "lastSurah": "البلد"
+      "currentMonthPaid": true,
+      "lastPaymentDate": "2024-12-14T23:11:08.407Z",
+      "createdAt": "2024-12-14T23:11:01.054Z"
     },
     {
       "id": "1734218030299",
@@ -293,15 +292,14 @@
           "time": "16:30"
         }
       ],
-      "evaluation": "جيد",
-      "sessionsAttended": 0,
-      "paymentType": "شهري",
-      "notes": "ارجو تكرار كل ايه 5 مرات ",
+      "evaluation": "جيد جداً",
+      "sessionsAttended": 8,
+      "paymentType": "monthly",
+      "notes": "حفظ سوره نوح \r\nالمراجعه : المطففين الي 26",
       "photo": "/uploads/1734218030296-488917955.jpg",
-      "currentMonthPaid": false,
-      "lastPaymentDate": null,
-      "createdAt": "2024-12-14T23:13:50.300Z",
-      "lastSurah": "البلد"
+      "currentMonthPaid": true,
+      "lastPaymentDate": "2024-12-14T23:13:55.591Z",
+      "createdAt": "2024-12-14T23:13:50.300Z"
     },
     {
       "id": "1734262577575",
@@ -422,75 +420,6 @@
       "lastPaymentDate": null,
       "createdAt": "2024-12-22T11:25:51.046Z",
       "lastSurah": "البلد +الفجر"
-    },
-    {
-      "id": "1735044755990",
-      "name": "حمزه احمد",
-      "password": "1234",
-      "currentSurah": "الممتحنه",
-      "schedule": [
-        {
-          "day": "الأحد",
-          "time": "16:00"
-        },
-        {
-          "day": "الخميس",
-          "time": "16:00"
-        }
-      ],
-      "evaluation": "جيد جداً",
-      "sessionsAttended": 6,
-      "paymentType": "monthly",
-      "notes": "الورد اليومي : 50 صلاه علي النبي ",
-      "photo": "/uploads/1735044755961-411484860.jpg",
-      "currentMonthPaid": true,
-      "lastPaymentDate": "2024-12-24T12:52:45.587Z",
-      "createdAt": "2024-12-24T12:52:35.990Z"
-    },
-    {
-      "id": "1735046884886",
-      "name": "عائشة جميل",
-      "password": "1234",
-      "currentSurah": "الحاقه",
-      "schedule": [
-        {
-          "day": "الأحد",
-          "time": "19:00"
-        },
-        {
-          "day": "الأربعاء",
-          "time": "19:00"
-        }
-      ],
-      "evaluation": "جيد جداً",
-      "sessionsAttended": 0,
-      "paymentType": "perSession",
-      "notes": "الورد اليومي : 50 صلاه علي النبي ",
-      "photo": "/uploads/1735046884800-92182272.jpg",
-      "currentMonthPaid": false,
-      "lastPaymentDate": null,
-      "createdAt": "2024-12-24T13:28:04.887Z",
-      "lastSurah": "البلد"
-    },
-    {
-      "id": "1735047638443",
-      "name": "سيف اسامة",
-      "password": "1234",
-      "currentSurah": "المسد",
-      "schedule": [
-        {
-          "day": "الجمعة",
-          "time": "16:00"
-        }
-      ],
-      "evaluation": "جيد",
-      "sessionsAttended": 0,
-      "paymentType": "perSession",
-      "notes": "يجب المتابعه معه بستمرار و تكرار كل ايه معه 5 مرات \r\nحفظه ثقيل قليل ",
-      "photo": "/uploads/1735047638354-521998342.jpg",
-      "currentMonthPaid": false,
-      "lastPaymentDate": null,
-      "createdAt": "2024-12-24T13:40:38.444Z"
     }
   ]
 }
