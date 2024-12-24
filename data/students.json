@@ -4,7 +4,7 @@
       "id": "1734167825077",
       "name": "معاذ محمد",
       "password": "1234",
-      "currentSurah": "الزمر",
+      "currentSurah": "الزمر  الي 67  | 9.5/10",
       "schedule": [
         {
           "day": "السبت",
@@ -18,18 +18,18 @@
       "evaluation": "ممتاز",
       "sessionsAttended": 1,
       "paymentType": "perSession",
-      "notes": "ممتاز اللهم بارك , ومهذب في الحلقه وقدره استيعابو الايات جميله اللهم بارك",
+      "notes": "الورد اليومي : الصلاه علي النبي 50 مره\nممتاز اللهم بارك , ومهذب في الحلقه وقدره استيعابو الايات جميله اللهم بارك",
       "photo": "/uploads/1734167825054-869269646.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T09:17:05.078Z",
-      "lastSurah": "النجم"
+      "lastSurah": "فصلت | 9.5/10"
     },
     {
       "id": "1734168086134",
       "name": "مالك محمد",
       "password": "1234",
-      "currentSurah": "النور",
+      "currentSurah": "النور | 9.5/10",
       "schedule": [
         {
           "day": "السبت",
@@ -43,18 +43,18 @@
       "evaluation": "ممتاز",
       "sessionsAttended": 0,
       "paymentType": "مجاني",
-      "notes": "ممتاز اللهم بارك و مريح في الحفظ وعنده قدر كبير من المعرفه اللهم بارك مقارنتا بعمره",
+      "notes": "الورد اليومي : الصلاه علي النبي 50 مره\nممتاز اللهم بارك و مريح في الحفظ وعنده قدر كبير من المعرفه اللهم بارك مقارنتا بعمره\n",
       "photo": "/uploads/1734215975720-998687586.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T09:21:26.135Z",
-      "lastSurah": "الزمر"
+      "lastSurah": "الزمر  | 10/10"
     },
     {
       "id": "1734215942371",
       "name": "محمد احمد",
       "password": "1234",
-      "currentSurah": "الطور",
+      "currentSurah": "الطور | 8.5/10",
       "schedule": [
         {
           "day": "السبت",
@@ -67,18 +67,19 @@
       ],
       "evaluation": "جيد جداً",
       "sessionsAttended": 0,
-      "paymentType": "perSession",
-      "notes": "حفظ سوره الطور\r\nالمراجعه : سوره التحريم + البلد\r\n",
+      "paymentType": "مجاني",
+      "notes": "الورد اليومي : الصلاه علي النبي 50 مره ",
       "photo": "/uploads/1734215942366-298097390.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "createdAt": "2024-12-14T22:39:02.371Z"
+      "createdAt": "2024-12-14T22:39:02.371Z",
+      "lastSurah": "التحريم | 9/10"
     },
     {
       "id": "1734216159737",
       "name": "ادم احمد",
       "password": "1234",
-      "currentSurah": "الحشر",
+      "currentSurah": "الحشر | 8.5/10",
       "schedule": [
         {
           "day": "السبت",
@@ -91,12 +92,13 @@
       ],
       "evaluation": "جيد جداً",
       "sessionsAttended": 0,
-      "paymentType": "perSession",
-      "notes": "حفظ سوره الحشر \r\nالمراجعه : المرسلات + البلد\r\n",
+      "paymentType": "مجاني",
+      "notes": "الورد اليومي : صلي علي النبي 50 مره",
       "photo": "/uploads/1734216159733-717627170.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "createdAt": "2024-12-14T22:42:39.737Z"
+      "createdAt": "2024-12-14T22:42:39.737Z",
+      "lastSurah": "الانسان | لم يتم التحديد بعد"
     },
     {
       "id": "1734216333655",
@@ -164,7 +166,7 @@
       "id": "1734217017651",
       "name": "سليمان علي",
       "password": "1234",
-      "currentSurah": "عم",
+      "currentSurah": "عم | 8.5/10",
       "schedule": [
         {
           "day": "السبت",
@@ -174,17 +176,18 @@
       "evaluation": "جيد جداً",
       "sessionsAttended": 5,
       "paymentType": "monthly",
-      "notes": "حفظ عم \r\nالمراجعه : المطففين الي 13 + الناس + الفلق + الاخلاص",
+      "notes": "حفظ عم \nالمراجعه : المطففين الي 13 + الناس + الفلق + الاخلاص",
       "photo": "/uploads/1734217017631-151036659.jpg",
       "currentMonthPaid": true,
       "lastPaymentDate": "2024-12-20T05:57:40.810Z",
-      "createdAt": "2024-12-14T22:56:57.651Z"
+      "createdAt": "2024-12-14T22:56:57.651Z",
+      "lastSurah": "البلد | 7.5/10"
     },
     {
       "id": "1734217143624",
       "name": "يحيي علي ",
       "password": "1234",
-      "currentSurah": "عم",
+      "currentSurah": "عم | 7/10",
       "schedule": [
         {
           "day": "السبت",
@@ -198,17 +201,18 @@
       "evaluation": "جيد",
       "sessionsAttended": 5,
       "paymentType": "monthly",
-      "notes": "حفظ عم \r\nالمراجعه : المطففين الي 13 + الناس + الفلق + الاخلاص",
+      "notes": "حفظ عم \nالمراجعه : المطففين الي 13 + الناس + الفلق + الاخلاص",
       "photo": "/uploads/1734217143620-390059418.jpg",
       "currentMonthPaid": true,
       "lastPaymentDate": "2024-12-14T22:59:09.006Z",
-      "createdAt": "2024-12-14T22:59:03.625Z"
+      "createdAt": "2024-12-14T22:59:03.625Z",
+      "lastSurah": "البلد | مراجعه"
     },
     {
       "id": "1734217237180",
       "name": "معاذ ياسر",
       "password": "1234",
-      "currentSurah": "عم",
+      "currentSurah": "عم | 8.5/10",
       "schedule": [
         {
           "day": "السبت",
@@ -220,13 +224,14 @@
         }
       ],
       "evaluation": "جيد",
-      "sessionsAttended": 8,
-      "paymentType": "monthly",
-      "notes": "حفظ عم \r\nالمراجعه : المطففين الي 13 + الناس + الفلق + الاخلاص",
+      "sessionsAttended": 0,
+      "paymentType": "مجاني",
+      "notes": "معاذ مشتت قليلا في الحلقه ولو ركز هيكون ممتاز ",
       "photo": "/uploads/1734217237176-759354297.jpg",
-      "currentMonthPaid": true,
-      "lastPaymentDate": "2024-12-14T23:00:41.527Z",
-      "createdAt": "2024-12-14T23:00:37.180Z"
+      "currentMonthPaid": false,
+      "lastPaymentDate": null,
+      "createdAt": "2024-12-14T23:00:37.180Z",
+      "lastSurah": "البلد | 9/10"
     },
     {
       "id": "1734217497335",
@@ -257,7 +262,7 @@
       "id": "1734217861054",
       "name": "حفصه ياسر",
       "password": "1234",
-      "currentSurah": "ق",
+      "currentSurah": "ق | 10/10",
       "schedule": [
         {
           "day": "السبت",
@@ -269,13 +274,14 @@
         }
       ],
       "evaluation": "ممتاز",
-      "sessionsAttended": 8,
-      "paymentType": "monthly",
-      "notes": "حفظ ق \r\nالمراجعه : المرسلات الي 16",
+      "sessionsAttended": 0,
+      "paymentType": "مجاني",
+      "notes": "مجتهده في الحفظ و التدبر \n",
       "photo": "/uploads/1734217861050-314931354.jpg",
-      "currentMonthPaid": true,
-      "lastPaymentDate": "2024-12-14T23:11:08.407Z",
-      "createdAt": "2024-12-14T23:11:01.054Z"
+      "currentMonthPaid": false,
+      "lastPaymentDate": null,
+      "createdAt": "2024-12-14T23:11:01.054Z",
+      "lastSurah": "المرسلات | لم يتم التسميع بعد"
     },
     {
       "id": "1734218030299",
@@ -390,7 +396,7 @@
           "time": "19:00"
         }
       ],
-      "evaluation": "ممتاز",
+      "evaluation": "جيد",
       "sessionsAttended": 0,
       "paymentType": "monthly",
       "notes": "لم يتم البدء بعد ",
@@ -420,6 +426,54 @@
       "lastPaymentDate": null,
       "createdAt": "2024-12-22T11:25:51.046Z",
       "lastSurah": "البلد +الفجر"
+    },
+    {
+      "id": "1735082669403",
+      "name": "معاذ عبدالرحمن",
+      "password": "1234",
+      "currentSurah": "النجم",
+      "schedule": [
+        {
+          "day": "الإثنين",
+          "time": "15:00"
+        },
+        {
+          "day": "الجمعة",
+          "time": "16:00"
+        }
+      ],
+      "evaluation": "جيد",
+      "sessionsAttended": 1,
+      "paymentType": "monthly",
+      "notes": "",
+      "photo": "/uploads/1735082669323-904097071.jpg",
+      "currentMonthPaid": true,
+      "lastPaymentDate": "2024-12-24T23:26:06.057Z",
+      "createdAt": "2024-12-24T23:24:29.404Z"
+    },
+    {
+      "id": "1735082740460",
+      "name": "سارة عبدالرحمن",
+      "password": "1234",
+      "currentSurah": "النجم",
+      "schedule": [
+        {
+          "day": "الإثنين",
+          "time": "15:00"
+        },
+        {
+          "day": "الجمعة",
+          "time": "16:00"
+        }
+      ],
+      "evaluation": "جيد",
+      "sessionsAttended": 1,
+      "paymentType": "monthly",
+      "notes": "",
+      "photo": "/uploads/1735082740400-174436135.jpg",
+      "currentMonthPaid": true,
+      "lastPaymentDate": "2024-12-24T23:26:05.388Z",
+      "createdAt": "2024-12-24T23:25:40.461Z"
     }
   ]
 }
