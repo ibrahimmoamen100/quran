@@ -3,7 +3,7 @@
     {
       "id": "1734167825077",
       "name": "معاذ شرف",
-      "password": "4508",
+      "password": "1234",
       "currentSurah": "الزمر",
       "schedule": [
         {
@@ -16,7 +16,7 @@
         }
       ],
       "evaluation": "ممتاز",
-      "sessionsAttended": 0,
+      "sessionsAttended": 1,
       "paymentType": "perSession",
       "notes": "ممتاز اللهم بارك , ومهذب في الحلقه وقدره استيعابو الايات جميله اللهم بارك",
       "photo": "/uploads/1734167825054-869269646.jpg",
@@ -28,7 +28,7 @@
     {
       "id": "1734168086134",
       "name": "مالك شرف",
-      "password": "4508",
+      "password": "1234",
       "currentSurah": "الفرقان",
       "schedule": [
         {
@@ -100,7 +100,7 @@
     },
     {
       "id": "1734216333655",
-      "name": "سامر وليد",
+      "name": "سامر محمد",
       "password": "1234",
       "currentSurah": "المدثر",
       "schedule": [
@@ -112,12 +112,11 @@
       "evaluation": "جيد جداً",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "حفظ المدثر الي 30 \nالمراجعه : البلد\n",
+      "notes": "حفظ المدثر الي 30 \r\nالمراجعه : البلد\r\n",
       "photo": "/uploads/1734216333651-164846466.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "createdAt": "2024-12-14T22:45:33.655Z",
-      "lastSurah": "البلد"
+      "createdAt": "2024-12-14T22:45:33.655Z"
     },
     {
       "id": "1734216497238",
@@ -132,16 +131,17 @@
       ],
       "evaluation": "جيد",
       "sessionsAttended": 0,
-      "paymentType": "perSession",
-      "notes": "حفظ المدثر الي 30 \r\nالمراجعه : البلد ",
+      "paymentType": "سنوي",
+      "notes": "حفظ المدثر الي 30 \nالمراجعه : البلد ",
       "photo": "/uploads/1734216497235-725325124.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "createdAt": "2024-12-14T22:48:17.238Z"
+      "createdAt": "2024-12-14T22:48:17.238Z",
+      "lastSurah": "البلد"
     },
     {
       "id": "1734216856227",
-      "name": "سيف وليد",
+      "name": "سيف محمد",
       "password": "1234",
       "currentSurah": "المدثر",
       "schedule": [
@@ -153,12 +153,11 @@
       "evaluation": "ضعيف",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "حفظ المدثر الي 30 \nالمراجعه : من الناس الي الاخلاص",
+      "notes": "حفظ المدثر الي 30 \r\nالمراجعه : من الناس الي الاخلاص",
       "photo": "/uploads/1734216856225-794253867.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "createdAt": "2024-12-14T22:54:16.227Z",
-      "lastSurah": "البلد"
+      "createdAt": "2024-12-14T22:54:16.227Z"
     },
     {
       "id": "1734217017651",
@@ -177,7 +176,7 @@
       "notes": "حفظ عم \r\nالمراجعه : المطففين الي 13 + الناس + الفلق + الاخلاص",
       "photo": "/uploads/1734217017631-151036659.jpg",
       "currentMonthPaid": true,
-      "lastPaymentDate": "2024-12-14T22:57:04.343Z",
+      "lastPaymentDate": "2024-12-20T05:57:40.810Z",
       "createdAt": "2024-12-14T22:56:57.651Z"
     },
     {
@@ -304,7 +303,7 @@
     {
       "id": "1734262577575",
       "name": "محمد جميل",
-      "password": "01129320831",
+      "password": "1234",
       "currentSurah": "الفتح",
       "schedule": [
         {
@@ -328,7 +327,7 @@
     {
       "id": "1734262969541",
       "name": "البراء احمد",
-      "password": "01117719044",
+      "password": "1234",
       "currentSurah": "النجم",
       "schedule": [
         {
@@ -353,7 +352,7 @@
     {
       "id": "1734263567588",
       "name": "حمزه احمد",
-      "password": "01111774409",
+      "password": "1234",
       "currentSurah": "الصف",
       "schedule": [
         {
@@ -377,7 +376,7 @@
     {
       "id": "1734263774917",
       "name": "عبدالرحمن محمد",
-      "password": "01097000654",
+      "password": "1234",
       "currentSurah": "المنافقون",
       "schedule": [
         {
@@ -389,7 +388,7 @@
           "time": "19:00"
         }
       ],
-      "evaluation": "جديد",
+      "evaluation": "ممتاز",
       "sessionsAttended": 0,
       "paymentType": "monthly",
       "notes": "لم يتم البدء بعد ",
@@ -400,24 +399,24 @@
       "lastSurah": " النجم"
     },
     {
-      "id": "1734454578010",
+      "id": "1734866751045",
       "name": "سجدة وليد",
       "password": "1234",
-      "currentSurah": "عبسى",
+      "currentSurah": "عبسي",
       "schedule": [
         {
           "day": "الجمعة",
-          "time": "15:30"
+          "time": "12:12"
         }
       ],
-      "evaluation": "جديد",
+      "evaluation": "ممتاز",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "حفظها ممتاز وفهمها للتفسير كويس جدا اللهم بارك ولكن احيانا تأتي مش حفظه \r\nلاتنسي الذكر اليومي ",
-      "photo": "/uploads/1734454577969-149163034.jpg",
+      "notes": "hjkhjk",
+      "photo": "/uploads/1734866750974-662796052.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "createdAt": "2024-12-17T16:56:18.010Z"
+      "createdAt": "2024-12-22T11:25:51.046Z"
     }
   ]
 }
