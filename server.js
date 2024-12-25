@@ -21,10 +21,11 @@ app.use((req, res, next) => {
 // Create necessary directories
 const publicDir = path.join(__dirname, 'public');
 const uploadsDir = path.join(publicDir, 'uploads');
+const certificatesDir = path.join(publicDir, 'certificates');
 const dataDir = path.join(__dirname, 'data');
 const logsDir = path.join(__dirname, 'logs');
 
-[publicDir, uploadsDir, dataDir, logsDir].forEach(dir => {
+[publicDir, uploadsDir, certificatesDir, dataDir, logsDir].forEach(dir => {
     if (!fs.existsSync(dir)) {
         fs.mkdirSync(dir, { recursive: true });
     }
@@ -33,7 +34,11 @@ const logsDir = path.join(__dirname, 'logs');
 // Configure multer for file uploads
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, uploadsDir);
+        if (file.fieldname === 'certificates') {
+            cb(null, certificatesDir);
+        } else {
+            cb(null, uploadsDir);
+        }
     },
     filename: function (req, file, cb) {
         const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
@@ -63,6 +68,7 @@ app.use('/data/students.json', (req, res) => {
 });
 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
+app.use('/certificates', express.static(path.join(__dirname, 'certificates')));
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
 // Handle 404 errors for static files
@@ -182,11 +188,14 @@ app.get('/api/students/:id', (req, res) => {
     }
 });
 
-app.post('/api/students', upload.single('photo'), (req, res) => {
+app.post('/api/students', upload.fields([
+    { name: 'photo', maxCount: 1 },
+    { name: 'certificates', maxCount: 10 }
+]), (req, res) => {
     try {
         console.log('Received request to add student');
         console.log('Request body:', req.body);
-        console.log('File:', req.file);
+        console.log('Files:', req.files);
 
         // التحقق من البيانات المطلوبة
         if (!req.body.name) {
@@ -198,63 +207,47 @@ app.post('/api/students', upload.single('photo'), (req, res) => {
         if (!req.body.currentSurah) {
             return res.status(400).json({ message: 'الرجاء إدخال السورة الحالية' });
         }
-        
+
         const data = readStudentsData();
-        console.log('Current students data:', data);
         
-        // إنشاء معرف فريد للطالب
-        const studentId = Date.now().toString();
+        // Generate a unique ID
+        const id = Date.now().toString();
         
-        // معالجة جدول المواعيد
-        let schedule = [];
-        if (req.body.schedule) {
-            try {
-                schedule = JSON.parse(req.body.schedule);
-                console.log('Parsed schedule:', schedule);
-            } catch (error) {
-                console.error('Error parsing schedule:', error);
-                return res.status(400).json({ message: 'خطأ في تنسيق جدول المواعيد' });
-            }
+        // Process the photo file
+        let photoPath = '';
+        if (req.files && req.files.photo && req.files.photo[0]) {
+            photoPath = '/uploads/' + req.files.photo[0].filename;
         }
-        
+
+        // Process certificate files
+        let certificatePaths = [];
+        if (req.files && req.files.certificates) {
+            certificatePaths = req.files.certificates.map(file => '/certificates/' + file.filename);
+        }
+
         const newStudent = {
-            id: studentId,
+            id,
             name: req.body.name,
             password: req.body.password,
             currentSurah: req.body.currentSurah,
-            schedule: schedule,
-            evaluation: "جديد",
-            sessionsAttended: 0,
-            paymentType: req.body.paymentType || 'perSession',
-            notes: req.body.notes || '',
-            photo: req.file ? `/uploads/${req.file.filename}` : null,
-            currentMonthPaid: false,
-            lastPaymentDate: null,
-            createdAt: new Date().toISOString()
+            lastSurah: req.body.lastSurah,
+            paymentType: req.body.paymentType,
+            schedule: JSON.parse(req.body.schedule || '[]'),
+            notes: req.body.notes,
+            photo: photoPath,
+            certificates: certificatePaths,
+            sessionCount: 0
         };
 
-        console.log('New student data to be added:', newStudent);
-
-        if (!data.students) {
-            data.students = [];
-        }
-
         data.students.push(newStudent);
-        console.log('Updated students data before writing:', data);
-        
-        const success = writeStudentsData(data);
-        if (!success) {
-            throw new Error('Failed to write student data');
-        }
+        writeStudentsData(data);
 
-        console.log('Data written successfully');
-        res.status(201).json({ 
-            message: 'تم إضافة الطالب بنجاح', 
-            student: newStudent 
-        });
+        // Remove password before sending response
+        const { password, ...studentResponse } = newStudent;
+        res.status(201).json(studentResponse);
     } catch (error) {
         console.error('Error adding student:', error);
-        res.status(500).json({ message: 'حدث خطأ في إضافة الطالب: ' + error.message });
+        res.status(500).json({ error: 'Failed to add student' });
     }
 });
 

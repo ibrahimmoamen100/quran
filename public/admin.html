@@ -24,7 +24,7 @@
         }
         .modal-content {
             background-color: #fefefe;
-            margin: 15% auto;
+            margin: 4% auto;
             padding: 20px;
             border: 1px solid #888;
             width: 80%;
@@ -124,6 +124,11 @@
                             <label class="block text-sm mb-1">صورة الطالب</label>
                             <input type="file" name="photo" accept="image/*" class="w-full p-2 border rounded-md">
                         </div>
+                        <div>
+                            <label class="block text-sm mb-1">شهادات الطالب</label>
+                            <input type="file" name="certificates" accept="image/*" multiple class="w-full p-2 border rounded-md">
+                            <p class="text-sm text-gray-500 mt-1">يمكنك اختيار عدة صور للشهادات</p>
+                        </div>
                     </div>
                     
                     <div>
@@ -174,6 +179,7 @@
                             <thead class="bg-gray-50">
                                 <tr>
                                     <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider sticky right-0 bg-gray-50">الصورة</th>
+                                    <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">الشهادات</th>
                                     <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">الاسم</th>
                                     <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">السورة الحالية</th>
                                     <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">المواعيد</th>
@@ -196,7 +202,7 @@
 
         <!-- Modal تعديل الطالب -->
         <div id="editStudentModal" class="modal">
-            <div class="modal-content">
+            <div class="modal-content max-w-7xl">
                 <span class="close" onclick="closeEditModal()">&times;</span>
                 <h2 class="text-2xl font-bold mb-4">تعديل بيانات الطالب</h2>
                 <form id="editStudentForm" class="space-y-4">
@@ -251,12 +257,28 @@
                     <div>
                         <label class="block text-sm mb-1">الصورة الحالية</label>
                         <img id="currentPhoto" src="" alt="صورة الطالب" class="max-w-xs mt-2 hidden">
+                        <div id="certificateImages" class="mt-2 flex flex-wrap gap-2"></div>
                         <input type="file" name="photo" accept="image/*" class="mt-2">
+                    </div>
+                    <div>
+                        <label class="block text-sm mb-1">شهادات الطالب</label>
+                        <input type="file" name="certificates" accept="image/*" multiple class="w-full p-2 border rounded-md">
+                        <p class="text-sm text-gray-500 mt-1">يمكنك اختيار عدة صور للشهادات</p>
                     </div>
                     <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700">
                         حفظ التغييرات
                     </button>
                 </form>
+            </div>
+        </div>
+
+        <!-- Modal عرض الشهادات -->
+        <div id="certificatesModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeCertificatesModal()">&times;</span>
+                <h2 class="text-xl font-semibold mb-4">شهادات الطالب</h2>
+                <div id="certificatesContainer" class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                </div>
             </div>
         </div>
 
@@ -311,6 +333,25 @@
                 form.querySelector('textarea[name="notes"]').value = student.notes || '';
                 // Don't populate password field for security, but keep the current password if not changed
                 form.querySelector('input[name="password"]').placeholder = 'اتركه فارغاً للاحتفاظ بكلمة المرور الحالية';
+
+                // Show current photo if exists
+                const currentPhotoDiv = document.getElementById('currentPhoto');
+                if (student.photo) {
+                    currentPhotoDiv.innerHTML = `<img src="${student.photo}" alt="Current photo" class="h-20 w-20 rounded-full">`;
+                } else {
+                    currentPhotoDiv.innerHTML = '';
+                }
+
+                // Show current certificates if exist
+                const currentCertificatesDiv = document.getElementById('currentCertificates');
+                if (student.certificates && student.certificates.length > 0) {
+                    const certLinks = student.certificates.map(cert => 
+                        `<a href="${cert}" target="_blank" class="text-green-600 hover:text-green-800">شهادة</a>`
+                    ).join(', ');
+                    currentCertificatesDiv.innerHTML = `الشهادات الحالية: ${certLinks}`;
+                } else {
+                    currentCertificatesDiv.innerHTML = 'لا توجد شهادات';
+                }
             }
 
             document.getElementById('editStudentForm').addEventListener('submit', async (e) => {
@@ -357,6 +398,28 @@
                     console.error('Error:', error);
                 }
             });
+
+            function viewCertificates(studentId) {
+                const student = students.find(s => s.id === studentId);
+                if (!student || !student.certificates) return;
+
+                const container = document.getElementById('certificatesContainer');
+                container.innerHTML = '';
+                
+                student.certificates.forEach(cert => {
+                    const img = document.createElement('img');
+                    img.src = cert;
+                    img.className = 'w-full h-auto rounded-lg shadow-md cursor-pointer';
+                    img.onclick = () => window.open(cert, '_blank');
+                    container.appendChild(img);
+                });
+
+                document.getElementById('certificatesModal').style.display = 'block';
+            }
+
+            function closeCertificatesModal() {
+                document.getElementById('certificatesModal').style.display = 'none';
+            }
         </script>
 
         <script>

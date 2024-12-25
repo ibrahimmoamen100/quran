@@ -1,16 +1,183 @@
 <?php
+<?php
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
-header('Access-Control-Allow-Methods: POST');
-header('Access-Control-Allow-Headers: Content-Type');
+header('Access-Control-Allow-Methods: POST, PUT, DELETE');
+header('Access-Control-Allow-Headers: Content-Type, Authorization');
 
 $file = '../data/students.json';
-$data = json_decode(file_get_contents('php://input'), true);
+$uploadDir = '../public/uploads/';
 
-if (file_put_contents($file, json_encode($data, JSON_PRETTY_PRINT))) {
-    echo json_encode(['success' => true]);
-} else {
-    http_response_code(500);
-    echo json_encode(['error' => 'Failed to save data']);
+// Function to generate a unique filename
+function generateUniqueFilename($filename) {
+    $extension = pathinfo($filename, PATHINFO_EXTENSION);
+    $basename = pathinfo($filename, PATHINFO_FILENAME);
+    $uniqueName = uniqid() . '-' . $basename . '.' . $extension;
+    return $uniqueName;
+}
+
+// Function to handle file uploads
+function handleFileUpload($file, $uploadDir) {
+    if ($file['error'] === UPLOAD_ERR_OK) {
+        $uniqueFilename = generateUniqueFilename($file['name']);
+        $targetPath = $uploadDir . $uniqueFilename;
+        if (move_uploaded_file($file['tmp_name'], $targetPath)) {
+            return '/uploads/' . $uniqueFilename;
+        }
+    }
+    return null;
+}
+
+// Get the request method
+$method = $_SERVER['REQUEST_METHOD'];
+
+// Handle PUT request (for updating student data)
+if ($method === 'PUT') {
+    // Get the student ID from the URL
+    $studentId = basename($_SERVER['REQUEST_URI']);
+    
+    // Get the authorization header
+    $headers = getallheaders();
+    $authHeader = isset($headers['Authorization']) ? $headers['Authorization'] : null;
+    
+    // Verify the token (replace with your actual token verification logic)
+    if (!$authHeader || !preg_match('/Bearer\s(\S+)/', $authHeader, $matches)) {
+        http_response_code(401);
+        echo json_encode(['error' => 'Unauthorized']);
+        exit;
+    }
+    $token = $matches[1];
+    // In a real application, you would verify the token here
+    // For this example, we'll just assume the token is valid
+
+    // Read existing data
+    $students = json_decode(file_get_contents($file), true);
+    if (!is_array($students)) {
+        $students = [];
+    }
+
+    // Get the request body
+    $requestBody = file_get_contents('php://input');
+    $studentData = json_decode($requestBody, true);
+
+    // Handle file upload
+    $uploadedFile = isset($_FILES['photo']) ? $_FILES['photo'] : null;
+    if ($uploadedFile) {
+        $imagePath = handleFileUpload($uploadedFile, $uploadDir);
+        if ($imagePath) {
+            $studentData['photo'] = $imagePath;
+        }
+    }
+
+    // Find the student to update
+    $studentUpdated = false;
+    foreach ($students as $key => $student) {
+        if ($student['id'] == $studentId) {
+            // Update student data
+            $students[$key] = array_merge($student, $studentData);
+            $studentUpdated = true;
+            break;
+        }
+    }
+
+    if ($studentUpdated) {
+        // Save updated data
+        if (file_put_contents($file, json_encode($students, JSON_PRETTY_PRINT))) {
+            echo json_encode(['success' => true]);
+        } else {
+            http_response_code(500);
+            echo json_encode(['error' => 'Failed to save data']);
+        }
+    } else {
+        http_response_code(404);
+        echo json_encode(['error' => 'Student not found']);
+    }
+}
+// Handle POST request (for adding new student)
+elseif ($method === 'POST') {
+    // Read existing data
+    $students = json_decode(file_get_contents($file), true);
+    if (!is_array($students)) {
+        $students = [];
+    }
+    
+    // Get the request body
+    $studentData = $_POST;
+    
+    // Handle file upload
+    $uploadedFile = isset($_FILES['photo']) ? $_FILES['photo'] : null;
+    if ($uploadedFile) {
+        $imagePath = handleFileUpload($uploadedFile, $uploadDir);
+        if ($imagePath) {
+            $studentData['photo'] = $imagePath;
+        }
+    }
+    
+    // Generate a unique ID for the new student
+    $studentData['id'] = uniqid();
+    
+    // Add the new student to the array
+    $students[] = $studentData;
+    
+    // Save updated data
+    if (file_put_contents($file, json_encode($students, JSON_PRETTY_PRINT))) {
+        echo json_encode(['success' => true]);
+    } else {
+        http_response_code(500);
+        echo json_encode(['error' => 'Failed to save data']);
+    }
+}
+// Handle DELETE request (for deleting a student)
+elseif ($method === 'DELETE') {
+    // Get the student ID from the URL
+    $studentId = basename($_SERVER['REQUEST_URI']);
+    
+    // Get the authorization header
+    $headers = getallheaders();
+    $authHeader = isset($headers['Authorization']) ? $headers['Authorization'] : null;
+    
+    // Verify the token (replace with your actual token verification logic)
+    if (!$authHeader || !preg_match('/Bearer\s(\S+)/', $authHeader, $matches)) {
+        http_response_code(401);
+        echo json_encode(['error' => 'Unauthorized']);
+        exit;
+    }
+    $token = $matches[1];
+    // In a real application, you would verify the token here
+    // For this example, we'll just assume the token is valid
+
+    // Read existing data
+    $students = json_decode(file_get_contents($file), true);
+    if (!is_array($students)) {
+        $students = [];
+    }
+
+    // Find the student to delete
+    $studentDeleted = false;
+    foreach ($students as $key => $student) {
+        if ($student['id'] == $studentId) {
+            // Remove the student from the array
+            array_splice($students, $key, 1);
+            $studentDeleted = true;
+            break;
+        }
+    }
+
+    if ($studentDeleted) {
+        // Save updated data
+        if (file_put_contents($file, json_encode($students, JSON_PRETTY_PRINT))) {
+            echo json_encode(['success' => true]);
+        } else {
+            http_response_code(500);
+            echo json_encode(['error' => 'Failed to save data']);
+        }
+    } else {
+        http_response_code(404);
+        echo json_encode(['error' => 'Student not found']);
+    }
+}
+else {
+    http_response_code(405);
+    echo json_encode(['error' => 'Method Not Allowed']);
 }
 ?>

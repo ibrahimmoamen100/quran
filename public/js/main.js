@@ -325,24 +325,14 @@ function loadStudents() {
 // Edit student
 async function openEditModal(studentId) {
     try {
-        const token = localStorage.getItem('token');
-        if (!token) {
-            alert('الرجاء تسجيل الدخول أولاً');
-            return;
-        }
-
-        const response = await fetch(`/api/student/${studentId}`, {
-            headers: {
-                'Authorization': `Bearer ${token}`
-            }
-        });
-        
+        const response = await fetch('/api/students');
         if (!response.ok) {
-            throw new Error('Failed to fetch student details');
+            throw new Error('Failed to fetch students data');
         }
-        
-        const student = await response.json();
-        console.log('Server response:', student);
+        const data = await response.json();
+        const students = data;
+        const student = students.find(s => s.id === studentId);
+
         if (!student) {
             throw new Error('Student not found');
         }
@@ -399,6 +389,20 @@ async function openEditModal(studentId) {
             currentPhotoElement.style.display = 'block';
         } else {
             currentPhotoElement.style.display = 'none';
+        }
+
+        // Show certificate images if they exist
+        const certificatesContainer = document.getElementById('certificateImages');
+        certificatesContainer.innerHTML = ''; // Clear previous images
+        
+        if (student.certificates && student.certificates.length > 0) {
+            student.certificates.forEach(certificate => {
+                const img = document.createElement('img');
+                img.src = certificate;
+                img.alt = 'Certificate';
+                img.className = 'w-24 h-24 object-cover rounded mt-2';
+                certificatesContainer.appendChild(img);
+            });
         }
         
         // Show the modal
