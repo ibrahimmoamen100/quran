@@ -474,44 +474,51 @@
       "lastPaymentDate": null
     },
     {
-      "id": "1735132237877",
-      "name": "اسما اسامة",
+      "id": "1735150017483",
+      "name": "اسما اسامه",
       "password": "1234",
-      "currentSurah": "الزمر",
-      "lastSurah": "فصلت",
+      "currentSurah": "الزمر + سبأ ",
+      "lastSurah": "فصلت + غافر",
       "paymentType": "monthly",
       "schedule": [
         {
+          "day": "الأربعاء",
+          "time": "13:40"
+        },
+        {
           "day": "الأحد",
-          "time": "14:40"
+          "time": "13:40"
         }
       ],
-      "notes": "",
-      "photo": "/uploads/1735132237855-63117350.svg",
+      "notes": "تكرار كل ايه اخذناها 5 مرات ",
+      "photo": "/uploads/1735150017467-398682201.jpg",
       "certificates": [],
-      "sessionCount": 0
+      "sessionCount": 0,
+      "sessionsAttended": 2,
+      "evaluation": "جيد جداً"
     },
     {
-      "id": "1735132274594",
-      "name": "ديما احمد",
+      "id": "1735150087390",
+      "name": "ديما محمد",
       "password": "1234",
-      "currentSurah": "الزمر",
-      "lastSurah": "فصلت",
+      "currentSurah": "الزمر + سبأ ",
+      "lastSurah": "فصلت + غافر",
       "paymentType": "monthly",
       "schedule": [
         {
           "day": "الأحد",
-          "time": "14:40"
+          "time": "13:40"
         },
         {
           "day": "الأربعاء",
-          "time": "14:40"
+          "time": "13:40"
         }
       ],
-      "notes": "",
-      "photo": "/uploads/1735132274582-339998163.svg",
+      "notes": "يجب تكرار كل ايه اخذناها 5 مرات",
+      "photo": "/uploads/1735150087380-836978683.jpg",
       "certificates": [],
-      "sessionCount": 0
+      "sessionCount": 0,
+      "sessionsAttended": 2
     }
   ]
 }
