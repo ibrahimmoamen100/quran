@@ -477,9 +477,9 @@
       "id": "1735150017483",
       "name": "اسما اسامه",
       "password": "1234",
-      "currentSurah": "الزمر + سبأ ",
-      "lastSurah": "فصلت + غافر",
-      "paymentType": "monthly",
+      "currentSurah": "الزمر:  7.5/10  + سبأ: لم يتم التسميع",
+      "lastSurah": "فصلت 9.5/10 + غافر 10/10",
+      "paymentType": "سنوي",
       "schedule": [
         {
           "day": "الأربعاء",
@@ -495,14 +495,16 @@
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 2,
-      "evaluation": "جيد جداً"
+      "evaluation": "جيد جداً",
+      "currentMonthPaid": false,
+      "lastPaymentDate": null
     },
     {
       "id": "1735150087390",
       "name": "ديما محمد",
       "password": "1234",
-      "currentSurah": "الزمر + سبأ ",
-      "lastSurah": "فصلت + غافر",
+      "currentSurah": "الزمر: 7/10 + سبأ: لم يتم التسميع",
+      "lastSurah": "فصلت: 9/10 + غافر 9/10",
       "paymentType": "monthly",
       "schedule": [
         {
@@ -518,7 +520,8 @@
       "photo": "/uploads/1735150087380-836978683.jpg",
       "certificates": [],
       "sessionCount": 0,
-      "sessionsAttended": 2
+      "sessionsAttended": 2,
+      "evaluation": "جيد جداً"
     }
   ]
 }
