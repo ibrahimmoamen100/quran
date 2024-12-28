@@ -4,7 +4,7 @@
       "id": "1734167825077",
       "name": "معاذ محمد",
       "password": "1234",
-      "currentSurah": "الزمر",
+      "currentSurah": "ص         | الزمر 10\\9.5 ",
       "schedule": [
         {
           "day": "السبت",
@@ -18,18 +18,18 @@
       "evaluation": "ممتاز",
       "sessionsAttended": 1,
       "paymentType": "perSession",
-      "notes": "ممتاز اللهم بارك , ومهذب في الحلقه وقدره استيعابو الايات جميله اللهم بارك",
+      "notes": "الايات التي تحتاج تثبيت هي  \n(18) أَفَمَنْ حَقَّ عَلَيْهِ كَلِمَةُ الْعَذَابِ أَفَأَنتَ تُنقِذُ مَن فِي النَّارِ (19)\n(21)أَفَمَن شَرَحَ اللَّهُ صَدْرَهُ لِلْإِسْلَامِ فَهُوَ عَلَىٰ نُورٍ مِّن رَّبِّهِ ۚ فَوَيْلٌ لِّلْقَاسِيَةِ قُلُوبُهُم مِّن ذِكْرِ اللَّهِ ۚ أُولَٰئِكَ فِي ضَلَالٍ مُّبِينٍ (22)\n(23) أَفَمَن يَتَّقِي بِوَجْهِهِ سُوءَ الْعَذَابِ يَوْمَ الْقِيَامَةِ ۚ وَقِيلَ لِلظَّالِمِينَ ذُوقُوا مَا كُنتُمْ تَكْسِبُونَ (24)\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\nالورد اليومي 30 صلاه علي النبي + 30 استغفار ",
       "photo": "/uploads/1734167825054-869269646.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T09:17:05.078Z",
-      "lastSurah": "النجم"
+      "lastSurah": "غافر 10\\9.5    | الفتح 10\\9.5"
     },
     {
       "id": "1734168086134",
       "name": "مالك محمد",
       "password": "1234",
-      "currentSurah": "النور",
+      "currentSurah": "النور | 9.5/10",
       "schedule": [
         {
           "day": "السبت",
@@ -43,12 +43,12 @@
       "evaluation": "ممتاز",
       "sessionsAttended": 0,
       "paymentType": "مجاني",
-      "notes": "ممتاز اللهم بارك و مريح في الحفظ وعنده قدر كبير من المعرفه اللهم بارك مقارنتا بعمره",
+      "notes": "الورد اليومي 30 صلاه علي النبي + 30 استغفار",
       "photo": "/uploads/1734215975720-998687586.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T09:21:26.135Z",
-      "lastSurah": "الزمر"
+      "lastSurah": "الزمر  | 10/10  + سبأ 10\\9.5"
     },
     {
       "id": "1734215942371",
@@ -102,7 +102,7 @@
       "id": "1734216333655",
       "name": "سامر وليد",
       "password": "1234",
-      "currentSurah": "المدثر",
+      "currentSurah": "المدثر  10\\8",
       "schedule": [
         {
           "day": "الجمعة",
@@ -112,7 +112,7 @@
       "evaluation": "جيد جداً",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "حفظ المدثر الي 30 \nالمراجعه : البلد\n",
+      "notes": "الورد اليومي 50 صلاه علي النبي ",
       "photo": "/uploads/1734216333651-164846466.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
@@ -123,17 +123,17 @@
       "id": "1734216497238",
       "name": "محمد اسامه",
       "password": "1234",
-      "currentSurah": "المدثر ",
+      "currentSurah": "المدثر  لم يتم التسميع لعدم الحفظ",
       "schedule": [
         {
           "day": "الجمعة",
           "time": "14:40"
         }
       ],
-      "evaluation": "جيد",
+      "evaluation": "مقبول",
       "sessionsAttended": 0,
       "paymentType": "سنوي",
-      "notes": "حفظ المدثر الي 30 \nالمراجعه : البلد ",
+      "notes": "ارجو الحفظ يا محمد \nمستواك قل جدا \nفي اهمال شديد لحلقه القرأن \nارجو الاهتمام مثل باقي المواد \n",
       "photo": "/uploads/1734216497235-725325124.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
@@ -144,27 +144,28 @@
       "id": "1734216856227",
       "name": "سيف محمد",
       "password": "1234",
-      "currentSurah": "المدثر",
+      "currentSurah": "المدثر ايه 30  10\\8",
       "schedule": [
         {
           "day": "الجمعة",
           "time": "14:40"
         }
       ],
-      "evaluation": "ضعيف",
+      "evaluation": "جيد",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "حفظ المدثر الي 30 \r\nالمراجعه : من الناس الي الاخلاص",
+      "notes": "سيف اللهم بارك تحسن كثير عن الاول بفضل الله\nواخذ الخطوه وسمع ايه 30 \nومتفاعل جيد في الحلقه \n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\nالورد اليومي 50 صلاه علي النبي ",
       "photo": "/uploads/1734216856225-794253867.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "createdAt": "2024-12-14T22:54:16.227Z"
+      "createdAt": "2024-12-14T22:54:16.227Z",
+      "lastSurah": "البلد"
     },
     {
       "id": "1734217017651",
       "name": "سليمان علي",
       "password": "1234",
-      "currentSurah": "عم",
+      "currentSurah": "عم ",
       "schedule": [
         {
           "day": "السبت",
@@ -172,13 +173,14 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 5,
+      "sessionsAttended": 1,
       "paymentType": "monthly",
-      "notes": "حفظ عم \r\nالمراجعه : المطففين الي 13 + الناس + الفلق + الاخلاص",
+      "notes": "الورد اليومي 10 صلاه علي النبي \nسليمان متفاعل جدا في الحلقه اللهم بارك \nولكن في حتت رياء , كطفل في سنه ف طبيعي ولكن يجب توعيته من الان علي ان يجعل مع ربه اسرار\n",
       "photo": "/uploads/1734217017631-151036659.jpg",
       "currentMonthPaid": true,
-      "lastPaymentDate": "2024-12-20T05:57:40.810Z",
-      "createdAt": "2024-12-14T22:56:57.651Z"
+      "lastPaymentDate": "2024-12-28T16:08:57.148Z",
+      "createdAt": "2024-12-14T22:56:57.651Z",
+      "lastSurah": "البلد 10\\7  | الفجر الي 10"
     },
     {
       "id": "1734217143624",
@@ -196,19 +198,19 @@
         }
       ],
       "evaluation": "جيد",
-      "sessionsAttended": 5,
+      "sessionsAttended": 1,
       "paymentType": "monthly",
       "notes": "حفظ عم \r\nالمراجعه : المطففين الي 13 + الناس + الفلق + الاخلاص",
       "photo": "/uploads/1734217143620-390059418.jpg",
       "currentMonthPaid": true,
-      "lastPaymentDate": "2024-12-14T22:59:09.006Z",
+      "lastPaymentDate": "2024-12-28T16:08:50.362Z",
       "createdAt": "2024-12-14T22:59:03.625Z"
     },
     {
       "id": "1734217237180",
       "name": "معاذ ياسر",
       "password": "1234",
-      "currentSurah": "عم",
+      "currentSurah": "عم | 7.5/10",
       "schedule": [
         {
           "day": "السبت",
@@ -219,20 +221,21 @@
           "time": "14:40"
         }
       ],
-      "evaluation": "جيد",
-      "sessionsAttended": 8,
+      "evaluation": "جيد جداً",
+      "sessionsAttended": 4,
       "paymentType": "monthly",
-      "notes": "حفظ عم \r\nالمراجعه : المطففين الي 13 + الناس + الفلق + الاخلاص",
+      "notes": "تم ترقيه معاذ الي جيد جدا لحفظه سوره البلد \nواذا قل عن هذه الدرجات المره القادمه \nف سيقل الي جيد ",
       "photo": "/uploads/1734217237176-759354297.jpg",
       "currentMonthPaid": true,
-      "lastPaymentDate": "2024-12-14T23:00:41.527Z",
-      "createdAt": "2024-12-14T23:00:37.180Z"
+      "lastPaymentDate": "2024-12-28T16:09:15.996Z",
+      "createdAt": "2024-12-14T23:00:37.180Z",
+      "lastSurah": "البلد 10\\7  | الفجر الي 10"
     },
     {
       "id": "1734217497335",
       "name": "عمار ياسر",
       "password": "1234",
-      "currentSurah": "الرحمن",
+      "currentSurah": "القمر | مراجعه",
       "schedule": [
         {
           "day": "السبت",
@@ -243,21 +246,21 @@
           "time": "14:40"
         }
       ],
-      "evaluation": "جيد",
-      "sessionsAttended": 8,
+      "evaluation": "ضعيف",
+      "sessionsAttended": 4,
       "paymentType": "monthly",
-      "notes": "حفظ الرحمن كامله \r\nالمراجعه : المرسلات 19",
+      "notes": "عمار للأسف مستواه ضعيف جدا لانه مهمل جدا في حلقه القرأن , لو اجتهد هيكون مستواه افضل ولكن مش بيهتم بحلقه القرأن \nبيجي في وقت الحلقه ويراجع امامي \nوديما بيجيب حجج انا بذاكر بمتحن انا في 3 اعدادي ",
       "photo": "/uploads/1734217497332-246598079.jpg",
       "currentMonthPaid": true,
-      "lastPaymentDate": "2024-12-14T23:05:02.978Z",
+      "lastPaymentDate": "2024-12-28T16:09:36.214Z",
       "createdAt": "2024-12-14T23:04:57.335Z",
-      "lastSurah": " النجم"
+      "lastSurah": " البلد"
     },
     {
       "id": "1734217861054",
       "name": "حفصه ياسر",
       "password": "1234",
-      "currentSurah": "ق",
+      "currentSurah": "ق | 10/10",
       "schedule": [
         {
           "day": "السبت",
@@ -269,19 +272,20 @@
         }
       ],
       "evaluation": "ممتاز",
-      "sessionsAttended": 8,
+      "sessionsAttended": 4,
       "paymentType": "monthly",
-      "notes": "حفظ ق \r\nالمراجعه : المرسلات الي 16",
+      "notes": "مجتهده اللهم بارك و بتتعب مع نفسها ومن الاولاد المتفوقين الي بديهم اللهم بارك ||\nالورد اليومي 50 صلاه علي النبي ",
       "photo": "/uploads/1734217861050-314931354.jpg",
       "currentMonthPaid": true,
-      "lastPaymentDate": "2024-12-14T23:11:08.407Z",
-      "createdAt": "2024-12-14T23:11:01.054Z"
+      "lastPaymentDate": "2024-12-28T16:09:48.389Z",
+      "createdAt": "2024-12-14T23:11:01.054Z",
+      "lastSurah": "البلد "
     },
     {
       "id": "1734218030299",
       "name": "حمزه مصطفي",
       "password": "1234",
-      "currentSurah": "نوح",
+      "currentSurah": "نوح 10\\8 | كامله",
       "schedule": [
         {
           "day": "السبت",
@@ -293,13 +297,14 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 8,
+      "sessionsAttended": 1,
       "paymentType": "monthly",
-      "notes": "حفظ سوره نوح \r\nالمراجعه : المطففين الي 26",
+      "notes": "الورد اليومي يا حمزه 50 صلاه علي النبي ",
       "photo": "/uploads/1734218030296-488917955.jpg",
-      "currentMonthPaid": true,
-      "lastPaymentDate": "2024-12-14T23:13:55.591Z",
-      "createdAt": "2024-12-14T23:13:50.300Z"
+      "currentMonthPaid": false,
+      "lastPaymentDate": null,
+      "createdAt": "2024-12-14T23:13:50.300Z",
+      "lastSurah": "البلد 10\\7  | الفجر الي 10"
     },
     {
       "id": "1734262577575",
@@ -404,7 +409,7 @@
       "id": "1734866751045",
       "name": "سجدة وليد",
       "password": "1234",
-      "currentSurah": "عبسي",
+      "currentSurah": "عبسي 10\\8",
       "schedule": [
         {
           "day": "الجمعة",
@@ -414,12 +419,12 @@
       "evaluation": "جيد جداً",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "الورد اليومي 50 صلاه علي النبي ",
+      "notes": "الورد اليومي 50 صلاه علي النبي يا سجدة",
       "photo": "/uploads/1734866750974-662796052.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-22T11:25:51.046Z",
-      "lastSurah": "البلد +الفجر"
+      "lastSurah": "البلد 10\\7  | الفجر الي 10"
     },
     {
       "id": "1735129860909",
