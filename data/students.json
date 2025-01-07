@@ -68,11 +68,12 @@
       "evaluation": "جيد جداً",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "حفظ سوره الطور\r\nالمراجعه : سوره التحريم + البلد\r\n",
+      "notes": "حفظ سوره الطور\nالمراجعه : سوره التحريم + البلد\n",
       "photo": "/uploads/1734215942366-298097390.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "createdAt": "2024-12-14T22:39:02.371Z"
+      "createdAt": "2024-12-14T22:39:02.371Z",
+      "lastSurah": "التحريم"
     },
     {
       "id": "1734216159737",
@@ -202,9 +203,9 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 4,
+      "sessionsAttended": 5,
       "paymentType": "monthly",
-      "notes": "تم ترقيه معاذ الي جيد جدا لحفظه سوره البلد \nواذا قل عن هذه الدرجات المره القادمه \nف سيقل الي جيد ",
+      "notes": "معاذ مستواه كويس ولكن بيسرح كثير في الحلقه \nلما بيركز بيكون شاطر",
       "photo": "/uploads/1734217237176-759354297.jpg",
       "currentMonthPaid": true,
       "lastPaymentDate": "2024-12-28T16:09:15.996Z",
@@ -227,7 +228,7 @@
         }
       ],
       "evaluation": "ضعيف",
-      "sessionsAttended": 4,
+      "sessionsAttended": 5,
       "paymentType": "monthly",
       "notes": "الورد اليومي 50 صلاه علي النبي ",
       "photo": "/uploads/1734217497332-246598079.jpg",
@@ -481,7 +482,7 @@
       "sessionsAttended": 7,
       "currentMonthPaid": true,
       "lastPaymentDate": "2025-01-07T23:03:52.962Z",
-      "evaluation": "ممتاز"
+      "evaluation": "جيد جداً"
     },
     {
       "id": "1736291226529",
