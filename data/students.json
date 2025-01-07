@@ -18,7 +18,7 @@
       "evaluation": "ممتاز",
       "sessionsAttended": 1,
       "paymentType": "perSession",
-      "notes": "الايات التي تحتاج تثبيت هي  \n(18) أَفَمَنْ حَقَّ عَلَيْهِ كَلِمَةُ الْعَذَابِ أَفَأَنتَ تُنقِذُ مَن فِي النَّارِ (19)\n(21)أَفَمَن شَرَحَ اللَّهُ صَدْرَهُ لِلْإِسْلَامِ فَهُوَ عَلَىٰ نُورٍ مِّن رَّبِّهِ ۚ فَوَيْلٌ لِّلْقَاسِيَةِ قُلُوبُهُم مِّن ذِكْرِ اللَّهِ ۚ أُولَٰئِكَ فِي ضَلَالٍ مُّبِينٍ (22)\n(23) أَفَمَن يَتَّقِي بِوَجْهِهِ سُوءَ الْعَذَابِ يَوْمَ الْقِيَامَةِ ۚ وَقِيلَ لِلظَّالِمِينَ ذُوقُوا مَا كُنتُمْ تَكْسِبُونَ (24)\n&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\nالورد اليومي 30 صلاه علي النبي + 30 استغفار ",
+      "notes": "الورد اليومي 50 سبحان الله وبحمده سبحان الله العظيم",
       "photo": "/uploads/1734167825054-869269646.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
@@ -43,7 +43,7 @@
       "evaluation": "ممتاز",
       "sessionsAttended": 0,
       "paymentType": "مجاني",
-      "notes": "الورد اليومي 30 صلاه علي النبي + 30 استغفار",
+      "notes": "الورد اليومي 50 مره سبحان الله وبحمده سبحان الله العظيم",
       "photo": "/uploads/1734215975720-998687586.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
@@ -130,10 +130,10 @@
           "time": "14:40"
         }
       ],
-      "evaluation": "مقبول",
+      "evaluation": "جيد جداً",
       "sessionsAttended": 0,
       "paymentType": "سنوي",
-      "notes": "ارجو الحفظ يا محمد \nمستواك قل جدا \nفي اهمال شديد لحلقه القرأن \nارجو الاهتمام مثل باقي المواد \n",
+      "notes": "مستواه تطور من اخر مره \nالورد اليومي 50 صلاه علي النبي ",
       "photo": "/uploads/1734216497235-725325124.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
@@ -154,33 +154,12 @@
       "evaluation": "جيد",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "سيف اللهم بارك تحسن كثير عن الاول بفضل الله\nواخذ الخطوه وسمع ايه 30 \nومتفاعل جيد في الحلقه \n$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$\nالورد اليومي 50 صلاه علي النبي ",
+      "notes": "ارجو الحضور المره القادمه يا سيف \nالورد اليومي 50 صلاه علي النبي \n",
       "photo": "/uploads/1734216856225-794253867.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T22:54:16.227Z",
-      "lastSurah": "البلد"
-    },
-    {
-      "id": "1734217017651",
-      "name": "سليمان علي",
-      "password": "1234",
-      "currentSurah": "عم ",
-      "schedule": [
-        {
-          "day": "السبت",
-          "time": "14:40"
-        }
-      ],
-      "evaluation": "جيد جداً",
-      "sessionsAttended": 1,
-      "paymentType": "monthly",
-      "notes": "الورد اليومي 10 صلاه علي النبي \nسليمان متفاعل جدا في الحلقه اللهم بارك \nولكن في حتت رياء , كطفل في سنه ف طبيعي ولكن يجب توعيته من الان علي ان يجعل مع ربه اسرار\n",
-      "photo": "/uploads/1734217017631-151036659.jpg",
-      "currentMonthPaid": true,
-      "lastPaymentDate": "2024-12-28T16:08:57.148Z",
-      "createdAt": "2024-12-14T22:56:57.651Z",
-      "lastSurah": "البلد 10\\7  | الفجر الي 10"
+      "lastSurah": "الفجر"
     },
     {
       "id": "1734217143624",
@@ -200,11 +179,12 @@
       "evaluation": "جيد",
       "sessionsAttended": 1,
       "paymentType": "monthly",
-      "notes": "حفظ عم \r\nالمراجعه : المطففين الي 13 + الناس + الفلق + الاخلاص",
+      "notes": "الورد اليومي : 20 مره سبحان الله ",
       "photo": "/uploads/1734217143620-390059418.jpg",
       "currentMonthPaid": true,
       "lastPaymentDate": "2024-12-28T16:08:50.362Z",
-      "createdAt": "2024-12-14T22:59:03.625Z"
+      "createdAt": "2024-12-14T22:59:03.625Z",
+      "lastSurah": "الفجر"
     },
     {
       "id": "1734217237180",
@@ -235,7 +215,7 @@
       "id": "1734217497335",
       "name": "عمار ياسر",
       "password": "1234",
-      "currentSurah": "القمر | مراجعه",
+      "currentSurah": "القمر 10\\6.5",
       "schedule": [
         {
           "day": "السبت",
@@ -249,18 +229,18 @@
       "evaluation": "ضعيف",
       "sessionsAttended": 4,
       "paymentType": "monthly",
-      "notes": "عمار للأسف مستواه ضعيف جدا لانه مهمل جدا في حلقه القرأن , لو اجتهد هيكون مستواه افضل ولكن مش بيهتم بحلقه القرأن \nبيجي في وقت الحلقه ويراجع امامي \nوديما بيجيب حجج انا بذاكر بمتحن انا في 3 اعدادي ",
+      "notes": "الورد اليومي 50 صلاه علي النبي ",
       "photo": "/uploads/1734217497332-246598079.jpg",
       "currentMonthPaid": true,
       "lastPaymentDate": "2024-12-28T16:09:36.214Z",
       "createdAt": "2024-12-14T23:04:57.335Z",
-      "lastSurah": " البلد"
+      "lastSurah": " الفجر"
     },
     {
       "id": "1734217861054",
       "name": "حفصه ياسر",
       "password": "1234",
-      "currentSurah": "ق | 10/10",
+      "currentSurah": "الحجرات 10\\10",
       "schedule": [
         {
           "day": "السبت",
@@ -272,14 +252,14 @@
         }
       ],
       "evaluation": "ممتاز",
-      "sessionsAttended": 4,
+      "sessionsAttended": 5,
       "paymentType": "monthly",
-      "notes": "مجتهده اللهم بارك و بتتعب مع نفسها ومن الاولاد المتفوقين الي بديهم اللهم بارك ||\nالورد اليومي 50 صلاه علي النبي ",
+      "notes": "الورد اليومي 50 مره سبحان الله وبحمده سبحان الله العظيم",
       "photo": "/uploads/1734217861050-314931354.jpg",
       "currentMonthPaid": true,
-      "lastPaymentDate": "2024-12-28T16:09:48.389Z",
+      "lastPaymentDate": "2025-01-07T22:55:35.513Z",
       "createdAt": "2024-12-14T23:11:01.054Z",
-      "lastSurah": "البلد "
+      "lastSurah": "الغاشيه"
     },
     {
       "id": "1734218030299",
@@ -297,7 +277,7 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 1,
+      "sessionsAttended": 3,
       "paymentType": "monthly",
       "notes": "الورد اليومي يا حمزه 50 صلاه علي النبي ",
       "photo": "/uploads/1734218030296-488917955.jpg",
@@ -381,31 +361,6 @@
       "lastSurah": "المدثر"
     },
     {
-      "id": "1734263774917",
-      "name": "عبدالرحمن محمد",
-      "password": "1234",
-      "currentSurah": "المنافقون",
-      "schedule": [
-        {
-          "day": "الثلاثاء",
-          "time": "19:00"
-        },
-        {
-          "day": "الخميس",
-          "time": "19:00"
-        }
-      ],
-      "evaluation": "جيد",
-      "sessionsAttended": 0,
-      "paymentType": "monthly",
-      "notes": "لم يتم البدء بعد ",
-      "photo": "/uploads/1734263774910-620436924.svg",
-      "currentMonthPaid": false,
-      "lastPaymentDate": null,
-      "createdAt": "2024-12-15T11:56:14.917Z",
-      "lastSurah": " النجم"
-    },
-    {
       "id": "1734866751045",
       "name": "سجدة وليد",
       "password": "1234",
@@ -448,32 +403,6 @@
       ],
       "sessionCount": 0,
       "sessionsAttended": 0,
-      "evaluation": "جيد جداً",
-      "currentMonthPaid": false,
-      "lastPaymentDate": null
-    },
-    {
-      "id": "1735130922906",
-      "name": "جابر محمد",
-      "password": "1234",
-      "currentSurah": "الصف",
-      "lastSurah": "البلد",
-      "paymentType": "perSession",
-      "schedule": [
-        {
-          "day": "الخميس",
-          "time": "12:12"
-        }
-      ],
-      "notes": "لبابلاب",
-      "photo": "/uploads/1735130922847-54762252.png",
-      "certificates": [
-        "/certificates/1735130922879-400427891.jpg",
-        "/certificates/1735130922880-425191166.jpg",
-        "/certificates/1735130922886-919929133.jpg"
-      ],
-      "sessionCount": 0,
-      "sessionsAttended": 1,
       "evaluation": "جيد جداً",
       "currentMonthPaid": false,
       "lastPaymentDate": null
@@ -527,6 +456,58 @@
       "sessionCount": 0,
       "sessionsAttended": 2,
       "evaluation": "جيد جداً"
+    },
+    {
+      "id": "1736291022667",
+      "name": "محمد اشرف",
+      "password": "1234",
+      "currentSurah": "القدر",
+      "lastSurah": "الزلزله",
+      "paymentType": "monthly",
+      "schedule": [
+        {
+          "day": "السبت",
+          "time": "14:00"
+        },
+        {
+          "day": "الثلاثاء",
+          "time": "14:00"
+        }
+      ],
+      "notes": "ممتاز اللهم بارك مقارنتن بسنه \r\nنسبه تفويت الحروف قل عن الاول اللهم بارك",
+      "photo": "/uploads/1736291022626-666688613.svg",
+      "certificates": [],
+      "sessionCount": 0,
+      "sessionsAttended": 7,
+      "currentMonthPaid": true,
+      "lastPaymentDate": "2025-01-07T23:03:52.962Z",
+      "evaluation": "ممتاز"
+    },
+    {
+      "id": "1736291226529",
+      "name": "سليمان علي",
+      "password": "1234",
+      "currentSurah": "عم 10\\8.5",
+      "lastSurah": "الفجر",
+      "paymentType": "monthly",
+      "schedule": [
+        {
+          "day": "السبت",
+          "time": "14:00"
+        },
+        {
+          "day": "الثلاثاء",
+          "time": "14:00"
+        }
+      ],
+      "notes": "الورد اليومي : 20 مره سبحان الله ",
+      "photo": "/uploads/1736291226520-107185335.jpg",
+      "certificates": [],
+      "sessionCount": 0,
+      "sessionsAttended": 2,
+      "currentMonthPaid": true,
+      "lastPaymentDate": "2025-01-07T23:07:18.876Z",
+      "evaluation": "ممتاز"
     }
   ]
 }
