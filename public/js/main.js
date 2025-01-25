@@ -218,36 +218,27 @@ document.getElementById('editStudentForm').addEventListener('submit', async (e) 
     try {
         const formData = new FormData(e.target);
         const studentId = formData.get('studentId'); // Get the student ID from the form
-        const studentData = {
-            name: formData.get('name'),
-            currentSurah: formData.get('currentSurah'),
-            lastSurah: formData.get('lastSurah'),
-            evaluation: formData.get('evaluation'),
-            paymentType: formData.get('paymentType'),
-            notes: formData.get('notes')
-        };
-
-        // Only include password if it's not empty
-        const password = formData.get('password');
-        if (password && password.trim() !== '') {
-            studentData.password = password;
-        }
-
         const token = localStorage.getItem('token');
         if (!token) {
             alert('الرجاء تسجيل الدخول أولاً');
             return;
         }
-
-        console.log('Sending update with data:', studentData);
+        
+        const certificatesInput = document.getElementById('editCertificateImages');
+        if (certificatesInput && certificatesInput.files.length > 0) {
+            for (let i = 0; i < certificatesInput.files.length; i++) {
+                formData.append('certificates[]', certificatesInput.files[i]);
+            }
+        }
+        
+        console.log('Sending update with data:', formData);
         
         const response = await fetch(`/api/students/${studentId}`, {
             method: 'PUT',
             headers: {
-                'Authorization': `Bearer ${token}`,
-                'Content-Type': 'application/json'
+                'Authorization': `Bearer ${token}`
             },
-            body: JSON.stringify(studentData)
+            body: formData
         });
 
         if (!response.ok) {

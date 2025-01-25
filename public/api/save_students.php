@@ -60,7 +60,29 @@ if ($method === 'PUT') {
     $requestBody = file_get_contents('php://input');
     $studentData = json_decode($requestBody, true);
 
-    // Handle file upload
+    // Handle file uploads
+    $uploadedFiles = isset($_FILES['certificates']) ? $_FILES['certificates'] : [];
+    $certificatePaths = [];
+    if (is_array($uploadedFiles['name'])) {
+        foreach ($uploadedFiles['name'] as $key => $name) {
+            $file = [
+                'name' => $name,
+                'type' => $uploadedFiles['type'][$key],
+                'tmp_name' => $uploadedFiles['tmp_name'][$key],
+                'error' => $uploadedFiles['error'][$key],
+                'size' => $uploadedFiles['size'][$key],
+            ];
+            $imagePath = handleFileUpload($file, $uploadDir);
+            if ($imagePath) {
+                $certificatePaths[] = $imagePath;
+            }
+        }
+    }
+    if (!empty($certificatePaths)) {
+        $studentData['certificates'] = $certificatePaths;
+    }
+    
+    // Handle main photo upload
     $uploadedFile = isset($_FILES['photo']) ? $_FILES['photo'] : null;
     if ($uploadedFile) {
         $imagePath = handleFileUpload($uploadedFile, $uploadDir);
@@ -68,13 +90,28 @@ if ($method === 'PUT') {
             $studentData['photo'] = $imagePath;
         }
     }
+    
+    // Log student data after file uploads
+    error_log('Student data after file uploads: ' . json_encode($studentData));
 
     // Find the student to update
     $studentUpdated = false;
     foreach ($students as $key => $student) {
-        if ($student['id'] == $studentId) {
-            // Update student data
+       if ($student['id'] == $studentId) {
+            // Log student data before merge
+            error_log('Student data before merge: ' . json_encode($student));
+            
+            // Update student data, but ensure certificates are merged correctly
+            if (isset($studentData['certificates']) && is_array($studentData['certificates'])) {
+                if (isset($student['certificates']) && is_array($student['certificates'])) {
+                    $studentData['certificates'] = array_merge($student['certificates'], $studentData['certificates']);
+                }
+            }
             $students[$key] = array_merge($student, $studentData);
+            
+            // Log student data after merge
+            error_log('Student data after merge: ' . json_encode($students[$key]));
+            
             $studentUpdated = true;
             break;
         }
