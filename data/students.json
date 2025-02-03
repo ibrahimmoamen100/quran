@@ -79,7 +79,7 @@
       "id": "1734216159737",
       "name": "ادم احمد",
       "password": "1234",
-      "currentSurah": "الحشر",
+      "currentSurah": "المجادله",
       "schedule": [
         {
           "day": "السبت",
@@ -93,17 +93,18 @@
       "evaluation": "جيد جداً",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "حفظ سوره الحشر \r\nالمراجعه : المرسلات + البلد\r\n",
+      "notes": "الورد اليومي 50 صلاه علي النبي ",
       "photo": "/uploads/1734216159733-717627170.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "createdAt": "2024-12-14T22:42:39.737Z"
+      "createdAt": "2024-12-14T22:42:39.737Z",
+      "lastSurah": "الطلاق + الانسان"
     },
     {
       "id": "1734216333655",
       "name": "سامر وليد",
       "password": "1234",
-      "currentSurah": "المدثر  10\\8",
+      "currentSurah": "المزمل",
       "schedule": [
         {
           "day": "الجمعة",
@@ -124,7 +125,7 @@
       "id": "1734216497238",
       "name": "محمد اسامه",
       "password": "1234",
-      "currentSurah": "المدثر  لم يتم التسميع لعدم الحفظ",
+      "currentSurah": "المزمل",
       "schedule": [
         {
           "day": "الجمعة",
@@ -134,7 +135,7 @@
       "evaluation": "جيد جداً",
       "sessionsAttended": 0,
       "paymentType": "سنوي",
-      "notes": "مستواه تطور من اخر مره \nالورد اليومي 50 صلاه علي النبي ",
+      "notes": "مستواه تطور من اخر مره \r\nالورد اليومي 50 صلاه علي النبي ",
       "photo": "/uploads/1734216497235-725325124.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
@@ -145,7 +146,7 @@
       "id": "1734216856227",
       "name": "سيف محمد",
       "password": "1234",
-      "currentSurah": "المدثر ايه 30  10\\8",
+      "currentSurah": "المزمل",
       "schedule": [
         {
           "day": "الجمعة",
@@ -155,7 +156,7 @@
       "evaluation": "جيد",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "ارجو الحضور المره القادمه يا سيف \nالورد اليومي 50 صلاه علي النبي \n",
+      "notes": "ارجو الحضور المره القادمه يا سيف \r\nالورد اليومي 50 صلاه علي النبي \r\n",
       "photo": "/uploads/1734216856225-794253867.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
@@ -212,7 +213,7 @@
       "id": "1734217237180",
       "name": "معاذ ياسر",
       "password": "1234",
-      "currentSurah": "عم | 7.5/10",
+      "currentSurah": "المرسلات",
       "schedule": [
         {
           "day": "السبت",
@@ -226,12 +227,12 @@
       "evaluation": "جيد جداً",
       "sessionsAttended": 4,
       "paymentType": "monthly",
-      "notes": "تم ترقيه معاذ الي جيد جدا لحفظه سوره البلد \nواذا قل عن هذه الدرجات المره القادمه \nف سيقل الي جيد ",
+      "notes": "الورد اليومي 50 صلاه علي النبي ",
       "photo": "/uploads/1734217237176-759354297.jpg",
       "currentMonthPaid": true,
       "lastPaymentDate": "2024-12-28T16:09:15.996Z",
       "createdAt": "2024-12-14T23:00:37.180Z",
-      "lastSurah": "البلد 10\\7  | الفجر الي 10"
+      "lastSurah": "الغاشيه"
     },
     {
       "id": "1734217497335",
@@ -262,7 +263,7 @@
       "id": "1734217861054",
       "name": "حفصه ياسر",
       "password": "1234",
-      "currentSurah": "الحجرات",
+      "currentSurah": "الفتح",
       "schedule": [
         {
           "day": "السبت",
@@ -312,7 +313,7 @@
       "id": "1734262969541",
       "name": "البراء احمد",
       "password": "1234",
-      "currentSurah": "النجم",
+      "currentSurah": "الحجرات",
       "schedule": [
         {
           "day": "الأحد",
@@ -326,18 +327,18 @@
       "evaluation": "جيد جداً",
       "sessionsAttended": 2,
       "paymentType": "monthly",
-      "notes": "حفظ سوره النجم  | المراجعه : الاحزاب الوجه الثاني 2",
+      "notes": "الورد اليومي 20 سبحان الله وبحمده سبحان الله العظيم",
       "photo": "/uploads/1734262969532-438353737.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-15T11:42:49.542Z",
-      "lastSurah": " النجم"
+      "lastSurah": "النجم"
     },
     {
       "id": "1734263567588",
       "name": "حمزه احمد",
       "password": "1234",
-      "currentSurah": "الممتحنه",
+      "currentSurah": "الحشر",
       "schedule": [
         {
           "day": "الأحد",
@@ -348,7 +349,7 @@
           "time": "16:00"
         }
       ],
-      "evaluation": "جيد جداً",
+      "evaluation": "جيد",
       "sessionsAttended": 2,
       "paymentType": "monthly",
       "notes": "الورد اليومي : 50 صلاه علي النبي يوميا ",
@@ -362,14 +363,14 @@
       "id": "1734866751045",
       "name": "سجدة وليد",
       "password": "1234",
-      "currentSurah": "عبسي 10\\8",
+      "currentSurah": "النازعات",
       "schedule": [
         {
           "day": "الجمعة",
           "time": "12:12"
         }
       ],
-      "evaluation": "جيد جداً",
+      "evaluation": "جيد",
       "sessionsAttended": 0,
       "paymentType": "perSession",
       "notes": "الورد اليومي 50 صلاه علي النبي يا سجدة",
@@ -455,7 +456,7 @@
       ],
       "sessionCount": 0,
       "sessionsAttended": 1,
-      "evaluation": "ممتاز",
+      "evaluation": "جيد جداً",
       "currentMonthPaid": true,
       "lastPaymentDate": "2025-01-12T05:38:31.461Z"
     },
