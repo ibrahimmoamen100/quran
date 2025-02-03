@@ -4,7 +4,7 @@
       "id": "1734167825077",
       "name": "معاذ محمد",
       "password": "1234",
-      "currentSurah": "ص",
+      "currentSurah": "ص         | الزمر 10\\9.5 ",
       "schedule": [
         {
           "day": "السبت",
@@ -23,7 +23,7 @@
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T09:17:05.078Z",
-      "lastSurah": "غافر "
+      "lastSurah": "غافر 10\\9.5    | الفتح 10\\9.5"
     },
     {
       "id": "1734168086134",
@@ -54,7 +54,7 @@
       "id": "1734215942371",
       "name": "محمد احمد",
       "password": "1234",
-      "currentSurah": "الذاريات",
+      "currentSurah": "ق",
       "schedule": [
         {
           "day": "السبت",
@@ -68,18 +68,18 @@
       "evaluation": "جيد جداً",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "الورد اليومي 50 صلاه علي النبي \r\n",
+      "notes": "حفظ سوره الطور\r\nالمراجعه : سوره التحريم + البلد\r\n",
       "photo": "/uploads/1734215942366-298097390.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T22:39:02.371Z",
-      "lastSurah": "التحريم + الحديد"
+      "lastSurah": "التحريم"
     },
     {
       "id": "1734216159737",
       "name": "ادم احمد",
       "password": "1234",
-      "currentSurah": "المجادله",
+      "currentSurah": "الحشر",
       "schedule": [
         {
           "day": "السبت",
@@ -93,12 +93,11 @@
       "evaluation": "جيد جداً",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "الورد اليومي 45 صلاه علي النبي \r\n",
+      "notes": "حفظ سوره الحشر \r\nالمراجعه : المرسلات + البلد\r\n",
       "photo": "/uploads/1734216159733-717627170.jpg",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "createdAt": "2024-12-14T22:42:39.737Z",
-      "lastSurah": "الطلاق + الانسان"
+      "createdAt": "2024-12-14T22:42:39.737Z"
     },
     {
       "id": "1734216333655",
@@ -182,13 +181,13 @@
       "currentMonthPaid": true,
       "lastPaymentDate": "2024-12-28T16:08:57.148Z",
       "createdAt": "2024-12-14T22:56:57.651Z",
-      "lastSurah": "الغاشيه"
+      "lastSurah": "البلد 10\\7  | الفجر الي 10"
     },
     {
       "id": "1734217143624",
       "name": "يحيي علي ",
       "password": "1234",
-      "currentSurah": "المرسلات ",
+      "currentSurah": "المرسلات",
       "schedule": [
         {
           "day": "السبت",
@@ -202,18 +201,18 @@
       "evaluation": "جيد",
       "sessionsAttended": 1,
       "paymentType": "monthly",
-      "notes": "ارجعو الحفظ يا يحيي ",
+      "notes": "حفظ عم \r\nالمراجعه : المطففين الي 13 + الناس + الفلق + الاخلاص",
       "photo": "/uploads/1734217143620-390059418.jpg",
       "currentMonthPaid": true,
       "lastPaymentDate": "2024-12-28T16:08:50.362Z",
       "createdAt": "2024-12-14T22:59:03.625Z",
-      "lastSurah": "الغاشيه"
+      "lastSurah": "البلد"
     },
     {
       "id": "1734217237180",
       "name": "معاذ ياسر",
       "password": "1234",
-      "currentSurah": "المرسلات",
+      "currentSurah": "عم | 7.5/10",
       "schedule": [
         {
           "day": "السبت",
@@ -224,15 +223,15 @@
           "time": "14:40"
         }
       ],
-      "evaluation": "ممتاز",
+      "evaluation": "جيد جداً",
       "sessionsAttended": 4,
       "paymentType": "monthly",
-      "notes": "تم ترقيه معاذ الي ممتاز لحفظه سوره المرسلات 10\\9\r\n",
+      "notes": "تم ترقيه معاذ الي جيد جدا لحفظه سوره البلد \nواذا قل عن هذه الدرجات المره القادمه \nف سيقل الي جيد ",
       "photo": "/uploads/1734217237176-759354297.jpg",
       "currentMonthPaid": true,
       "lastPaymentDate": "2024-12-28T16:09:15.996Z",
       "createdAt": "2024-12-14T23:00:37.180Z",
-      "lastSurah": "الغاشيه"
+      "lastSurah": "البلد 10\\7  | الفجر الي 10"
     },
     {
       "id": "1734217497335",
@@ -310,34 +309,10 @@
       "lastSurah": "البلد 10\\7  | الفجر الي 10"
     },
     {
-      "id": "1734262577575",
-      "name": "محمد جميل",
-      "password": "1234",
-      "currentSurah": "الفتح",
-      "schedule": [
-        {
-          "day": "الأحد",
-          "time": "19:00"
-        },
-        {
-          "day": "الأربعاء",
-          "time": "19:00"
-        }
-      ],
-      "evaluation": "جيد جداً",
-      "sessionsAttended": 0,
-      "paymentType": "perSession",
-      "notes": "حفظ سوره الفتح كامله  | \r\nمراجعه : التحريم اول وجه",
-      "photo": "/uploads/1734262577561-872029113.jpg",
-      "currentMonthPaid": false,
-      "lastPaymentDate": null,
-      "createdAt": "2024-12-15T11:36:17.576Z"
-    },
-    {
       "id": "1734262969541",
       "name": "البراء احمد",
       "password": "1234",
-      "currentSurah": "الذاريات",
+      "currentSurah": "النجم",
       "schedule": [
         {
           "day": "الأحد",
@@ -349,14 +324,14 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 7,
+      "sessionsAttended": 2,
       "paymentType": "monthly",
       "notes": "حفظ سوره النجم  | المراجعه : الاحزاب الوجه الثاني 2",
-      "photo": "/uploads/1737033436339-230092999.jpg",
-      "currentMonthPaid": true,
-      "lastPaymentDate": "2024-12-15T11:43:09.523Z",
+      "photo": "/uploads/1734262969532-438353737.jpg",
+      "currentMonthPaid": false,
+      "lastPaymentDate": null,
       "createdAt": "2024-12-15T11:42:49.542Z",
-      "lastSurah": " "
+      "lastSurah": " النجم"
     },
     {
       "id": "1734263567588",
@@ -374,12 +349,12 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 8,
+      "sessionsAttended": 2,
       "paymentType": "monthly",
       "notes": "الورد اليومي : 50 صلاه علي النبي يوميا ",
       "photo": "/uploads/1735121667477-136384826.jpg",
-      "currentMonthPaid": true,
-      "lastPaymentDate": "2025-01-16T13:16:42.598Z",
+      "currentMonthPaid": false,
+      "lastPaymentDate": null,
       "createdAt": "2024-12-15T11:52:47.589Z",
       "lastSurah": "المدثر"
     },
@@ -403,58 +378,6 @@
       "lastPaymentDate": null,
       "createdAt": "2024-12-22T11:25:51.046Z",
       "lastSurah": "البلد 10\\7  | الفجر الي 10"
-    },
-    {
-      "id": "1735129860909",
-      "name": "محسن سيد",
-      "password": "1234",
-      "currentSurah": "نوح",
-      "lastSurah": "سوره التحريم + البلد",
-      "paymentType": "مجاني",
-      "schedule": [
-        {
-          "day": "الجمعة",
-          "time": "12:12"
-        }
-      ],
-      "notes": "الورد اليومي ",
-      "photo": "/uploads/1736659464836-560002478.png",
-      "certificates": [
-        "/certificates/1735129860840-359221370.jpg",
-        "/certificates/1735129860879-216203767.jpg",
-        "/certificates/1735129860883-46214867.jpg"
-      ],
-      "sessionCount": 0,
-      "sessionsAttended": 0,
-      "evaluation": "ممتاز",
-      "currentMonthPaid": false,
-      "lastPaymentDate": null
-    },
-    {
-      "id": "1735130922906",
-      "name": "جابر محمد",
-      "password": "1234",
-      "currentSurah": "الصف",
-      "lastSurah": "البلد",
-      "paymentType": "perSession",
-      "schedule": [
-        {
-          "day": "الخميس",
-          "time": "12:12"
-        }
-      ],
-      "notes": "لبابلاب",
-      "photo": "/uploads/1736660376116-545215475.png",
-      "certificates": [
-        "/certificates/1735130922879-400427891.jpg",
-        "/certificates/1735130922880-425191166.jpg",
-        "/certificates/1735130922886-919929133.jpg"
-      ],
-      "sessionCount": 0,
-      "sessionsAttended": 1,
-      "evaluation": "جيد جداً",
-      "currentMonthPaid": false,
-      "lastPaymentDate": null
     },
     {
       "id": "1735150017483",
@@ -505,8 +428,8 @@
       "sessionCount": 0,
       "sessionsAttended": 2,
       "evaluation": "جيد جداً",
-      "currentMonthPaid": true,
-      "lastPaymentDate": "2025-01-16T11:10:45.195Z"
+      "currentMonthPaid": false,
+      "lastPaymentDate": null
     },
     {
       "id": "1736660274707",
@@ -526,7 +449,7 @@
         }
       ],
       "notes": "مستواه ممتاز مقارنتا بسنه ",
-      "photo": "/uploads/1737033389122-457783621.jpg",
+      "photo": "/uploads/1736662784798-463045063.jpg",
       "certificates": [
         "/certificates/1736660274690-634232708.jpeg"
       ],
@@ -537,22 +460,56 @@
       "lastPaymentDate": "2025-01-12T05:38:31.461Z"
     },
     {
-      "id": "1737762347198",
-      "name": "انس احمد",
+      "id": "1738581464811",
+      "name": "عبدالرحمن محمد",
       "password": "1234",
-      "currentSurah": "عبسى",
-      "lastSurah": "الفجر",
-      "paymentType": "perSession",
+      "currentSurah": "المنافقون",
+      "lastSurah": "التحريم + عبسي",
+      "paymentType": "monthly",
       "schedule": [
         {
-          "day": "الجمعة",
+          "day": "الأربعاء",
+          "time": "16:00"
+        },
+        {
+          "day": "الأحد",
           "time": "16:00"
         }
       ],
-      "notes": "",
-      "photo": "/uploads/1737762347188-359227937.jpg",
-      "certificates": [],
-      "sessionCount": 0
+      "notes": "الورد اليومي 50 صلاه علي النبي يا عبدالرحمن ما تنساش ",
+      "photo": "/uploads/1738581464795-479460359.jpg",
+      "certificates": [
+        "/certificates/1738581464796-843603061.jpeg"
+      ],
+      "sessionCount": 0,
+      "sessionsAttended": 2,
+      "evaluation": "جيد"
+    },
+    {
+      "id": "1738581724489",
+      "name": "يوسف محمد",
+      "password": "1234",
+      "currentSurah": "الفجر",
+      "lastSurah": "الكوثر + الماعون + قريس",
+      "paymentType": "monthly",
+      "schedule": [
+        {
+          "day": "الأحد",
+          "time": "16:00"
+        },
+        {
+          "day": "الأربعاء",
+          "time": "16:00"
+        }
+      ],
+      "notes": "يوسف مستواه كويس ولكن بيسرح كثير في الحلقه ممكن بسبب سرحانه ما يركزش علي الايه و يقولها غلط وانا بقرأهالو",
+      "photo": "/uploads/1738581724479-579039720.jpg",
+      "certificates": [
+        "/certificates/1738581724479-421871562.jpeg"
+      ],
+      "sessionCount": 0,
+      "sessionsAttended": 2,
+      "evaluation": "جيد"
     }
   ]
 }

@@ -225,13 +225,28 @@ document.getElementById('editStudentForm').addEventListener('submit', async (e) 
         }
         
         const certificatesInput = document.getElementById('editCertificateImages');
-        if (certificatesInput && certificatesInput.files.length > 0) {
-            for (let i = 0; i < certificatesInput.files.length; i++) {
-                formData.append('certificates[]', certificatesInput.files[i]);
+        console.log('certificatesInput:', certificatesInput);
+        if (certificatesInput) {
+            console.log('certificatesInput.files:', certificatesInput.files);
+            if (certificatesInput.files.length > 0) {
+                for (let i = 0; i < certificatesInput.files.length; i++) {
+                    formData.append('certificates[]', certificatesInput.files[i]);
+                }
             }
         }
         
+        const schedule = [];
+        const scheduleItems = document.querySelectorAll('#editScheduleContainer .schedule-item');
+        scheduleItems.forEach(item => {
+            const day = item.querySelector('select[name="day"]').value;
+            const time = item.querySelector('input[name="time"]').value;
+            schedule.push({ day, time });
+        });
+        formData.set('schedule', JSON.stringify(schedule));
         console.log('Sending update with data:', formData);
+        for (let [key, value] of formData.entries()) {
+            console.log(`${key}: ${value}`);
+        }
         
         const response = await fetch(`/api/students/${studentId}`, {
             method: 'PUT',

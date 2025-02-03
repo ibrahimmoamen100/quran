@@ -18,6 +18,7 @@ function generateUniqueFilename($filename) {
 
 // Function to handle file uploads
 function handleFileUpload($file, $uploadDir) {
+    error_log('File upload details: ' . json_encode($file));
     if ($file['error'] === UPLOAD_ERR_OK) {
         $uniqueFilename = generateUniqueFilename($file['name']);
         $targetPath = $uploadDir . $uniqueFilename;
@@ -98,24 +99,19 @@ if ($method === 'PUT') {
     $studentUpdated = false;
     foreach ($students as $key => $student) {
        if ($student['id'] == $studentId) {
-            // Log student data before merge
-            error_log('Student data before merge: ' . json_encode($student));
+            // Log student data before overwrite
+            error_log('Student data before overwrite: ' . json_encode($student));
             
-            // Update student data, but ensure certificates are merged correctly
-            if (isset($studentData['certificates']) && is_array($studentData['certificates'])) {
-                if (isset($student['certificates']) && is_array($student['certificates'])) {
-                    $studentData['certificates'] = array_merge($student['certificates'], $studentData['certificates']);
-                }
-            }
-            $students[$key] = array_merge($student, $studentData);
+            $students[$key] = $studentData;
             
-            // Log student data after merge
-            error_log('Student data after merge: ' . json_encode($students[$key]));
+            // Log student data after overwrite
+            error_log('Student data after overwrite: ' . json_encode($students[$key]));
             
             $studentUpdated = true;
             break;
         }
     }
+    error_log('Students array after loop: ' . json_encode($students));
 
     if ($studentUpdated) {
         // Save updated data
@@ -123,11 +119,11 @@ if ($method === 'PUT') {
             echo json_encode(['success' => true]);
         } else {
             http_response_code(500);
-            echo json_encode(['error' => 'Failed to save data']);
+            echo json_encode(['error' => 'Failed to save data', 'details' => error_get_last()]);
         }
     } else {
         http_response_code(404);
-        echo json_encode(['error' => 'Student not found']);
+        echo json_encode(['error' => 'Student not found', 'studentId' => $studentId]);
     }
 }
 // Handle POST request (for adding new student)

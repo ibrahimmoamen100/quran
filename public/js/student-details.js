@@ -36,6 +36,21 @@ async function fetchStudentDetails() {
         document.getElementById('last-payment-date').textContent = student.lastPaymentDate || 'غير محدد';
         document.getElementById('notes').textContent = student.notes || 'لا توجد ملاحظات';
         
+        // Display certificates
+        const certificatesContainer = document.getElementById('certificates');
+        certificatesContainer.innerHTML = ''; // Clear any existing content
+        if (student.certificates && student.certificates.length > 0) {
+            student.certificates.forEach(cert => {
+                const img = document.createElement('img');
+                img.src = cert;
+                img.alt = 'Certificate';
+                img.className = 'w-24 h-24 object-cover rounded mt-2';
+                certificatesContainer.appendChild(img);
+            });
+        } else {
+            certificatesContainer.textContent = 'لا توجد شهادات بعد';
+        }
+        
         // تحديث صورة الطالب
         const studentImage = document.getElementById('student-image');
         if (student.photo) {
