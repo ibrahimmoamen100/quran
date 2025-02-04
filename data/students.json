@@ -175,7 +175,7 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 1,
+      "sessionsAttended": 8,
       "paymentType": "monthly",
       "notes": "الورد اليومي 20 مره سبحان الله",
       "photo": "/uploads/1734217017631-151036659.jpg",
@@ -200,7 +200,7 @@
         }
       ],
       "evaluation": "جيد",
-      "sessionsAttended": 1,
+      "sessionsAttended": 8,
       "paymentType": "monthly",
       "notes": "حفظ عم \r\nالمراجعه : المطففين الي 13 + الناس + الفلق + الاخلاص",
       "photo": "/uploads/1734217143620-390059418.jpg",
@@ -225,12 +225,12 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 4,
+      "sessionsAttended": 3,
       "paymentType": "monthly",
       "notes": "الورد اليومي 50 صلاه علي النبي ",
       "photo": "/uploads/1734217237176-759354297.jpg",
       "currentMonthPaid": true,
-      "lastPaymentDate": "2024-12-28T16:09:15.996Z",
+      "lastPaymentDate": "2025-02-04T21:56:40.587Z",
       "createdAt": "2024-12-14T23:00:37.180Z",
       "lastSurah": "الغاشيه"
     },
@@ -249,13 +249,13 @@
           "time": "14:40"
         }
       ],
-      "evaluation": "ضعيف",
-      "sessionsAttended": 4,
+      "evaluation": "جيد",
+      "sessionsAttended": 3,
       "paymentType": "monthly",
       "notes": "الورد اليومي 50 صلاه علي النبي ",
       "photo": "/uploads/1734217497332-246598079.jpg",
       "currentMonthPaid": true,
-      "lastPaymentDate": "2024-12-28T16:09:36.214Z",
+      "lastPaymentDate": "2025-02-04T21:56:41.692Z",
       "createdAt": "2024-12-14T23:04:57.335Z",
       "lastSurah": " الفجر"
     },
@@ -275,12 +275,12 @@
         }
       ],
       "evaluation": "ممتاز",
-      "sessionsAttended": 4,
+      "sessionsAttended": 3,
       "paymentType": "monthly",
       "notes": "الورد اليومي 50 مره سبحان الله وبحمده سبحان الله العظيم",
       "photo": "/uploads/1734217861050-314931354.jpg",
       "currentMonthPaid": true,
-      "lastPaymentDate": "2024-12-28T16:09:48.389Z",
+      "lastPaymentDate": "2025-02-04T21:56:51.381Z",
       "createdAt": "2024-12-14T23:11:01.054Z",
       "lastSurah": "الغاشيه"
     },
@@ -313,7 +313,7 @@
       "id": "1734262969541",
       "name": "البراء احمد",
       "password": "1234",
-      "currentSurah": "الحجرات",
+      "currentSurah": "الحجرات 10\\10",
       "schedule": [
         {
           "day": "الأحد",
@@ -324,8 +324,8 @@
           "time": "16:00"
         }
       ],
-      "evaluation": "جيد جداً",
-      "sessionsAttended": 2,
+      "evaluation": "ممتاز",
+      "sessionsAttended": 3,
       "paymentType": "monthly",
       "notes": "الورد اليومي 20 سبحان الله وبحمده سبحان الله العظيم",
       "photo": "/uploads/1734262969532-438353737.jpg",
@@ -338,7 +338,7 @@
       "id": "1734263567588",
       "name": "حمزه احمد",
       "password": "1234",
-      "currentSurah": "الحشر",
+      "currentSurah": "المجادله",
       "schedule": [
         {
           "day": "الأحد",
@@ -350,7 +350,7 @@
         }
       ],
       "evaluation": "جيد",
-      "sessionsAttended": 2,
+      "sessionsAttended": 3,
       "paymentType": "monthly",
       "notes": "الورد اليومي : 50 صلاه علي النبي يوميا ",
       "photo": "/uploads/1735121667477-136384826.jpg",
@@ -436,7 +436,7 @@
       "id": "1736660274707",
       "name": "محمد اشرف",
       "password": "1234",
-      "currentSurah": "القدر",
+      "currentSurah": "البينه",
       "lastSurah": "الزلزله",
       "paymentType": "monthly",
       "schedule": [
@@ -455,7 +455,7 @@
         "/certificates/1736660274690-634232708.jpeg"
       ],
       "sessionCount": 0,
-      "sessionsAttended": 1,
+      "sessionsAttended": 4,
       "evaluation": "جيد جداً",
       "currentMonthPaid": true,
       "lastPaymentDate": "2025-01-12T05:38:31.461Z"
@@ -484,7 +484,9 @@
       ],
       "sessionCount": 0,
       "sessionsAttended": 2,
-      "evaluation": "جيد"
+      "evaluation": "جيد",
+      "currentMonthPaid": false,
+      "lastPaymentDate": null
     },
     {
       "id": "1738581724489",
