@@ -236,9 +236,8 @@
                     <div>
                         <label class="block text-sm mb-1">نوع الدفع</label>
                         <select name="paymentType" class="w-full p-2 border rounded-md" onchange="toggleEditPaymentStatus(this)">
-                            <option value="مجاني">مجاني</option>
-                            <option value="شهري">شهري</option>
-                            <option value="سنوي">سنوي</option>
+                            <option value="perSession">بالحلقه </option>
+                            <option value="perMonth">بالشهر</option>
                         </select>
                     </div>
                     <div>
@@ -329,7 +328,7 @@
                 form.querySelector('input[name="currentSurah"]').value = student.currentSurah || '';
                 form.querySelector('input[name="lastSurah"]').value = student.lastSurah || '';
                 form.querySelector('select[name="evaluation"]').value = student.evaluation || 'ممتاز';
-                form.querySelector('select[name="paymentType"]').value = student.paymentType || 'شهري';
+                form.querySelector('select[name="paymentType"]').value = student.paymentType || 'perMonth';
                 form.querySelector('textarea[name="notes"]').value = student.notes || '';
                 // Don't populate password field for security, but keep the current password if not changed
                 form.querySelector('input[name="password"]').placeholder = 'اتركه فارغاً للاحتفاظ بكلمة المرور الحالية';

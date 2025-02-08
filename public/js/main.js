@@ -350,7 +350,7 @@ async function openEditModal(studentId) {
         form.querySelector('input[name="currentSurah"]').value = student.currentSurah;
         form.querySelector('input[name="lastSurah"]').value = student.lastSurah || '';
         form.querySelector('select[name="evaluation"]').value = student.evaluation || '';
-        form.querySelector('select[name="paymentType"]').value = student.paymentType;
+        form.querySelector('select[name="paymentType"]').value = student.paymentType || 'بالشهر';
         form.querySelector('textarea[name="notes"]').value = student.notes || '';
         
         // Clear existing schedule items
