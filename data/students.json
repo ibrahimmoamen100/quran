@@ -194,9 +194,13 @@
       "paymentType": "perMonth",
       "notes": "الورد اليومي 20 مره سبحان الله",
       "photo": "/uploads/1734217017631-151036659.jpg",
+<<<<<<< HEAD
       "certificates": [
         "/certificates/ama.png"
       ],      "currentMonthPaid": false,
+=======
+      "currentMonthPaid": false,
+>>>>>>> d8317554080c57e6fecdf151cc111f60dfef6438
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T22:56:57.651Z",
       "lastSurah": "البلد 10\\7  | الفجر الي 10"
@@ -221,9 +225,13 @@
       "paymentType": "perMonth",
       "notes": "حفظ عم \r\nالمراجعه : المطففين الي 13 + الناس + الفلق + الاخلاص",
       "photo": "/uploads/1734217143620-390059418.jpg",
+<<<<<<< HEAD
       "certificates": [
         "/certificates/ama.png"
       ],      "currentMonthPaid": false,
+=======
+      "currentMonthPaid": false,
+>>>>>>> d8317554080c57e6fecdf151cc111f60dfef6438
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T22:59:03.625Z",
       "lastSurah": "البلد"
@@ -248,9 +256,12 @@
       "paymentType": "monthly",
       "notes": "الورد اليومي 50 صلاه علي النبي ",
       "photo": "/uploads/1734217237176-759354297.jpg",
+<<<<<<< HEAD
       "certificates": [
         "/certificates/ama.png"
       ],
+=======
+>>>>>>> d8317554080c57e6fecdf151cc111f60dfef6438
       "currentMonthPaid": true,
       "lastPaymentDate": "2025-02-04T21:56:40.587Z",
       "createdAt": "2024-12-14T23:00:37.180Z",
@@ -276,9 +287,13 @@
       "paymentType": "monthly",
       "notes": "الورد اليومي 50 صلاه علي النبي ",
       "photo": "/uploads/1734217497332-246598079.jpg",
+<<<<<<< HEAD
       "certificates": [
         "/certificates/ama.png"
       ],      "currentMonthPaid": true,
+=======
+      "currentMonthPaid": true,
+>>>>>>> d8317554080c57e6fecdf151cc111f60dfef6438
       "lastPaymentDate": "2025-02-04T21:56:41.692Z",
       "createdAt": "2024-12-14T23:04:57.335Z",
       "lastSurah": " الفجر"
@@ -358,9 +373,13 @@
       "paymentType": "monthly",
       "notes": "الورد اليومي 20 سبحان الله وبحمده سبحان الله العظيم",
       "photo": "/uploads/1734262969532-438353737.jpg",
+<<<<<<< HEAD
       "certificates": [
         "/certificates/ama.png"
       ],      "currentMonthPaid": false,
+=======
+      "currentMonthPaid": false,
+>>>>>>> d8317554080c57e6fecdf151cc111f60dfef6438
       "lastPaymentDate": null,
       "createdAt": "2024-12-15T11:42:49.542Z",
       "lastSurah": "النجم 7\\10"
@@ -550,6 +569,7 @@
       ],
       "sessionCount": 0,
       "sessionsAttended": 2,
+<<<<<<< HEAD
       "evaluation": "جيد",
       "currentMonthPaid": false,
       "lastPaymentDate": null
@@ -584,6 +604,9 @@
       "evaluation": "جيد جداً",
       "currentMonthPaid": false,
       "lastPaymentDate": null
+=======
+      "evaluation": "جيد"
+>>>>>>> d8317554080c57e6fecdf151cc111f60dfef6438
     }
   ]
 }

@@ -7,6 +7,7 @@ async function fetchStudentDetails() {
     try {
         const studentId = localStorage.getItem('studentId');
         console.log('Fetching details for student ID:', studentId);
+<<<<<<< HEAD
 
         const response = await fetch('/data/students.json');
         if (!response.ok) throw new Error('Failed to fetch student details');
@@ -21,6 +22,27 @@ async function fetchStudentDetails() {
         // Update student information
         updateStudentInfo(student);
 
+=======
+        
+        // Fetch student data from JSON file
+        const response = await fetch('/data/students.json');
+        if (!response.ok) {
+            throw new Error('Failed to fetch student details');
+        }
+        
+        const data = await response.json();
+        const student = data.students.find(s => s.id === studentId);
+        
+        if (!student) {
+            throw new Error('Student not found');
+        }
+        
+        // Update student information
+        updateStudentInfo(student);
+        // Display certificates
+        displayCertificates(student.certificates);
+        
+>>>>>>> d8317554080c57e6fecdf151cc111f60dfef6438
         // Show main content and hide loading spinner
         document.getElementById('loading').style.display = 'none';
         document.getElementById('main-content').style.display = 'block';
@@ -35,16 +57,23 @@ async function fetchStudentDetails() {
     }
 }
 
+<<<<<<< HEAD
 
 
 function displayCertificates(certificates) {
     console.log('Certificates:', certificates); // Debugging line
+=======
+function displayCertificates(certificates) {
+>>>>>>> d8317554080c57e6fecdf151cc111f60dfef6438
     const certificatesContainer = document.getElementById('certificates');
     certificatesContainer.innerHTML = '';
 
     if (certificates && certificates.length > 0) {
         certificates.forEach(cert => {
+<<<<<<< HEAD
             console.log('Adding certificate:', cert); // Debugging line
+=======
+>>>>>>> d8317554080c57e6fecdf151cc111f60dfef6438
             const certificateWrapper = document.createElement('div');
             certificateWrapper.className = 'relative group';
 
@@ -52,7 +81,12 @@ function displayCertificates(certificates) {
             img.src = cert;
             img.alt = 'شهادة';
             img.className = 'w-48 h-48 object-cover rounded-lg shadow-md transition-transform duration-300 transform group-hover:scale-105';
+<<<<<<< HEAD
 
+=======
+            
+            // Add view full size button
+>>>>>>> d8317554080c57e6fecdf151cc111f60dfef6438
             const viewButton = document.createElement('button');
             viewButton.className = 'absolute bottom-2 right-2 bg-green-600 text-white px-3 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300';
             viewButton.textContent = 'عرض';
@@ -85,7 +119,10 @@ function updateStudentInfo(student) {
     const studentImage = document.getElementById('student-image');
     studentImage.src = student.photo || '/images/default-avatar.png';
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> d8317554080c57e6fecdf151cc111f60dfef6438
     updateSchedule(student.schedule);
 }
 
@@ -99,7 +136,11 @@ function updateSchedule(schedule) {
             const timeParts = item.time.split(':');
             let hours = parseInt(timeParts[0]);
             const minutes = timeParts[1];
+<<<<<<< HEAD
             const ampm = hours >= 12 ? 'مسائاً' : 'صباحاً';
+=======
+            const ampm = hours >= 12 ? 'م' : 'ص';
+>>>>>>> d8317554080c57e6fecdf151cc111f60dfef6438
             hours = hours % 12;
             hours = hours ? hours : 12;
             listItem.textContent = `${item.day} - ${hours}:${minutes} ${ampm}`;

@@ -279,6 +279,196 @@
             </div>
         </div>
 
+<<<<<<< HEAD
+=======
+        <script>
+            // Function to close the edit modal
+            function closeEditModal() {
+                document.getElementById('editStudentModal').style.display = 'none';
+            }
+
+            // Close modal when clicking outside
+            window.onclick = function(event) {
+                const modal = document.getElementById('editStudentModal');
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            }
+
+            async function editStudent(studentId) {
+                selectedStudentId = studentId;
+                try {
+                    const token = localStorage.getItem('token');
+                    if (!token) {
+                        alert('الرجاء تسجيل الدخول أولاً');
+                        return;
+                    }
+
+                    const response = await fetch(`/api/students/${studentId}`, {
+                        headers: {
+                            'Authorization': `Bearer ${token}`
+                        }
+                    });
+
+                    if (response.ok) {
+                        const student = await response.json();
+                        populateEditForm(student);
+                        document.getElementById('editStudentModal').style.display = 'block';
+                    } else {
+                        console.error('Failed to fetch student data');
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                }
+            }
+
+            function populateEditForm(student) {
+                const form = document.getElementById('editStudentForm');
+                form.querySelector('input[name="name"]').value = student.name || '';
+                form.querySelector('input[name="currentSurah"]').value = student.currentSurah || '';
+                form.querySelector('input[name="lastSurah"]').value = student.lastSurah || '';
+                form.querySelector('select[name="evaluation"]').value = student.evaluation || 'ممتاز';
+                form.querySelector('select[name="paymentType"]').value = student.paymentType || 'perMonth';
+                form.querySelector('textarea[name="notes"]').value = student.notes || '';
+                // Don't populate password field for security, but keep the current password if not changed
+                form.querySelector('input[name="password"]').placeholder = 'اتركه فارغاً للاحتفاظ بكلمة المرور الحالية';
+
+                // Show current photo if exists
+                const currentPhotoDiv = document.getElementById('currentPhoto');
+                if (student.photo) {
+                    currentPhotoDiv.innerHTML = `<img src="${student.photo}" alt="Current photo" class="h-20 w-20 rounded-full">`;
+                } else {
+                    currentPhotoDiv.innerHTML = '';
+                }
+
+                // Show current certificates if exist
+                const currentCertificatesDiv = document.getElementById('currentCertificates');
+                if (student.certificates && student.certificates.length > 0) {
+                    const certLinks = student.certificates.map(cert => 
+                        `<a href="${cert}" target="_blank" class="text-green-600 hover:text-green-800">شهادة</a>`
+                    ).join(', ');
+                    currentCertificatesDiv.innerHTML = `الشهادات الحالية: ${certLinks}`;
+                } else {
+                    currentCertificatesDiv.innerHTML = 'لا توجد شهادات';
+                }
+            }
+
+            document.getElementById('editStudentForm').addEventListener('submit', async (e) => {
+                e.preventDefault();
+                const formData = new FormData(e.target);
+                const studentData = {
+                    name: formData.get('name'),
+                    currentSurah: formData.get('currentSurah'),
+                    lastSurah: formData.get('lastSurah'),
+                    evaluation: formData.get('evaluation'),
+                    paymentType: formData.get('paymentType'),
+                    notes: formData.get('notes')
+                };
+
+                // Only include password if it's not empty
+                const newPassword = formData.get('password');
+                if (newPassword) {
+                    studentData.password = newPassword;
+                }
+
+                try {
+                    const token = localStorage.getItem('token');
+                    if (!token) {
+                        alert('الرجاء تسجيل الدخول أولاً');
+                        return;
+                    }
+
+                    const response = await fetch(`/api/students/${selectedStudentId}`, {
+                        method: 'PUT',
+                        headers: {
+                            'Authorization': `Bearer ${token}`,
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(studentData)
+                    });
+
+                    if (response.ok) {
+                        closeEditModal();
+                        loadStudents();
+                    } else {
+                        throw new Error('Failed to update student');
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                }
+            });
+
+            function viewCertificates(studentId) {
+                const student = students.find(s => s.id === studentId);
+                if (!student || !student.certificates) return;
+
+                const container = document.getElementById('certificatesContainer');
+                container.innerHTML = '';
+                
+                student.certificates.forEach(cert => {
+                    const img = document.createElement('img');
+                    img.src = cert;
+                    img.className = 'w-full h-auto rounded-lg shadow-md cursor-pointer';
+                    img.onclick = () => window.open(cert, '_blank');
+                    container.appendChild(img);
+                });
+
+                document.getElementById('certificatesModal').style.display = 'block';
+            }
+
+            function closeCertificatesModal() {
+                document.getElementById('certificatesModal').style.display = 'none';
+            }
+        </script>
+
+        <script>
+            // Check for existing login
+            window.addEventListener('DOMContentLoaded', function() {
+                const token = localStorage.getItem('token');
+                if (token) {
+                    showAdminPanel();
+                }
+            });
+
+            // Login form submission
+            document.getElementById('adminLoginForm').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                const password = document.getElementById('adminPassword').value;
+                
+                try {
+                    const response = await fetch('/api/admin/login', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ password })
+                    });
+
+                    if (response.ok) {
+                        const data = await response.json();
+                        localStorage.setItem('token', data.token);
+                        showAdminPanel();
+                    } else {
+                        alert('كلمة المرور غير صحيحة');
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert('حدث خطأ في تسجيل الدخول');
+                }
+            });
+
+            function showAdminPanel() {
+                document.getElementById('loginForm').style.display = 'none';
+                document.getElementById('adminContent').style.display = 'block';
+            }
+
+            function logout() {
+                localStorage.removeItem('token');
+                window.location.reload();
+            }
+        </script>
+
+>>>>>>> d8317554080c57e6fecdf151cc111f60dfef6438
         <script src="/js/main.js"></script>
     </body>
 </html>
