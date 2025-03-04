@@ -511,6 +511,13 @@ app.get('/api/outstanding-students', (req, res) => {
                 id: student.id,
                 name: student.name,
                 currentSurah: student.currentSurah,
+                lastSurah: student.lastSurah,
+                evaluation: student.evaluation,
+                paymentType: student.paymentType,
+                notes: student.notes,
+                sessionsAttended: student.sessionsAttended,
+                certificates: student.certificates,
+
                 photo: student.photo
             }));
 

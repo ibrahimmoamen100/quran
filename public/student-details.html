@@ -11,10 +11,16 @@
         body {
             font-family: 'Tajawal', sans-serif;
         }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
     </style>
 </head>
-<body class="bg-gray-50">
-    <!-- Navigation -->
+<body class="bg-gradient-to-br from-green-50 to-green-100">
+    <!-- Navigation (Unchanged) -->
     <nav class="bg-green-600 text-white shadow-lg">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center py-4">
@@ -34,15 +40,16 @@
 
     <!-- Main Content -->
     <div id="main-content" class="container mx-auto px-4 py-8" style="display: none;">
-        <div class="bg-white rounded-lg shadow-lg p-6 max-w-4xl mx-auto">
+        <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-4xl mx-auto">
             <!-- Student Profile Header -->
-            <div class="flex items-center mb-8">
+            <div class="flex items-center mb-8 bg-green-50 p-6 rounded-lg">
                 <img id="student-image" src="/images/default-avatar.png" alt="صورة الطالب" 
-                     class="w-32 h-32 rounded-full object-cover border-4 border-green-500">
+                     class="w-32 h-32 rounded-full object-cover border-4 border-green-500 shadow-lg">
                 <div class="mr-6">
-                    <h1 id="student-name" class="text-3xl font-bold text-gray-800 mb-2"></h1>
-                    <p class="text-gray-600">
-                        رقم الطالب: <span id="student-id" class="font-semibold"></span>
+                    <h1 id="student-name" class="text-3xl font-bold text-green-800 mb-2"></h1>
+                    <p class="text-gray-600 flex items-center">
+                        <i class="fas fa-id-card ml-2 text-green-600"></i>
+                        رقم الطالب: <span id="student-id" class="font-semibold mr-2"></span>
                     </p>
                 </div>
             </div>
@@ -50,147 +57,92 @@
             <!-- Student Details Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <!-- Academic Info -->
-                <div class="bg-gray-50 rounded-lg p-6">
-                    <h2 class="text-xl font-bold text-gray-800 mb-4">المعلومات الأكاديمية</h2>
+                <div class="bg-green-50 rounded-lg p-6 hover-scale shadow-md">
+                    <h2 class="text-xl font-bold text-green-800 mb-4 flex items-center">
+                        <i class="fas fa-book-open ml-2 text-green-600"></i>
+                        المعلومات الأكاديمية
+                    </h2>
                     <div class="space-y-4">
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                             <div>
-                                <p class="text-gray-600">السورة الحالية</p>
+                                <p class="text-gray-600"><i class="fas fa-quran ml-1 text-green-500"></i> السورة الحالية</p>
                                 <p id="current-surah" class="font-semibold text-gray-800"></p>
                             </div>
                             <div>
-                                <p class="text-gray-600">المراجعة</p>
+                                <p class="text-gray-600"><i class="fas fa-redo ml-1 text-green-500"></i> المراجعة</p>
                                 <p id="last-surah" class="font-semibold text-gray-800"></p>
                             </div>
                             <div>
-                                <p class="text-gray-600">التقييم</p>
+                                <p class="text-gray-600"><i class="fas fa-star ml-1 text-green-500"></i> التقييم</p>
                                 <p id="evaluation" class="font-semibold text-gray-800"></p>
                             </div>
                         </div>
                         <div>
-                            <p class="text-gray-600">عدد الحصص</p>
+                            <p class="text-gray-600"><i class="fas fa-chalkboard-teacher ml-1 text-green-500"></i> عدد الحصص</p>
                             <p id="sessions-attended" class="font-semibold text-gray-800"> حلقه</p>
                         </div>
                     </div>
                 </div>
 
                 <!-- Payment Info -->
-                <div class="bg-gray-50 rounded-lg p-6">
-                    <h2 class="text-xl font-bold text-gray-800 mb-4">معلومات الدفع</h2>
+                <div class="bg-green-50 rounded-lg p-6 hover-scale shadow-md">
+                    <h2 class="text-xl font-bold text-green-800 mb-4 flex items-center">
+                        <i class="fas fa-money-bill-wave ml-2 text-green-600"></i>
+                        معلومات الدفع
+                    </h2>
                     <div class="space-y-4">
                         <div>
-                            <p class="text-gray-600">نوع الدفع</p>
+                            <p class="text-gray-600"><i class="fas fa-credit-card ml-1 text-green-500"></i> نوع الدفع</p>
                             <p id="payment-type" class="font-semibold text-gray-800"></p>
                         </div>
                         <div>
-                            <p class="text-gray-600">الشهر الحالي مدفوع</p>
+                            <p class="text-gray-600"><i class="fas fa-calendar-check ml-1 text-green-500"></i> الشهر الحالي مدفوع</p>
                             <p id="current-month-paid" class="font-semibold text-gray-800"></p>
                         </div>
                         <div>
-                            <p class="text-gray-600">تاريخ آخر دفعة</p>
+                            <p class="text-gray-600"><i class="fas fa-calendar ml-1 text-green-500"></i> تاريخ آخر دفعة</p>
                             <p id="last-payment-date" class="font-semibold text-gray-800"></p>
                         </div>
                     </div>
                 </div>
             </div>
-             <!-- Schedule Section -->
-             <div class="bg-gray-50 rounded-lg p-6 my-4">
-                <h2 class="text-xl font-bold text-gray-800 mb-4">جدول الحلقات </h2>
+
+            <!-- Schedule Section -->
+            <div class="bg-green-50 rounded-lg p-6 my-4 hover-scale shadow-md">
+                <h2 class="text-xl font-bold text-green-800 mb-4 flex items-center">
+                    <i class="fas fa-calendar-alt ml-2 text-green-600"></i>
+                    جدول الحلقات 
+                </h2>
                 <ul id="student-schedule" class="text-gray-700">
                     
                 </ul>
             </div>
 
             <!-- Notes Section -->
-            <div class="mt-8 bg-gray-50 rounded-lg p-6">
-                <h2 class="text-xl font-bold text-gray-800 mb-4">الملاحظات</h2>
+            <div class="mt-8 bg-green-50 rounded-lg p-6 hover-scale shadow-md">
+                <h2 class="text-xl font-bold text-green-800 mb-4 flex items-center">
+                    <i class="fas fa-sticky-note ml-2 text-green-600"></i>
+                    الملاحظات
+                </h2>
                 <p id="notes" class="text-gray-700"></p>
             </div>
+
+            <!-- Certificate Section -->
+            <div class="mt-8 bg-green-50 rounded-lg p-6 hover-scale shadow-md">
+                <h2 class="text-xl font-bold text-green-800 mb-4 flex items-center">
+                    <i class="fas fa-award ml-2 text-green-600"></i>
+                    الشهادات
+                </h2>
+                <p class="pb-4 flex items-center">
+                    <i class="fas fa-heart ml-2 text-red-500"></i>
+                    بارك الله فيكم وفي ابويكم
+                </p>
+                
+                <div id="certificates" class="flex flex-wrap gap-4"></div>
+            </div>            
         </div>
     </div>
 
-    <script>
-        // تحديد عنوان API بناءً على بيئة التشغيل
-        const API_URL = window.location.hostname === 'localhost' 
-            ? 'http://localhost:3000' 
-            : '';
-
-        // التحقق من وجود token عند تحميل الصفحة
-        window.addEventListener('DOMContentLoaded', async () => {
-            const token = localStorage.getItem('studentToken');
-            const studentId = localStorage.getItem('studentId');
-            
-            if (!token || !studentId) {
-                window.location.href = '/students-portal.html';
-                return;
-            }
-
-            try {
-                const response = await fetch(`${API_URL}/api/student/${studentId}`, {
-                    headers: {
-                        'Authorization': `Bearer ${token}`
-                    }
-                });
-
-                if (!response.ok) {
-                    throw new Error('Failed to fetch student data');
-                }
-
-                const student = await response.json();
-                
-                // تحديث معلومات الطالب في الصفحة
-                document.getElementById('student-name').textContent = student.name;
-                document.getElementById('student-id').textContent = student.id;
-                document.getElementById('current-surah').textContent = student.currentSurah;
-                document.getElementById('last-surah').textContent = student.lastSurah;
-                document.getElementById('evaluation').textContent = student.evaluation;
-                document.getElementById('sessions-attended').textContent = student.sessionsAttended + '  من 8 حلقات';
-                document.getElementById('payment-type').textContent = student.paymentType === 'perSession' ? 'بالحصة' : 'شهري';
-                document.getElementById('current-month-paid').textContent = student.currentMonthPaid ? 'نعم' : 'لا';
-                document.getElementById('last-payment-date').textContent = student.lastPaymentDate ? new Date(student.lastPaymentDate).toLocaleDateString('ar-US') : 'لا يوجد';
-                document.getElementById('notes').textContent = student.notes || 'لا توجد ملاحظات';
-                
-                if (student.photo) {
-                    document.getElementById('student-image').src = student.photo;
-                }
-                
-                // Display schedule
-                const scheduleList = document.getElementById('student-schedule');
-                scheduleList.innerHTML = ''; // Clear any existing content
-                if (student.schedule && student.schedule.length > 0) {
-                    student.schedule.forEach(item => {
-                        const listItem = document.createElement('li');
-                        const timeParts = item.time.split(':');
-                        let hours = parseInt(timeParts[0]);
-                        const minutes = timeParts[1];
-                        const ampm = hours >= 12 ? 'م' : 'ص';
-                        hours = hours % 12;
-                        hours = hours ? hours : 12; // the hour '0' should be '12'
-                        listItem.textContent = `${item.day} - ${hours}:${minutes} ${ampm}`;
-                        scheduleList.appendChild(listItem);
-                    });
-                }  else {
-                    const listItem = document.createElement('li');
-                        listItem.textContent = 'لا يوجد جدول';
-                        scheduleList.appendChild(listItem);
-                }
-
-                // إخفاء شاشة التحميل وإظهار المحتوى
-                document.getElementById('loading').style.display = 'none';
-                document.getElementById('main-content').style.display = 'block';
-            } catch (error) {
-                console.error('Error fetching student data:', error);
-                alert('حدث خطأ في جلب بيانات الطالب');
-                window.location.href = '/students-portal.html';
-            }
-        });
-
-        // تسجيل الخروج
-        document.getElementById('logout-button').addEventListener('click', () => {
-            localStorage.removeItem('studentToken');
-            localStorage.removeItem('studentId');
-            window.location.href = '/students-portal.html';
-        });
-    </script>
+    <script src="./js/student-details.js"></script>
 </body>
 </html>

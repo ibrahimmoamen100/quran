@@ -6,9 +6,56 @@ const editModal = document.getElementById('editStudentModal');
 const currentPhoto = document.getElementById('currentPhoto');
 
 // Utility Functions
+
+
+            // Check for existing login
+            window.addEventListener('DOMContentLoaded', function() {
+                const token = localStorage.getItem('token');
+                if (token) {
+                    showAdminPanel();
+                }
+            });
+
+            // Login form submission
+            document.getElementById('adminLoginForm').addEventListener('submit', async function(e) {
+                e.preventDefault();
+                const password = document.getElementById('adminPassword').value;
+                
+                try {
+                    const response = await fetch('/api/admin/login', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({ password })
+                    });
+
+                    if (response.ok) {
+                        const data = await response.json();
+                        localStorage.setItem('token', data.token);
+                        showAdminPanel();
+                    } else {
+                        alert('كلمة المرور غير صحيحة');
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    alert('حدث خطأ في تسجيل الدخول');
+                }
+            });
+
+            function showAdminPanel() {
+                document.getElementById('loginForm').style.display = 'none';
+                document.getElementById('adminContent').style.display = 'block';
+            }
+
+            function logout() {
+                localStorage.removeItem('token');
+                window.location.reload();
+            }
 function formatSchedule(schedule) {
     return schedule.map(s => `${s.day} - ${s.time}`).join('<br>');
 }
+
 
 function addScheduleItem() {
     const container = document.getElementById('scheduleContainer');
@@ -70,22 +117,23 @@ function addEditScheduleItem() {
 
 function removeScheduleItem(button) {
     button.parentElement.remove();
+
 }
 
 // Toggle Payment Status Container
 function togglePaymentStatus(select) {
     const container = document.getElementById('paymentStatusContainer');
-    if (select.value === 'monthly') {
+    if (select.value === 'perMonth') {
         container.classList.remove('hidden');
     } else {
         container.classList.add('hidden');
-        container.querySelector('input[type="checkbox"]').checked = false;
+        container.querySelector('input[type="checkbox"]').checked = false;  
     }
 }
 
 function toggleEditPaymentStatus(select) {
     const container = document.getElementById('editPaymentStatusContainer');
-    if (select.value === 'monthly') {
+    if (select.value === 'perMonth') {
         container.classList.remove('hidden');
     } else {
         container.classList.add('hidden');
@@ -95,7 +143,7 @@ function toggleEditPaymentStatus(select) {
 
 // Format Payment Status
 function formatPaymentStatus(student) {
-    if (student.paymentType === 'monthly') {
+    if (student.paymentType === 'perMonth') {
         return `
             <div class="flex items-center">
                 <input type="checkbox" 
@@ -218,36 +266,42 @@ document.getElementById('editStudentForm').addEventListener('submit', async (e) 
     try {
         const formData = new FormData(e.target);
         const studentId = formData.get('studentId'); // Get the student ID from the form
-        const studentData = {
-            name: formData.get('name'),
-            currentSurah: formData.get('currentSurah'),
-            lastSurah: formData.get('lastSurah'),
-            evaluation: formData.get('evaluation'),
-            paymentType: formData.get('paymentType'),
-            notes: formData.get('notes')
-        };
-
-        // Only include password if it's not empty
-        const password = formData.get('password');
-        if (password && password.trim() !== '') {
-            studentData.password = password;
-        }
-
         const token = localStorage.getItem('token');
         if (!token) {
             alert('الرجاء تسجيل الدخول أولاً');
             return;
         }
-
-        console.log('Sending update with data:', studentData);
+        
+        const certificatesInput = document.getElementById('editCertificateImages');
+        console.log('certificatesInput:', certificatesInput);
+        if (certificatesInput) {
+            console.log('certificatesInput.files:', certificatesInput.files);
+            if (certificatesInput.files.length > 0) {
+                for (let i = 0; i < certificatesInput.files.length; i++) {
+                    formData.append('certificates[]', certificatesInput.files[i]);
+                }
+            }
+        }
+        
+        const schedule = [];
+        const scheduleItems = document.querySelectorAll('#editScheduleContainer .schedule-item');
+        scheduleItems.forEach(item => {
+            const day = item.querySelector('select[name="day"]').value;
+            const time = item.querySelector('input[name="time"]').value;
+            schedule.push({ day, time });
+        });
+        formData.set('schedule', JSON.stringify(schedule));
+        console.log('Sending update with data:', formData);
+        for (let [key, value] of formData.entries()) {
+            console.log(`${key}: ${value}`);
+        }
         
         const response = await fetch(`/api/students/${studentId}`, {
             method: 'PUT',
             headers: {
-                'Authorization': `Bearer ${token}`,
-                'Content-Type': 'application/json'
+                'Authorization': `Bearer ${token}`
             },
-            body: JSON.stringify(studentData)
+            body: formData
         });
 
         if (!response.ok) {
@@ -293,7 +347,7 @@ function loadStudents() {
                             </button>
                         </div>
                     </td>
-                    <td class="px-6 py-4 whitespace-nowrap">${student.paymentType === 'monthly' ? 'شهري' : 'بالحلقة'}</td>
+                    <td class="px-6 py-4 whitespace-nowrap">${student.paymentType === 'perMonth' ? 'شهري' : 'بالحلقة'}</td>
                     <td class="px-6 py-4 whitespace-nowrap">${formatPaymentStatus(student)}</td>
                     <td class="px-6 py-4 whitespace-nowrap">
                         <select onchange="updateEvaluation('${student.id}', this.value)" class="border rounded p-1">
@@ -305,7 +359,6 @@ function loadStudents() {
                             <option value="ضعيف" ${student.evaluation === 'ضعيف' ? 'selected' : ''}>ضعيف</option>
                         </select>
                     </td>
-                    <td class="px-6 py-4 whitespace-normal">${student.notes || '-'}</td>
                     <td class="px-6 py-4 whitespace-nowrap sticky left-0 bg-white">
                         <div class="flex space-x-2">
                             <button onclick="openEditModal('${student.id}')" class="text-blue-600 hover:text-blue-800 ml-2">تعديل</button>
@@ -344,7 +397,7 @@ async function openEditModal(studentId) {
         form.querySelector('input[name="currentSurah"]').value = student.currentSurah;
         form.querySelector('input[name="lastSurah"]').value = student.lastSurah || '';
         form.querySelector('select[name="evaluation"]').value = student.evaluation || '';
-        form.querySelector('select[name="paymentType"]').value = student.paymentType;
+        form.querySelector('select[name="paymentType"]').value = student.paymentType || 'بالشهر';
         form.querySelector('textarea[name="notes"]').value = student.notes || '';
         
         // Clear existing schedule items

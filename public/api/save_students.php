@@ -18,6 +18,7 @@ function generateUniqueFilename($filename) {
 
 // Function to handle file uploads
 function handleFileUpload($file, $uploadDir) {
+    error_log('File upload details: ' . json_encode($file));
     if ($file['error'] === UPLOAD_ERR_OK) {
         $uniqueFilename = generateUniqueFilename($file['name']);
         $targetPath = $uploadDir . $uniqueFilename;
@@ -60,7 +61,29 @@ if ($method === 'PUT') {
     $requestBody = file_get_contents('php://input');
     $studentData = json_decode($requestBody, true);
 
-    // Handle file upload
+    // Handle file uploads
+    $uploadedFiles = isset($_FILES['certificates']) ? $_FILES['certificates'] : [];
+    $certificatePaths = [];
+    if (is_array($uploadedFiles['name'])) {
+        foreach ($uploadedFiles['name'] as $key => $name) {
+            $file = [
+                'name' => $name,
+                'type' => $uploadedFiles['type'][$key],
+                'tmp_name' => $uploadedFiles['tmp_name'][$key],
+                'error' => $uploadedFiles['error'][$key],
+                'size' => $uploadedFiles['size'][$key],
+            ];
+            $imagePath = handleFileUpload($file, $uploadDir);
+            if ($imagePath) {
+                $certificatePaths[] = $imagePath;
+            }
+        }
+    }
+    if (!empty($certificatePaths)) {
+        $studentData['certificates'] = $certificatePaths;
+    }
+    
+    // Handle main photo upload
     $uploadedFile = isset($_FILES['photo']) ? $_FILES['photo'] : null;
     if ($uploadedFile) {
         $imagePath = handleFileUpload($uploadedFile, $uploadDir);
@@ -68,17 +91,27 @@ if ($method === 'PUT') {
             $studentData['photo'] = $imagePath;
         }
     }
+    
+    // Log student data after file uploads
+    error_log('Student data after file uploads: ' . json_encode($studentData));
 
     // Find the student to update
     $studentUpdated = false;
     foreach ($students as $key => $student) {
-        if ($student['id'] == $studentId) {
-            // Update student data
-            $students[$key] = array_merge($student, $studentData);
+       if ($student['id'] == $studentId) {
+            // Log student data before overwrite
+            error_log('Student data before overwrite: ' . json_encode($student));
+            
+            $students[$key] = $studentData;
+            
+            // Log student data after overwrite
+            error_log('Student data after overwrite: ' . json_encode($students[$key]));
+            
             $studentUpdated = true;
             break;
         }
     }
+    error_log('Students array after loop: ' . json_encode($students));
 
     if ($studentUpdated) {
         // Save updated data
@@ -86,11 +119,11 @@ if ($method === 'PUT') {
             echo json_encode(['success' => true]);
         } else {
             http_response_code(500);
-            echo json_encode(['error' => 'Failed to save data']);
+            echo json_encode(['error' => 'Failed to save data', 'details' => error_get_last()]);
         }
     } else {
         http_response_code(404);
-        echo json_encode(['error' => 'Student not found']);
+        echo json_encode(['error' => 'Student not found', 'studentId' => $studentId]);
     }
 }
 // Handle POST request (for adding new student)
