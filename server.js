@@ -402,7 +402,8 @@ app.post('/api/student/login', async (req, res) => {
         // Normalize and clean the input name
         const normalizeArabicText = (text) => {
             return text.trim()
-                      .normalize('NFKC')  // Normalize Unicode representation
+                      .normalize('NFKD') // Decompose characters into base characters and diacritics
+                      .replace(/[\u0300-\u036f]/g, '') // Remove diacritics
                       .replace(/\s+/g, ' '); // Replace multiple spaces with single space
         };
 

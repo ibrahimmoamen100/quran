@@ -30,6 +30,9 @@ async function fetchStudentDetails() {
 
     } catch (error) {
         console.error('Error fetching student details:', error);
+        console.log('Student ID from localStorage:', studentId);
+        console.log('Response status:', response.status);
+        console.log('Response text:', await response.text());
         alert('حدث خطأ في جلب بيانات الطالب');
         window.location.href = '/students-portal.html';
     }
