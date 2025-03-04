@@ -8,11 +8,10 @@ async function fetchStudentDetails() {
         const studentId = localStorage.getItem('studentId');
         console.log('Fetching details for student ID:', studentId);
 
-        const response = await fetch('/data/students.json');
+        const response = await fetch(`/api/student/${studentId}`);
         if (!response.ok) throw new Error('Failed to fetch student details');
 
-        const data = await response.json();
-        const student = data.students.find(s => s.id == studentId); // Use == for comparison
+        const student = await response.json();
 
         if (!student) throw new Error('Student not found');
 
