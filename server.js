@@ -101,12 +101,10 @@ function readStudentsData() {
         }
 
         // إذا لم يوجد الملف، نقوم بإنشاء ملف جديد
-        console.log('Creating new students data file');
         const defaultData = { students: [] };
         writeStudentsData(defaultData);
         return defaultData;
     } catch (error) {
-        console.error('Error reading students data:', error);
         const defaultData = { students: [] };
         writeStudentsData(defaultData);
         return defaultData;
@@ -140,7 +138,6 @@ function writeStudentsData(data) {
             throw new Error('Data verification failed');
         }
         
-        console.log('Data written successfully to', studentsFilePath);
         return true;
     } catch (error) {
         console.error('Error writing students data:', error);
@@ -161,26 +158,20 @@ app.get('/api/students', (req, res) => {
 
 app.get('/api/students/:id', (req, res) => {
     try {
-        console.log('Getting student details for ID:', req.params.id);
         const data = readStudentsData();
-        console.log('Total students found:', data.students.length);
         
         const student = data.students.find(s => {
-            console.log('Comparing:', s.id, req.params.id);
             return s.id === req.params.id;
         });
         
-        console.log('Found student:', student);
         
         if (!student) {
-            console.log('Student not found');
             return res.status(404).json({ error: 'الطالب غير موجود' });
         }
         
         // إخفاء كلمة المرور قبل إرسال البيانات
         const { password, ...studentData } = student;
         
-        console.log('Sending student data:', studentData);
         res.json(studentData);
     } catch (error) {
         console.error('Error getting student:', error);
@@ -193,9 +184,7 @@ app.post('/api/students', upload.fields([
     { name: 'certificates', maxCount: 10 }
 ]), (req, res) => {
     try {
-        console.log('Received request to add student');
-        console.log('Request body:', req.body);
-        console.log('Files:', req.files);
+
 
         // التحقق من البيانات المطلوبة
         if (!req.body.name) {
@@ -353,8 +342,14 @@ app.put('/api/students/:id', upload.single('photo'), (req, res) => {
                 }
                 updatedStudent.photo = '/uploads/' + req.file.filename;
             }
+
+            // Handle schedule update
+            if (req.body.schedule) {
+                updatedStudent.schedule = JSON.parse(req.body.schedule);
+            }
         }
 
+        console.log('Updated schedule:', updatedStudent.schedule);
         // Update the student data
         data.students[studentIndex] = updatedStudent;
         
@@ -393,11 +388,9 @@ app.delete('/api/students/:id', (req, res) => {
 app.post('/api/student/login', async (req, res) => {
     try {
         const { studentName, password } = req.body;
-        console.log('Login attempt for:', { studentName, password });
 
         // Read students data
         const studentsData = readStudentsData();
-        console.log('Total students found:', studentsData.students.length);
         
         // Normalize and clean the input name
         const normalizeArabicText = (text) => {
@@ -412,19 +405,11 @@ app.post('/api/student/login', async (req, res) => {
         // Find student with matching credentials
         const student = studentsData.students.find(s => {
             const normalizedStoredName = normalizeArabicText(s.name);
-            console.log('Comparing:', {
-                storedName: s.name,
-                normalizedStoredName,
-                inputName: studentName,
-                normalizedInputName,
-                nameMatch: normalizedStoredName === normalizedInputName,
-                passwordMatch: s.password === password
-            });
+
             return normalizedStoredName === normalizedInputName && s.password === password;
         });
 
         if (!student) {
-            console.log('Login failed: Invalid credentials');
             return res.status(401).json({ 
                 success: false, 
                 error: 'اسم الطالب أو الرقم السري غير صحيح' 
@@ -438,7 +423,6 @@ app.post('/api/student/login', async (req, res) => {
             { expiresIn: '24h' }
         );
 
-        console.log('Login successful for student:', student.name);
         res.json({
             success: true,
             token,
@@ -532,19 +516,15 @@ app.get('/api/outstanding-students', (req, res) => {
 // Middleware للتحقق من الـ token
 function authenticateStudent(req, res, next) {
     try {
-        console.log('Headers:', req.headers);
         const authHeader = req.headers.authorization;
         
         if (!authHeader || !authHeader.startsWith('Bearer ')) {
-            console.log('No auth header or invalid format');
             return res.status(401).json({ error: 'الرجاء تسجيل الدخول أولاً' });
         }
         
         const token = authHeader.split(' ')[1];
-        console.log('Token:', token);
         
         if (!token) {
-            console.log('No token found');
             return res.status(401).json({ error: 'الرجاء تسجيل الدخول أولاً' });
         }
 
@@ -607,5 +587,4 @@ app.get('/api/outstanding-students', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
 });

@@ -253,13 +253,13 @@
                     </div>
                     <div>
                         <label class="block text-sm mb-1">الصورة الحالية</label>
-                        <img id="currentPhoto" src="" alt="صورة الطالب" class="max-w-xs mt-2 hidden">
-                        <div id="certificateImages" class="mt-2 flex flex-wrap gap-2"></div>
+                        <img id="currentPhoto" src="" alt="صورة الطالب" class="max-w-xs mt-2 hidden w-24 h-24 object-cover rounded-md">
                         <input type="file" name="photo" accept="image/*" class="mt-2">
                     </div>
                     <div>
                         <label class="block text-sm mb-1">شهادات الطالب</label>
-                        <input type="file" id="editCertificateImages" name="certificates" accept="image/*" multiple class="w-full p-2 border rounded-md">
+                        <div id="certificateImages" class="mt-1 flex flex-wrap gap-1"></div>
+                        <input type="file" id="editCertificateImages" name="certificates"  accept="image/*" multiple class="w-full p-2 border rounded-md">
                         <p class="text-sm text-gray-500 mt-1">يمكنك اختيار عدة صور للشهادات</p>
                     </div>
                     <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700">

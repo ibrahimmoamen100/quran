@@ -232,6 +232,7 @@ addStudentForm.addEventListener('submit', async (e) => {
             const time = item.querySelector('input[name="time"]').value;
             schedule.push({ day, time });
         });
+        console.log('Schedule:', schedule);
         formData.set('schedule', JSON.stringify(schedule));
         
         // Log form data before sending

@@ -581,20 +581,12 @@
       "paymentType": "perSession",
       "schedule": [
         {
-          "day": "الإثنين",
-          "time": "12:12"
-        },
-        {
-          "day": "الأربعاء",
-          "time": "12:12"
-        },
-        {
-          "day": "الخميس",
+          "day": "الأحد",
           "time": "12:12"
         }
       ],
       "notes": "سيبسيبسسسسسسسؤؤؤؤؤؤؤؤؤؤؤؤ",
-      "photo": "/uploads/1741114813081-468263084.jpg",
+      "photo": "/uploads/1741169011871-940143850.png",
       "certificates": [
         "/certificates/ama.png"
       ],
