@@ -280,7 +280,10 @@ app.post('/api/students/new', upload.single('photo'), (req, res) => {
     }
 });
 
-app.put('/api/students/:id', upload.single('photo'), (req, res) => {
+app.put('/api/students/:id', upload.fields([
+    { name: 'photo', maxCount: 1 },
+    { name: 'certificates', maxCount: 10 }
+]), (req, res) => {
     try {
         console.log('Received update request for student:', req.params.id);
         console.log('Request body:', req.body);
@@ -343,6 +346,12 @@ app.put('/api/students/:id', upload.single('photo'), (req, res) => {
                 updatedStudent.photo = '/uploads/' + req.file.filename;
             }
 
+            // Handle certificates update
+            if (req.files && req.files.certificates) {
+                const certificatePaths = req.files.certificates.map(file => '/certificates/' + file.filename);
+                updatedStudent.certificates = certificatePaths;
+            }
+
             // Handle schedule update
             if (req.body.schedule) {
                 updatedStudent.schedule = JSON.parse(req.body.schedule);
@@ -350,6 +359,7 @@ app.put('/api/students/:id', upload.single('photo'), (req, res) => {
         }
 
         console.log('Updated schedule:', updatedStudent.schedule);
+        console.log('Updated certificates:', updatedStudent.certificates);
         // Update the student data
         data.students[studentIndex] = updatedStudent;
         
@@ -364,6 +374,43 @@ app.put('/api/students/:id', upload.single('photo'), (req, res) => {
     }
 });
 
+
+app.delete('/api/students/:id/certificates/:index', (req, res) => {
+    try {
+        const data = readStudentsData();
+        const studentId = req.params.id;
+        const certificateIndex = parseInt(req.params.index, 10);
+        const studentIndex = data.students.findIndex(s => s.id === studentId);
+        
+        if (studentIndex === -1) {
+            return res.status(404).json({ error: 'Student not found' });
+        }
+
+        const student = data.students[studentIndex];
+        if (certificateIndex < 0 || certificateIndex >= student.certificates.length) {
+            return res.status(400).json({ error: 'Invalid certificate index' });
+        }
+
+        // Remove the certificate file
+        const certificatePath = path.join(__dirname, 'public', student.certificates[certificateIndex]);
+        if (fs.existsSync(certificatePath)) {
+            fs.unlinkSync(certificatePath);
+        }
+
+        // Remove the certificate from the student's certificates array
+        student.certificates.splice(certificateIndex, 1);
+
+        // Update the student data
+        data.students[studentIndex] = student;
+        writeStudentsData(data);
+
+        console.log('Certificate deleted successfully');
+        res.json({ message: 'Certificate deleted successfully' });
+    } catch (error) {
+        console.error('Error deleting certificate:', error);
+        res.status(500).json({ error: 'Failed to delete certificate', message: error.message });
+    }
+});
 app.delete('/api/students/:id', (req, res) => {
     try {
         const data = readStudentsData();

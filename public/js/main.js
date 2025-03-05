@@ -279,7 +279,7 @@ document.getElementById('editStudentForm').addEventListener('submit', async (e) 
             console.log('certificatesInput.files:', certificatesInput.files);
             if (certificatesInput.files.length > 0) {
                 for (let i = 0; i < certificatesInput.files.length; i++) {
-                    formData.append('certificates[]', certificatesInput.files[i]);
+                    formData.append('certificates', certificatesInput.files[i]); // Change 'certificates[]' to 'certificates'
                 }
             }
         }
@@ -450,12 +450,17 @@ async function openEditModal(studentId) {
         certificatesContainer.innerHTML = ''; // Clear previous images
         
         if (student.certificates && student.certificates.length > 0) {
-            student.certificates.forEach(certificate => {
-                const img = document.createElement('img');
-                img.src = certificate;
-                img.alt = 'Certificate';
-                img.className = 'w-24 h-24 object-cover rounded mt-2';
-                certificatesContainer.appendChild(img);
+            student.certificates.forEach((certificate, index) => {
+                const imgContainer = document.createElement('div');
+                imgContainer.className = 'relative inline-block';
+                imgContainer.innerHTML = `
+                    <img src="${certificate}" alt="Certificate" class="w-24 h-24 object-cover rounded mt-2">
+                    <button type="button" class="absolute top-0 right-0 bg-red-600 text-white rounded-full p-1"
+                            onclick="deleteCertificate('${student.id}', ${index})">
+                        &times;
+                    </button>
+                `;
+                certificatesContainer.appendChild(imgContainer);
             });
         }
         
@@ -464,6 +469,36 @@ async function openEditModal(studentId) {
         modal.style.display = 'block';
     } catch (error) {
         console.error('Error:', error);
+    }
+}
+
+
+
+async function deleteCertificate(studentId, certificateIndex) {
+    try {
+        const token = localStorage.getItem('token');
+        if (!token) {
+            alert('الرجاء تسجيل الدخول أولاً');
+            return;
+        }
+
+        const response = await fetch(`/api/students/${studentId}/certificates/${certificateIndex}`, {
+            method: 'DELETE',
+            headers: {
+                'Authorization': `Bearer ${token}`
+            }
+        });
+
+        if (!response.ok) {
+            const errorData = await response.json();
+            throw new Error(errorData.message || 'Failed to delete certificate');
+        }
+
+        console.log('Certificate deleted successfully');
+        openEditModal(studentId); // Refresh the modal to reflect the changes
+    } catch (error) {
+        console.error('Error deleting certificate:', error);
+        alert('حدث خطأ أثناء حذف الشهادة: ' + error.message);
     }
 }
 

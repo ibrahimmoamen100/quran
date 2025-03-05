@@ -510,9 +510,7 @@
       ],
       "notes": "مستواه ممتاز  اللهم بارك مقارنتا بسنه ",
       "photo": "/uploads/1736662784798-463045063.jpg",
-      "certificates": [
-        "/certificates/1736660274690-634232708.jpeg"
-      ],
+      "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 1,
       "evaluation": "جيد جداً",
@@ -538,9 +536,7 @@
       ],
       "notes": "الورد اليومي 50 صلاه علي النبي يا عبدالرحمن ما تنساش ",
       "photo": "/uploads/1738582486422-255572032.jpg",
-      "certificates": [
-        "/certificates/1738581464796-843603061.jpeg"
-      ],
+      "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 4,
       "evaluation": "جيد",
@@ -566,10 +562,7 @@
       ],
       "notes": "يوسف مستواه كويس ولكن بيسرح كثير في الحلقه ممكن بسبب سرحانه ما يركزش علي الايه و يقولها غلط وانا بقرأهالو",
       "photo": "/uploads/1738582456762-735875996.jpg",
-      "certificates": [
-        "/certificates/1738581724479-421871562.jpeg",
-        "/certificates/1738581724479-421871562.jpeg"
-      ],
+      "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 4,
       "evaluation": "جيد",
@@ -585,14 +578,16 @@
       "paymentType": "perSession",
       "schedule": [
         {
-          "day": "الأحد",
+          "day": "الجمعة",
           "time": "12:12"
         }
       ],
       "notes": "سيبسيبسسسسسسسؤؤؤؤؤؤؤؤؤؤؤؤ",
       "photo": "/uploads/1741169011871-940143850.png",
       "certificates": [
-        "/certificates/ama.png"
+        "/certificates/1741174986564-249890889.jpg",
+        "/certificates/1741174986572-848780599.jpg",
+        "/certificates/1741174986580-645452292.jpg"
       ],
       "sessionCount": 0,
       "sessionsAttended": 3,
