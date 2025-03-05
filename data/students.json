@@ -4,7 +4,7 @@
       "id": "1734167825077",
       "name": "معاذ محمد",
       "password": "1234",
-      "currentSurah": "الصافات 9.5/10",
+      "currentSurah": "الصافات 10\\10",
       "schedule": [
         {
           "day": "السبت",
@@ -21,13 +21,13 @@
       "notes": "الورد اليومي 50 سبحان الله وبحمده سبحان الله العظيم",
       "photo": "/uploads/1734167825054-869269646.jpg",
       "certificates": [
-        "/certificates/1741192825985-368136841.jpg",
-        "/certificates/1741192825988-437595634.jpg"
+        "/certificates/ama.png",
+        "/certificates/tbark.png"
       ],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T09:17:05.078Z",
-      "lastSurah": "الاحقاف 9/10 + الزمر 9.5/10"
+      "lastSurah": "الاحقاف "
     },
     {
       "id": "1734168086134",
@@ -49,7 +49,10 @@
       "paymentType": "perSession",
       "notes": "الورد اليومي 50 مره سبحان الله وبحمده سبحان الله العظيم",
       "photo": "/uploads/1734215975720-998687586.jpg",
-      "certificates": [],
+      "certificates": [
+        "/certificates/ama.png",
+        "/certificates/tbark.png"
+      ],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T09:21:26.135Z",
@@ -384,7 +387,7 @@
       "id": "1734263567588",
       "name": "حمزه احمد",
       "password": "1234",
-      "currentSurah": "الطور ",
+      "currentSurah": "المجادله 9\\10",
       "schedule": [
         {
           "day": "الأحد",
@@ -395,16 +398,18 @@
           "time": "22:00"
         }
       ],
-      "evaluation": "جيد جداً",
-      "sessionsAttended": 5,
+      "evaluation": "جيد",
+      "sessionsAttended": 4,
       "paymentType": "perMonth",
       "notes": "الورد اليومي : 50 صلاه علي النبي يوميا ",
       "photo": "/uploads/1735121667477-136384826.jpg",
-      "certificates": [],
+      "certificates": [
+        "/certificates/ama.png"
+      ],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-15T11:52:47.589Z",
-      "lastSurah": "المزمل "
+      "lastSurah": "المدثر 7\\10"
     },
     {
       "id": "1734866751045",
@@ -422,7 +427,9 @@
       "paymentType": "perSession",
       "notes": "الورد اليومي 50 صلاه علي النبي يا سجدة",
       "photo": "/uploads/1734866750974-662796052.jpg",
-      "certificates": [],
+      "certificates": [
+        "/certificates/ama.png"
+      ],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-22T11:25:51.046Z",
@@ -514,8 +521,8 @@
       "id": "1738581464811",
       "name": "عبدالرحمن محمد",
       "password": "1234",
-      "currentSurah": "الصف الي ايه 5 ",
-      "lastSurah": "الطلاق الوجه الثاني + النبأ",
+      "currentSurah": "المنافقون",
+      "lastSurah": "التحريم + عبسي",
       "paymentType": "perMonth",
       "schedule": [
         {
@@ -531,8 +538,8 @@
       "photo": "/uploads/1738582486422-255572032.jpg",
       "certificates": [],
       "sessionCount": 0,
-      "sessionsAttended": 5,
-      "evaluation": "جيد جداً",
+      "sessionsAttended": 4,
+      "evaluation": "جيد",
       "currentMonthPaid": false,
       "lastPaymentDate": null
     },
@@ -540,8 +547,8 @@
       "id": "1738581724489",
       "name": "يوسف محمد",
       "password": "1234",
-      "currentSurah": "الغاشيه",
-      "lastSurah": "المسد + النصر + الكافرون",
+      "currentSurah": "الفجر",
+      "lastSurah": "الكوثر + الماعون + قريس",
       "paymentType": "perMonth",
       "schedule": [
         {
@@ -557,7 +564,7 @@
       "photo": "/uploads/1738582456762-735875996.jpg",
       "certificates": [],
       "sessionCount": 0,
-      "sessionsAttended": 5,
+      "sessionsAttended": 4,
       "evaluation": "جيد",
       "currentMonthPaid": false,
       "lastPaymentDate": null
@@ -576,7 +583,7 @@
         }
       ],
       "notes": "سيبسيبسسسسسسسؤؤؤؤؤؤؤؤؤؤؤؤ",
-      "photo": "/uploads/1741169011871-940143850.png",
+      "photo": "/uploads/1741213992899-586509287.png",
       "certificates": [
         "/certificates/1741174986564-249890889.jpg",
         "/certificates/1741174986572-848780599.jpg",

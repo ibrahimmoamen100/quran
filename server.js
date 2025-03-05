@@ -101,10 +101,12 @@ function readStudentsData() {
         }
 
         // إذا لم يوجد الملف، نقوم بإنشاء ملف جديد
+        console.log('Creating new students data file');
         const defaultData = { students: [] };
         writeStudentsData(defaultData);
         return defaultData;
     } catch (error) {
+        console.error('Error reading students data:', error);
         const defaultData = { students: [] };
         writeStudentsData(defaultData);
         return defaultData;
@@ -138,6 +140,7 @@ function writeStudentsData(data) {
             throw new Error('Data verification failed');
         }
         
+        console.log('Data written successfully to', studentsFilePath);
         return true;
     } catch (error) {
         console.error('Error writing students data:', error);
@@ -158,20 +161,26 @@ app.get('/api/students', (req, res) => {
 
 app.get('/api/students/:id', (req, res) => {
     try {
+        console.log('Getting student details for ID:', req.params.id);
         const data = readStudentsData();
+        console.log('Total students found:', data.students.length);
         
         const student = data.students.find(s => {
+            console.log('Comparing:', s.id, req.params.id);
             return s.id === req.params.id;
         });
         
+        console.log('Found student:', student);
         
         if (!student) {
+            console.log('Student not found');
             return res.status(404).json({ error: 'الطالب غير موجود' });
         }
         
         // إخفاء كلمة المرور قبل إرسال البيانات
         const { password, ...studentData } = student;
         
+        console.log('Sending student data:', studentData);
         res.json(studentData);
     } catch (error) {
         console.error('Error getting student:', error);
@@ -184,7 +193,9 @@ app.post('/api/students', upload.fields([
     { name: 'certificates', maxCount: 10 }
 ]), (req, res) => {
     try {
-
+        console.log('Received request to add student');
+        console.log('Request body:', req.body);
+        console.log('Files:', req.files);
 
         // التحقق من البيانات المطلوبة
         if (!req.body.name) {
@@ -280,10 +291,7 @@ app.post('/api/students/new', upload.single('photo'), (req, res) => {
     }
 });
 
-app.put('/api/students/:id', upload.fields([
-    { name: 'photo', maxCount: 1 },
-    { name: 'certificates', maxCount: 10 }
-]), (req, res) => {
+app.put('/api/students/:id', upload.single('photo'), (req, res) => {
     try {
         console.log('Received update request for student:', req.params.id);
         console.log('Request body:', req.body);
@@ -345,21 +353,8 @@ app.put('/api/students/:id', upload.fields([
                 }
                 updatedStudent.photo = '/uploads/' + req.file.filename;
             }
-
-            // Handle certificates update
-            if (req.files && req.files.certificates) {
-                const certificatePaths = req.files.certificates.map(file => '/certificates/' + file.filename);
-                updatedStudent.certificates = certificatePaths;
-            }
-
-            // Handle schedule update
-            if (req.body.schedule) {
-                updatedStudent.schedule = JSON.parse(req.body.schedule);
-            }
         }
 
-        console.log('Updated schedule:', updatedStudent.schedule);
-        console.log('Updated certificates:', updatedStudent.certificates);
         // Update the student data
         data.students[studentIndex] = updatedStudent;
         
@@ -374,43 +369,6 @@ app.put('/api/students/:id', upload.fields([
     }
 });
 
-
-app.delete('/api/students/:id/certificates/:index', (req, res) => {
-    try {
-        const data = readStudentsData();
-        const studentId = req.params.id;
-        const certificateIndex = parseInt(req.params.index, 10);
-        const studentIndex = data.students.findIndex(s => s.id === studentId);
-        
-        if (studentIndex === -1) {
-            return res.status(404).json({ error: 'Student not found' });
-        }
-
-        const student = data.students[studentIndex];
-        if (certificateIndex < 0 || certificateIndex >= student.certificates.length) {
-            return res.status(400).json({ error: 'Invalid certificate index' });
-        }
-
-        // Remove the certificate file
-        const certificatePath = path.join(__dirname, 'public', student.certificates[certificateIndex]);
-        if (fs.existsSync(certificatePath)) {
-            fs.unlinkSync(certificatePath);
-        }
-
-        // Remove the certificate from the student's certificates array
-        student.certificates.splice(certificateIndex, 1);
-
-        // Update the student data
-        data.students[studentIndex] = student;
-        writeStudentsData(data);
-
-        console.log('Certificate deleted successfully');
-        res.json({ message: 'Certificate deleted successfully' });
-    } catch (error) {
-        console.error('Error deleting certificate:', error);
-        res.status(500).json({ error: 'Failed to delete certificate', message: error.message });
-    }
-});
 app.delete('/api/students/:id', (req, res) => {
     try {
         const data = readStudentsData();
@@ -435,15 +393,16 @@ app.delete('/api/students/:id', (req, res) => {
 app.post('/api/student/login', async (req, res) => {
     try {
         const { studentName, password } = req.body;
+        console.log('Login attempt for:', { studentName, password });
 
         // Read students data
         const studentsData = readStudentsData();
+        console.log('Total students found:', studentsData.students.length);
         
         // Normalize and clean the input name
         const normalizeArabicText = (text) => {
             return text.trim()
-                      .normalize('NFKD') // Decompose characters into base characters and diacritics
-                      .replace(/[\u0300-\u036f]/g, '') // Remove diacritics
+                      .normalize('NFKC')  // Normalize Unicode representation
                       .replace(/\s+/g, ' '); // Replace multiple spaces with single space
         };
 
@@ -452,11 +411,19 @@ app.post('/api/student/login', async (req, res) => {
         // Find student with matching credentials
         const student = studentsData.students.find(s => {
             const normalizedStoredName = normalizeArabicText(s.name);
-
+            console.log('Comparing:', {
+                storedName: s.name,
+                normalizedStoredName,
+                inputName: studentName,
+                normalizedInputName,
+                nameMatch: normalizedStoredName === normalizedInputName,
+                passwordMatch: s.password === password
+            });
             return normalizedStoredName === normalizedInputName && s.password === password;
         });
 
         if (!student) {
+            console.log('Login failed: Invalid credentials');
             return res.status(401).json({ 
                 success: false, 
                 error: 'اسم الطالب أو الرقم السري غير صحيح' 
@@ -470,6 +437,7 @@ app.post('/api/student/login', async (req, res) => {
             { expiresIn: '24h' }
         );
 
+        console.log('Login successful for student:', student.name);
         res.json({
             success: true,
             token,
@@ -563,15 +531,19 @@ app.get('/api/outstanding-students', (req, res) => {
 // Middleware للتحقق من الـ token
 function authenticateStudent(req, res, next) {
     try {
+        console.log('Headers:', req.headers);
         const authHeader = req.headers.authorization;
         
         if (!authHeader || !authHeader.startsWith('Bearer ')) {
+            console.log('No auth header or invalid format');
             return res.status(401).json({ error: 'الرجاء تسجيل الدخول أولاً' });
         }
         
         const token = authHeader.split(' ')[1];
+        console.log('Token:', token);
         
         if (!token) {
+            console.log('No token found');
             return res.status(401).json({ error: 'الرجاء تسجيل الدخول أولاً' });
         }
 
@@ -634,4 +606,5 @@ app.get('/api/outstanding-students', (req, res) => {
 });
 
 app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
 });
