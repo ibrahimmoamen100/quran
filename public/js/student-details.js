@@ -8,7 +8,12 @@ async function fetchStudentDetails() {
         const studentId = localStorage.getItem('studentId');
         console.log('Fetching details for student ID:', studentId);
 
-        const response = await fetch(`/api/student/${studentId}`);
+        const token = localStorage.getItem('studentToken');
+        const response = await fetch(`/api/student/${studentId}`, {
+            headers: {
+                'Authorization': `Bearer ${token}`
+            }
+        });
         if (!response.ok) throw new Error('Failed to fetch student details');
 
         const student = await response.json();
