@@ -594,25 +594,6 @@
       "evaluation": "جيد جداً",
       "currentMonthPaid": false,
       "lastPaymentDate": null
-    },
-    {
-      "id": "1741255100533",
-      "name": "سيف محمد",
-      "password": "1234",
-      "currentSurah": "الجن 7/10",
-      "lastSurah": "perMonth",
-      "paymentType": "perSession",
-      "schedule": [
-        {
-          "day": "الجمعة",
-          "time": "14:00"
-        }
-      ],
-      "notes": "ارجو الحضور المره القادمه يا سيف \r\nالورد اليومي 50 صلاه علي النبي \r\n",
-      "photo": "/uploads/1741255100526-916968565.jpg",
-      "certificates": [],
-      "sessionCount": 0,
-      "sessionsAttended": 1
     }
   ]
 }
