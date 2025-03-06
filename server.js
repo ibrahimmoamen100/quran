@@ -3,9 +3,21 @@ const bodyParser = require('body-parser');
 const fs = require('fs');
 const path = require('path');
 const multer = require('multer');
-const jwt = require('jsonwebtoken'); 
+const jwt = require('jsonwebtoken');
+const { Pool } = require('pg');
 const app = express();
 const port = process.env.PORT || 3000;
+
+const dbUrl = process.env.DATABASE_URL || 'postgresql://user:password@host:port/database';
+
+process.env.DATABASE_URL = 'postgresql://shekh_owner:npg_gIM1vzQ0dxZb@ep-twilight-scene-a80eqtw6-pooler.eastus2.azure.neon.tech/shekh?sslmode=require';
+
+const pool = new Pool({
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false
+  }
+});
 
 // Enable CORS for development
 app.use((req, res, next) => {
@@ -54,18 +66,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Serve static files from public directory
 app.use(express.static('public'));
 
-// Serve students.json from data directory
-app.use('/data/students.json', (req, res) => {
-    const data = readStudentsData();
-    // Remove sensitive data like passwords before sending
-    const sanitizedData = {
-        students: data.students.map(student => {
-            const { password, ...studentData } = student;
-            return studentData;
-        })
-    };
-    res.json(sanitizedData);
-});
 
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 app.use('/certificates', express.static(path.join(__dirname, 'certificates')));
@@ -90,57 +90,33 @@ app.get('/admin', (req, res) => {
 });
 
 // Helper Functions
-function readStudentsData() {
-    const studentsFilePath = path.join(__dirname, 'data', 'students.json');
-    
+async function readStudentsData() {
     try {
-        // محاولة قراءة الملف
-        if (fs.existsSync(studentsFilePath)) {
-            const data = fs.readFileSync(studentsFilePath, 'utf8');
-            return JSON.parse(data);
-        }
-
-        // إذا لم يوجد الملف، نقوم بإنشاء ملف جديد
-        console.log('Creating new students data file');
-        const defaultData = { students: [] };
-        writeStudentsData(defaultData);
-        return defaultData;
+        const client = await pool.connect();
+        const result = await client.query('SELECT * FROM students');
+        client.release();
+        return { students: result.rows };
     } catch (error) {
         console.error('Error reading students data:', error);
-        const defaultData = { students: [] };
-        writeStudentsData(defaultData);
-        return defaultData;
+        return { students: [] };
     }
 }
 
-function writeStudentsData(data) {
-    const studentsFilePath = path.join(__dirname, 'data', 'students.json');
-    
+async function writeStudentsData(data) {
     try {
-        // التأكد من وجود المجلد
-        const dataDir = path.dirname(studentsFilePath);
-        if (!fs.existsSync(dataDir)) {
-            fs.mkdirSync(dataDir, { recursive: true });
-        }
+        const client = await pool.connect();
+        // Clear existing data
+        await client.query('DELETE FROM students');
 
-        // التحقق من صحة البيانات
-        if (!data || !data.students || !Array.isArray(data.students)) {
-            throw new Error('Invalid data structure');
+        // Insert new data
+        for (const student of data.students) {
+            await client.query(
+                'INSERT INTO students (id, name, password, currentSurah, lastSurah, paymentType, schedule, notes, photo, certificates, sessionCount, evaluation, sessionsAttended, currentMonthPaid, lastPaymentDate, createdAt, progress, lessons, payments) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18, $19)',
+                [student.id, student.name, student.password, student.currentSurah, student.lastSurah, student.paymentType, JSON.stringify(student.schedule), student.notes, student.photo, JSON.stringify(student.certificates), student.sessionCount, student.evaluation, student.sessionsAttended, student.currentMonthPaid, student.lastPaymentDate, student.createdAt, student.progress, JSON.stringify(student.lessons), JSON.stringify(student.payments)]
+            );
         }
-
-        // كتابة البيانات بتنسيق مقروء
-        const jsonString = JSON.stringify(data, null, 2);
-        fs.writeFileSync(studentsFilePath, jsonString, { encoding: 'utf8', flag: 'w' });
-        
-        // التحقق من نجاح الكتابة
-        const written = fs.readFileSync(studentsFilePath, 'utf8');
-        const parsedWritten = JSON.parse(written);
-        
-        if (JSON.stringify(parsedWritten) !== JSON.stringify(data)) {
-            throw new Error('Data verification failed');
-        }
-        
-        console.log('Data written successfully to', studentsFilePath);
+        client.release();
+        console.log('Data written successfully to the database');
         return true;
     } catch (error) {
         console.error('Error writing students data:', error);
@@ -149,9 +125,9 @@ function writeStudentsData(data) {
 }
 
 // API Routes
-app.get('/api/students', (req, res) => {
+app.get('/api/students', async (req, res) => {
     try {
-        const data = readStudentsData();
+        const data = await readStudentsData();
         res.json(data.students);
     } catch (error) {
         console.error('Error getting students:', error);
@@ -159,27 +135,28 @@ app.get('/api/students', (req, res) => {
     }
 });
 
-app.get('/api/students/:id', (req, res) => {
+app.get('/api/students/:id', async (req, res) => {
     try {
-        console.log('Getting student details for ID:', req.params.id);
-        const data = readStudentsData();
+        const studentId = req.params.id;
+        console.log('Getting student details for ID:', studentId);
+        const data = await readStudentsData();
         console.log('Total students found:', data.students.length);
-        
+
         const student = data.students.find(s => {
-            console.log('Comparing:', s.id, req.params.id);
-            return s.id === req.params.id;
+            console.log('Comparing:', s.id, studentId);
+            return s.id === studentId;
         });
-        
+
         console.log('Found student:', student);
-        
+
         if (!student) {
             console.log('Student not found');
             return res.status(404).json({ error: 'الطالب غير موجود' });
         }
-        
+
         // إخفاء كلمة المرور قبل إرسال البيانات
         const { password, ...studentData } = student;
-        
+
         console.log('Sending student data:', studentData);
         res.json(studentData);
     } catch (error) {
@@ -191,7 +168,7 @@ app.get('/api/students/:id', (req, res) => {
 app.post('/api/students', upload.fields([
     { name: 'photo', maxCount: 1 },
     { name: 'certificates', maxCount: 10 }
-]), (req, res) => {
+]), async (req, res) => {
     try {
         console.log('Received request to add student');
         console.log('Request body:', req.body);
@@ -208,11 +185,11 @@ app.post('/api/students', upload.fields([
             return res.status(400).json({ message: 'الرجاء إدخال السورة الحالية' });
         }
 
-        const data = readStudentsData();
-        
+        const data = await readStudentsData();
+
         // Generate a unique ID
         const id = Date.now().toString();
-        
+
         // Process the photo file
         let photoPath = '';
         if (req.files && req.files.photo && req.files.photo[0]) {
@@ -240,7 +217,7 @@ app.post('/api/students', upload.fields([
         };
 
         data.students.push(newStudent);
-        writeStudentsData(data);
+        await writeStudentsData(data);
 
         // Remove password before sending response
         const { password, ...studentResponse } = newStudent;
@@ -251,13 +228,13 @@ app.post('/api/students', upload.fields([
     }
 });
 
-app.post('/api/students/new', upload.single('photo'), (req, res) => {
+app.post('/api/students/new', upload.single('photo'), async (req, res) => {
     try {
-        const studentsData = readStudentsData();
-        
+        const studentsData = await readStudentsData();
+
         // إنشاء معرف فريد للطالب
         const studentId = Date.now().toString();
-        
+
         const newStudent = {
             id: studentId,
             name: req.body.name,
@@ -282,7 +259,7 @@ app.post('/api/students/new', upload.single('photo'), (req, res) => {
         };
 
         studentsData.students.push(newStudent);
-        writeStudentsData(studentsData);
+        await writeStudentsData(studentsData);
 
         res.status(201).json({ message: 'تم إضافة الطالب بنجاح', student: newStudent });
     } catch (error) {
@@ -291,15 +268,15 @@ app.post('/api/students/new', upload.single('photo'), (req, res) => {
     }
 });
 
-app.put('/api/students/:id', upload.single('photo'), (req, res) => {
+app.put('/api/students/:id', upload.single('photo'), async (req, res) => {
     try {
         console.log('Received update request for student:', req.params.id);
         console.log('Request body:', req.body);
 
-        const data = readStudentsData();
+        const data = await readStudentsData();
         const studentId = req.params.id;
         const studentIndex = data.students.findIndex(s => s.id === studentId);
-        
+
         if (studentIndex === -1) {
             console.log('Student not found:', studentId);
             return res.status(404).json({ error: 'Student not found' });
@@ -316,7 +293,7 @@ app.put('/api/students/:id', upload.single('photo'), (req, res) => {
             if (req.body.sessionsAttended !== undefined) {
                 updatedStudent.sessionsAttended = req.body.sessionsAttended;
             }
-        } 
+        }
         // Handle full student update
         else {
             // Update basic info
@@ -357,10 +334,10 @@ app.put('/api/students/:id', upload.single('photo'), (req, res) => {
 
         // Update the student data
         data.students[studentIndex] = updatedStudent;
-        
+
         // Write to both files
-        writeStudentsData(data);
-        
+        await writeStudentsData(data);
+
         console.log('Student updated successfully:', updatedStudent);
         res.json(updatedStudent);
     } catch (error) {
@@ -369,19 +346,19 @@ app.put('/api/students/:id', upload.single('photo'), (req, res) => {
     }
 });
 
-app.delete('/api/students/:id', (req, res) => {
+app.delete('/api/students/:id', async (req, res) => {
     try {
-        const data = readStudentsData();
+        const data = await readStudentsData();
         const studentId = req.params.id;
-        
+
         const initialLength = data.students.length;
         data.students = data.students.filter(student => student.id !== studentId);
-        
+
         if (data.students.length === initialLength) {
             return res.status(404).json({ message: 'الطالب غير موجود' });
         }
-        
-        writeStudentsData(data);
+
+        await writeStudentsData(data);
         res.json({ message: 'تم حذف الطالب بنجاح' });
     } catch (error) {
         console.error('Error deleting student:', error);
@@ -396,18 +373,18 @@ app.post('/api/student/login', async (req, res) => {
         console.log('Login attempt for:', { studentName, password });
 
         // Read students data
-        const studentsData = readStudentsData();
+        const studentsData = await readStudentsData();
         console.log('Total students found:', studentsData.students.length);
-        
+
         // Normalize and clean the input name
         const normalizeArabicText = (text) => {
             return text.trim()
-                      .normalize('NFKC')  // Normalize Unicode representation
-                      .replace(/\s+/g, ' '); // Replace multiple spaces with single space
+                .normalize('NFKC')  // Normalize Unicode representation
+                .replace(/\s+/g, ' '); // Replace multiple spaces with single space
         };
 
         const normalizedInputName = normalizeArabicText(studentName);
-        
+
         // Find student with matching credentials
         const student = studentsData.students.find(s => {
             const normalizedStoredName = normalizeArabicText(s.name);
@@ -424,9 +401,9 @@ app.post('/api/student/login', async (req, res) => {
 
         if (!student) {
             console.log('Login failed: Invalid credentials');
-            return res.status(401).json({ 
-                success: false, 
-                error: 'اسم الطالب أو الرقم السري غير صحيح' 
+            return res.status(401).json({
+                success: false,
+                error: 'اسم الطالب أو الرقم السري غير صحيح'
             });
         }
 
@@ -445,9 +422,9 @@ app.post('/api/student/login', async (req, res) => {
         });
     } catch (error) {
         console.error('Login error:', error);
-        res.status(500).json({ 
-            success: false, 
-            error: 'حدث خطأ في تسجيل الدخول' 
+        res.status(500).json({
+            success: false,
+            error: 'حدث خطأ في تسجيل الدخول'
         });
     }
 });
@@ -502,9 +479,9 @@ app.post('/api/admin/login', (req, res) => {
 });
 
 // إضافة نقطة نهاية للطلاب المتميزين
-app.get('/api/outstanding-students', (req, res) => {
+app.get('/api/outstanding-students', async (req, res) => {
     try {
-        const studentsData = readStudentsData();
+        const studentsData = await readStudentsData();
         const outstandingStudents = studentsData.students
             .filter(student => student.evaluation === 'ممتاز')
             .map(student => ({
@@ -517,7 +494,6 @@ app.get('/api/outstanding-students', (req, res) => {
                 notes: student.notes,
                 sessionsAttended: student.sessionsAttended,
                 certificates: student.certificates,
-
                 photo: student.photo
             }));
 
@@ -556,15 +532,15 @@ function authenticateStudent(req, res, next) {
     }
 }
 
-app.get('/api/student/:id', authenticateStudent, (req, res) => {
+app.get('/api/student/:id', authenticateStudent, async (req, res) => {
     try {
         const studentId = req.params.id;
-        
+
         if (!studentId) {
             return res.status(400).json({ error: 'معرف الطالب مطلوب' });
         }
-        
-        const studentsData = readStudentsData();
+
+        const studentsData = await readStudentsData();
         const student = studentsData.students.find(s => s.id === studentId);
 
         if (!student) {
@@ -586,9 +562,9 @@ app.use((err, req, res, next) => {
 });
 
 // إضافة نقطة نهاية للطلاب المتميزين
-app.get('/api/outstanding-students', (req, res) => {
+app.get('/api/outstanding-students', async (req, res) => {
     try {
-        const studentsData = readStudentsData();
+        const studentsData = await readStudentsData();
         const outstandingStudents = studentsData.students
             .filter(student => student.evaluation === 'ممتاز')
             .map(student => ({
