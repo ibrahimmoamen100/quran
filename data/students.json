@@ -521,7 +521,7 @@
       "id": "1738581464811",
       "name": "عبدالرحمن محمد",
       "password": "1234",
-      "currentSurah": "الصف 5",
+      "currentSurah": "الصف 8",
       "lastSurah": "الطلاق + النبأ",
       "paymentType": "perMonth",
       "schedule": [
@@ -547,7 +547,7 @@
       "id": "1738581724489",
       "name": "يوسف محمد",
       "password": "1234",
-      "currentSurah": "الغاشيه",
+      "currentSurah": "الغاشيه 9/10",
       "lastSurah": "الكوثر + الماعون + قريس",
       "paymentType": "perMonth",
       "schedule": [
@@ -560,38 +560,12 @@
           "time": "16:00"
         }
       ],
-      "notes": "يوسف مستواه كويس ولكن بيسرح كثير في الحلقه ممكن بسبب سرحانه ما يركزش علي الايه و يقولها غلط وانا بقرأهالو",
+      "notes": "اللهم بارك قرأته للقرأن ممتازه مقارنتا بسنه \r\nوحفظه اتحسن ربنا يحفظه و يبارك فيه",
       "photo": "/uploads/1741260226939-190348928.jpg",
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 5,
       "evaluation": "جيد",
-      "currentMonthPaid": false,
-      "lastPaymentDate": null
-    },
-    {
-      "id": "1741086203280",
-      "name": "سيد محسن",
-      "password": "1234",
-      "currentSurah": "المنافقون 12ddd",
-      "lastSurah": "التحريم + عبسيddd",
-      "paymentType": "perSession",
-      "schedule": [
-        {
-          "day": "الجمعة",
-          "time": "12:12"
-        }
-      ],
-      "notes": "سيبسيبسسسسسسسؤؤؤؤؤؤؤؤؤؤؤؤ",
-      "photo": "/uploads/1741213992899-586509287.png",
-      "certificates": [
-        "/certificates/1741174986564-249890889.jpg",
-        "/certificates/1741174986572-848780599.jpg",
-        "/certificates/1741174986580-645452292.jpg"
-      ],
-      "sessionCount": 0,
-      "sessionsAttended": 3,
-      "evaluation": "جيد جداً",
       "currentMonthPaid": false,
       "lastPaymentDate": null
     },
