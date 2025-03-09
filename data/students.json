@@ -521,8 +521,8 @@
       "id": "1738581464811",
       "name": "عبدالرحمن محمد",
       "password": "1234",
-      "currentSurah": "المنافقون",
-      "lastSurah": "التحريم + عبسي",
+      "currentSurah": "الصف 5",
+      "lastSurah": "الطلاق + النبأ",
       "paymentType": "perMonth",
       "schedule": [
         {
@@ -547,7 +547,7 @@
       "id": "1738581724489",
       "name": "يوسف محمد",
       "password": "1234",
-      "currentSurah": "الفجر",
+      "currentSurah": "الغاشيه",
       "lastSurah": "الكوثر + الماعون + قريس",
       "paymentType": "perMonth",
       "schedule": [
