@@ -711,7 +711,7 @@
     },
     {
       "id": "1741551950082",
-      "name": "انس احمد",
+      "name": "انس محمد",
       "password": "1234",
       "currentSurah": "النازعات 8/10",
       "lastSurah": "الغاشيه + الهمزه",
@@ -728,6 +728,32 @@
       "sessionCount": 0,
       "sessionsAttended": 1,
       "evaluation": "جيد جداً"
+    },
+    {
+      "id": "1741552261863",
+      "name": "معاذ عبدالرحمن",
+      "password": "1234",
+      "currentSurah": "الزخرف",
+      "lastSurah": "المرسلات",
+      "paymentType": "perMonth",
+      "schedule": [
+        {
+          "day": "الإثنين",
+          "time": "14:30"
+        },
+        {
+          "day": "الجمعة",
+          "time": "14:30"
+        }
+      ],
+      "notes": "لا تنسي الورد اليومي من الذكر 50 صلاه علي النبي",
+      "photo": "/uploads/1741552261843-934081463.jpg",
+      "certificates": [],
+      "sessionCount": 0,
+      "sessionsAttended": 1,
+      "evaluation": "جيد",
+      "currentMonthPaid": false,
+      "lastPaymentDate": null
     }
   ]
 }
