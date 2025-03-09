@@ -78,7 +78,7 @@ function updateStudentInfo(student) {
     document.getElementById('last-surah').textContent = student.lastSurah || 'غير محدد';
     document.getElementById('evaluation').textContent = student.evaluation || 'غير محدد';
     document.getElementById('sessions-attended').textContent = `${student.sessionsAttended || 0} من 8 حلقات`;
-    document.getElementById('payment-type').textContent = student.paymentType === 'perSession' ? 'بالشهر' : 'بالحلقه';
+    document.getElementById('payment-type').textContent = student.paymentType === 'perSession' ? 'بالحلقه' : 'بالشهر';
     document.getElementById('current-month-paid').textContent = student.currentMonthPaid ? 'نعم' : 'لا';
     document.getElementById('last-payment-date').textContent = student.lastPaymentDate || 'غير محدد';
     document.getElementById('notes').textContent = student.notes || 'لا توجد ملاحظات';
