@@ -16,7 +16,7 @@
         }
       ],
       "evaluation": "ممتاز",
-      "sessionsAttended": 2,
+      "sessionsAttended": 8,
       "paymentType": "perSession",
       "notes": "الورد اليومي 50 سبحان الله وبحمده سبحان الله العظيم",
       "photo": "/uploads/1741259806379-103673962.jpg",
@@ -45,7 +45,7 @@
         }
       ],
       "evaluation": "ممتاز",
-      "sessionsAttended": 0,
+      "sessionsAttended": 8,
       "paymentType": "perSession",
       "notes": "الورد اليومي 50 مره سبحان الله وبحمده سبحان الله العظيم",
       "photo": "/uploads/1741259813457-168981177.jpg",
@@ -74,7 +74,7 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 0,
+      "sessionsAttended": 8,
       "paymentType": "perSession",
       "notes": "الورد اليومي 50 صلاه علي النبي \r\n",
       "photo": "/uploads/1741259826670-758555645.jpg",
@@ -102,7 +102,7 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 0,
+      "sessionsAttended": 8,
       "paymentType": "perSession",
       "notes": "الورد اليومي 50 صلاه علي النبي ",
       "photo": "/uploads/1741259836717-990701566.jpg",
@@ -688,6 +688,46 @@
       "sessionCount": 0,
       "sessionsAttended": 1,
       "evaluation": "جيد"
+    },
+    {
+      "id": "1741551772759",
+      "name": "سيف اسامه",
+      "password": "1234",
+      "currentSurah": "الهمزه",
+      "lastSurah": "قريش + الماعون",
+      "paymentType": "perSession",
+      "schedule": [
+        {
+          "day": "الجمعة",
+          "time": "14:00"
+        }
+      ],
+      "notes": "نطقه للأيات صعب قليلا\r\nولكن يحب الحفظ وحريص اللهم بارك علي الصلاه ويحب القرأن",
+      "photo": "/uploads/1741551772736-256670928.jpg",
+      "certificates": [],
+      "sessionCount": 0,
+      "sessionsAttended": 1,
+      "evaluation": "جيد"
+    },
+    {
+      "id": "1741551950082",
+      "name": "انس احمد",
+      "password": "1234",
+      "currentSurah": "النازعات 8/10",
+      "lastSurah": "الغاشيه + الهمزه",
+      "paymentType": "perSession",
+      "schedule": [
+        {
+          "day": "الجمعة",
+          "time": "14:00"
+        }
+      ],
+      "notes": "مستواه كويس جدا اللهم بارك \r\nولكن يحب دائما اظهار اعمال الخير الذي يفعلها هذا طبيعي في هذا السن ولكن الافضل ان يخفي هذه الاعمال ويجعلها سرا بينه وبين الله ",
+      "photo": "/uploads/1741551950062-584193205.jpg",
+      "certificates": [],
+      "sessionCount": 0,
+      "sessionsAttended": 1,
+      "evaluation": "جيد جداً"
     }
   ]
 }
