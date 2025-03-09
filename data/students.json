@@ -33,7 +33,7 @@
       "id": "1734168086134",
       "name": "مالك محمد",
       "password": "1234",
-      "currentSurah": "المؤمنون 10/9",
+      "currentSurah": "المؤمنون 9/10",
       "schedule": [
         {
           "day": "السبت",
@@ -202,7 +202,7 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 5,
+      "sessionsAttended": 6,
       "paymentType": "perMonth",
       "notes": "الورد اليومي 20 مره سبحان الله",
       "photo": "/uploads/1741259878151-447750460.jpg",
@@ -218,7 +218,7 @@
       "id": "1734217143624",
       "name": "يحيي علي ",
       "password": "1234",
-      "currentSurah": "المرسلات",
+      "currentSurah": "الانسان 7/10",
       "schedule": [
         {
           "day": "السبت",
@@ -230,7 +230,7 @@
         }
       ],
       "evaluation": "جيد",
-      "sessionsAttended": 5,
+      "sessionsAttended": 6,
       "paymentType": "perMonth",
       "notes": "حفظ عم \r\nالمراجعه : المطففين الي 13 + الناس + الفلق + الاخلاص",
       "photo": "/uploads/1741259892124-281938485.jpg",
@@ -240,7 +240,7 @@
       "currentMonthPaid": true,
       "lastPaymentDate": "2025-03-05T11:12:43.896Z",
       "createdAt": "2024-12-14T22:59:03.625Z",
-      "lastSurah": "البلد"
+      "lastSurah": "النازعات"
     },
     {
       "id": "1734217237180",
@@ -594,6 +594,126 @@
       "evaluation": "جيد جداً",
       "currentMonthPaid": false,
       "lastPaymentDate": null
+    },
+    {
+      "id": "1741550230876",
+      "name": "محمد مكشه",
+      "password": "1234",
+      "currentSurah": "الجن 9/10",
+      "lastSurah": "عبسى",
+      "paymentType": "perSession",
+      "schedule": [
+        {
+          "day": "الإثنين",
+          "time": "21:30"
+        },
+        {
+          "day": "الخميس",
+          "time": "21:30"
+        }
+      ],
+      "notes": "لا تنسي الورد اليومي من الذكر 50 صلاه علي النبي ",
+      "photo": "/uploads/1741550230851-343685626.jpg",
+      "certificates": [],
+      "sessionCount": 0,
+      "sessionsAttended": 1,
+      "evaluation": "ممتاز"
+    },
+    {
+      "id": "1741550329538",
+      "name": "يوسف عيد",
+      "password": "1234",
+      "currentSurah": "الجن 9/10",
+      "lastSurah": "عبسى",
+      "paymentType": "perSession",
+      "schedule": [
+        {
+          "day": "الإثنين",
+          "time": "21:30"
+        },
+        {
+          "day": "الخميس",
+          "time": "21:30"
+        }
+      ],
+      "notes": "لا تنسي الورد اليومي من الذكر 50 استغفر الله العظيم",
+      "photo": "/uploads/1741550329524-779073564.jpg",
+      "certificates": [],
+      "sessionCount": 0,
+      "sessionsAttended": 1,
+      "evaluation": "ممتاز"
+    },
+    {
+      "id": "1741550481996",
+      "name": "لوجين سيد",
+      "password": "1234",
+      "currentSurah": "الجن 7/10",
+      "lastSurah": "الهمزه",
+      "paymentType": "perSession",
+      "schedule": [
+        {
+          "day": "الإثنين",
+          "time": "21:30"
+        },
+        {
+          "day": "الخميس",
+          "time": "21:30"
+        }
+      ],
+      "notes": "لوجين ساعات مش بتكون مركزه كويس في الحلقه \r\nلا تنسي الورد اليومي من الذكر 20 مره الحمد لله",
+      "photo": "/uploads/1741550481972-378201477.jpg",
+      "certificates": [],
+      "sessionCount": 0,
+      "sessionsAttended": 1,
+      "evaluation": "جيد"
+    },
+    {
+      "id": "1741550602527",
+      "name": "حسين احمد",
+      "password": "1234",
+      "currentSurah": "الجن ",
+      "lastSurah": "الانفطار",
+      "paymentType": "perSession",
+      "schedule": [
+        {
+          "day": "الإثنين",
+          "time": "21:30"
+        },
+        {
+          "day": "الخميس",
+          "time": "21:30"
+        }
+      ],
+      "notes": "لا تنسي الورد اليومي 40 صلاه علي النبي ",
+      "photo": "/uploads/1741550602507-584581518.jpg",
+      "certificates": [],
+      "sessionCount": 0,
+      "sessionsAttended": 1,
+      "evaluation": "جيد جداً"
+    },
+    {
+      "id": "1741550754593",
+      "name": "حسن احمد",
+      "password": "1234",
+      "currentSurah": "الفتح 7/10",
+      "lastSurah": "الوجه الاول من سوره ق",
+      "paymentType": "perSession",
+      "schedule": [
+        {
+          "day": "الإثنين",
+          "time": "21:30"
+        },
+        {
+          "day": "الخميس",
+          "time": "21:30"
+        }
+      ],
+      "notes": "للأسف مستواه بيقل جدا بسبب عدم الحفظ \r\nلا تنسي الورد اليومي 50 صلاه علي النبي ",
+      "photo": "/uploads/1741550754567-124615421.jpg",
+      "certificates": [],
+      "sessionCount": 0,
+      "sessionsAttended": 1,
+      "evaluation": "جيد"
     }
   ]
 }
