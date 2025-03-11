@@ -371,7 +371,7 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 5,
+      "sessionsAttended": 6,
       "paymentType": "perMonth",
       "notes": "الورد اليومي 20 سبحان الله وبحمده سبحان الله العظيم",
       "photo": "/uploads/1741259963522-663333336.jpg",
@@ -398,8 +398,8 @@
           "time": "22:00"
         }
       ],
-      "evaluation": "جيد",
-      "sessionsAttended": 5,
+      "evaluation": "جيد جداً",
+      "sessionsAttended": 6,
       "paymentType": "perMonth",
       "notes": "الورد اليومي : 50 صلاه علي النبي يوميا ",
       "photo": "/uploads/1741259997808-772880897.jpg",
@@ -573,8 +573,8 @@
       "id": "1741550230876",
       "name": "محمد مكشه",
       "password": "1234",
-      "currentSurah": "الجن 9/10",
-      "lastSurah": "عبسى",
+      "currentSurah": "الجن 8.5/10",
+      "lastSurah": "القيامه + المدثر",
       "paymentType": "perSession",
       "schedule": [
         {
@@ -598,7 +598,7 @@
       "name": "يوسف عيد",
       "password": "1234",
       "currentSurah": "الجن 9/10",
-      "lastSurah": "عبسى",
+      "lastSurah": "القيامه + المدثر",
       "paymentType": "perSession",
       "schedule": [
         {
@@ -622,7 +622,7 @@
       "name": "لوجين سيد",
       "password": "1234",
       "currentSurah": "الجن 7/10",
-      "lastSurah": "الهمزه",
+      "lastSurah": "القيامه + المدثر",
       "paymentType": "perSession",
       "schedule": [
         {
@@ -645,7 +645,7 @@
       "id": "1741550602527",
       "name": "حسين احمد",
       "password": "1234",
-      "currentSurah": "الجن ",
+      "currentSurah": "الجن 10/10",
       "lastSurah": "الانفطار",
       "paymentType": "perSession",
       "schedule": [
