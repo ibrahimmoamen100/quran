@@ -16,7 +16,7 @@
         }
       ],
       "evaluation": "ممتاز",
-      "sessionsAttended": 8,
+      "sessionsAttended": 0,
       "paymentType": "perSession",
       "notes": "الورد اليومي 50 سبحان الله وبحمده سبحان الله العظيم",
       "photo": "/uploads/1741259806379-103673962.jpg",
@@ -45,7 +45,7 @@
         }
       ],
       "evaluation": "ممتاز",
-      "sessionsAttended": 8,
+      "sessionsAttended": 0,
       "paymentType": "perSession",
       "notes": "الورد اليومي 50 مره سبحان الله وبحمده سبحان الله العظيم",
       "photo": "/uploads/1741259813457-168981177.jpg",
@@ -74,7 +74,7 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 8,
+      "sessionsAttended": 0,
       "paymentType": "perSession",
       "notes": "الورد اليومي 50 صلاه علي النبي \r\n",
       "photo": "/uploads/1741259826670-758555645.jpg",
@@ -102,7 +102,7 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 8,
+      "sessionsAttended": 0,
       "paymentType": "perSession",
       "notes": "الورد اليومي 50 صلاه علي النبي ",
       "photo": "/uploads/1741259836717-990701566.jpg",
@@ -343,15 +343,15 @@
         }
       ],
       "evaluation": "جيد",
-      "sessionsAttended": 6,
+      "sessionsAttended": 1,
       "paymentType": "perMonth",
       "notes": "الورد اليومي يا حمزه 50 صلاه علي النبي ",
       "photo": "/uploads/1741259950607-702439824.jpg",
       "certificates": [
         "/certificates/ama.png"
       ],
-      "currentMonthPaid": true,
-      "lastPaymentDate": "2025-03-05T11:17:20.997Z",
+      "currentMonthPaid": false,
+      "lastPaymentDate": null,
       "createdAt": "2024-12-14T23:13:50.300Z",
       "lastSurah": "التكوير"
     },
@@ -748,6 +748,32 @@
       ],
       "notes": "لا تنسي الورد اليومي من الذكر 50 صلاه علي النبي",
       "photo": "/uploads/1741552261843-934081463.jpg",
+      "certificates": [],
+      "sessionCount": 0,
+      "sessionsAttended": 1,
+      "evaluation": "جيد",
+      "currentMonthPaid": false,
+      "lastPaymentDate": null
+    },
+    {
+      "id": "1741656076145",
+      "name": "مكه احمد",
+      "password": "1234",
+      "currentSurah": "الفجر ",
+      "lastSurah": "التين + العلق",
+      "paymentType": "perSession",
+      "schedule": [
+        {
+          "day": "الإثنين",
+          "time": "21:30"
+        },
+        {
+          "day": "الخميس",
+          "time": "21:30"
+        }
+      ],
+      "notes": "الصلاه يا مكه ",
+      "photo": "/uploads/1741656076104-669378880.jpg",
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 1,

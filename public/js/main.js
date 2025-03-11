@@ -4,6 +4,7 @@ const editStudentForm = document.getElementById('editStudentForm');
 const studentsList = document.getElementById('studentsList');
 const editModal = document.getElementById('editStudentModal');
 const currentPhoto = document.getElementById('currentPhoto');
+const studentSearch = document.getElementById('studentSearch');
 
 // Utility Functions
 
@@ -217,7 +218,14 @@ function incrementSessions(id, currentCount) {
 }
 
 // Load students when page loads
+// Load students when page loads
 loadStudents();
+
+// Search functionality
+studentSearch.addEventListener('input', function() {
+    const searchTerm = this.value.trim().toLowerCase();
+    loadStudents(searchTerm);
+});
 
 // Add student form submission
 addStudentForm.addEventListener('submit', async (e) => {
@@ -319,15 +327,34 @@ document.getElementById('editStudentForm').addEventListener('submit', async (e) 
 });
 
 // Load students from server
-function loadStudents() {
+function loadStudents(searchTerm = '') {
     fetch('/api/students')
         .then(response => response.json())
         .then(students => {
             console.log('Server response:', students);
             const tbody = document.getElementById('studentsList');
             tbody.innerHTML = '';
+
+            let filteredStudents = students;
+            if (searchTerm) {
+                filteredStudents = students.filter(student =>
+                    student.name.toLowerCase().includes(searchTerm)
+                );
+
+                // Prioritize the matching student
+                const matchingStudent = filteredStudents.find(student =>
+                    student.name.toLowerCase() === searchTerm
+                );
+
+                if (matchingStudent) {
+                    filteredStudents = [
+                        matchingStudent,
+                        ...filteredStudents.filter(student => student !== matchingStudent)
+                    ];
+                }
+            }
             
-            students.forEach(student => {
+            filteredStudents.forEach(student => {
                 const row = document.createElement('tr');
                 row.className = 'hover:bg-gray-50';
                 row.innerHTML = `
