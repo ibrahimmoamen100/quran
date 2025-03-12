@@ -4,7 +4,7 @@
       "id": "1734167825077",
       "name": "معاذ محمد",
       "password": "1234",
-      "currentSurah": "الصافات 10\\9",
+      "currentSurah": "يس 10\\9",
       "schedule": [
         {
           "day": "السبت",
@@ -27,13 +27,13 @@
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T09:17:05.078Z",
-      "lastSurah": "الاحقاف 9/10 + الزمر 9.5/10"
+      "lastSurah": "الجاثيه 8.5/10 + الزمر 9/10"
     },
     {
       "id": "1734168086134",
       "name": "مالك محمد",
       "password": "1234",
-      "currentSurah": "المؤمنون 9/10",
+      "currentSurah": "المؤمنون 8/10",
       "schedule": [
         {
           "day": "السبت",
@@ -56,13 +56,13 @@
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T09:21:26.135Z",
-      "lastSurah": "الصافات 10/9  + الاحزاب 10\\10"
+      "lastSurah": "يس 9/10  + الاحزاب 10\\9.5"
     },
     {
       "id": "1734215942371",
       "name": "محمد احمد",
       "password": "1234",
-      "currentSurah": "الحجرات 9/10",
+      "currentSurah": "الحجرات 8/10",
       "schedule": [
         {
           "day": "السبت",
@@ -84,13 +84,13 @@
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T22:39:02.371Z",
-      "lastSurah": "التغابن 9/10 | المزمل 9/10"
+      "lastSurah": "التغابن 9/10 | المزمل 7.5/10"
     },
     {
       "id": "1734216159737",
       "name": "ادم احمد",
       "password": "1234",
-      "currentSurah": "الحديد 9/10",
+      "currentSurah": "الحديد 6.5/10",
       "schedule": [
         {
           "day": "السبت",
@@ -101,7 +101,7 @@
           "time": "15:00"
         }
       ],
-      "evaluation": "جيد جداً",
+      "evaluation": "جيد",
       "sessionsAttended": 0,
       "paymentType": "perSession",
       "notes": "الورد اليومي 50 صلاه علي النبي ",
@@ -112,7 +112,7 @@
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T22:42:39.737Z",
-      "lastSurah": "الطلاق + المزمل 9/10"
+      "lastSurah": "الطلاق 7.5/10 + الجن 8.5/10"
     },
     {
       "id": "1734216333655",
