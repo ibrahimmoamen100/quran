@@ -359,7 +359,7 @@
       "id": "1734262969541",
       "name": "البراء احمد",
       "password": "1234",
-      "currentSurah": "الفتح 8.5\\10",
+      "currentSurah": "محمد 8.5\\10",
       "schedule": [
         {
           "day": "الأحد",
@@ -371,7 +371,7 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 6,
+      "sessionsAttended": 7,
       "paymentType": "perMonth",
       "notes": "الورد اليومي 20 سبحان الله وبحمده سبحان الله العظيم",
       "photo": "/uploads/1741259963522-663333336.jpg",
@@ -387,7 +387,7 @@
       "id": "1734263567588",
       "name": "حمزه احمد",
       "password": "1234",
-      "currentSurah": "المجادله 9\\10",
+      "currentSurah": "الطور 7.5/10",
       "schedule": [
         {
           "day": "الأحد",
@@ -399,7 +399,7 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 6,
+      "sessionsAttended": 7,
       "paymentType": "perMonth",
       "notes": "الورد اليومي : 50 صلاه علي النبي يوميا ",
       "photo": "/uploads/1741259997808-772880897.jpg",
@@ -733,7 +733,7 @@
       "id": "1741552261863",
       "name": "معاذ عبدالرحمن",
       "password": "1234",
-      "currentSurah": "الزخرف",
+      "currentSurah": "الزخرف 8/10",
       "lastSurah": "المرسلات",
       "paymentType": "perMonth",
       "schedule": [
@@ -750,7 +750,7 @@
       "photo": "/uploads/1741552261843-934081463.jpg",
       "certificates": [],
       "sessionCount": 0,
-      "sessionsAttended": 1,
+      "sessionsAttended": 5,
       "evaluation": "جيد",
       "currentMonthPaid": false,
       "lastPaymentDate": null
@@ -778,6 +778,32 @@
       "sessionCount": 0,
       "sessionsAttended": 1,
       "evaluation": "جيد",
+      "currentMonthPaid": false,
+      "lastPaymentDate": null
+    },
+    {
+      "id": "1741968262844",
+      "name": "ساره عبدالرحمن",
+      "password": "1234",
+      "currentSurah": "الزخرف 8.5/10",
+      "lastSurah": "المرسلات",
+      "paymentType": "perMonth",
+      "schedule": [
+        {
+          "day": "الإثنين",
+          "time": "14:00"
+        },
+        {
+          "day": "الجمعة",
+          "time": "13:00"
+        }
+      ],
+      "notes": "",
+      "photo": "/uploads/1741968262830-432292999.jpg",
+      "certificates": [],
+      "sessionCount": 0,
+      "sessionsAttended": 5,
+      "evaluation": "جيد جداً",
       "currentMonthPaid": false,
       "lastPaymentDate": null
     }
