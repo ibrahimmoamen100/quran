@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +9,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+
         body {
             font-family: 'Tajawal', sans-serif;
         }
+
         .modal {
             display: none;
             position: fixed;
@@ -19,8 +22,9 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0,0,0,0.4);
+            background-color: rgba(0, 0, 0, 0.4);
         }
+
         .modal-content {
             background-color: #fefefe;
             margin: 4% auto;
@@ -31,6 +35,7 @@
             border-radius: 8px;
             position: relative;
         }
+
         .close {
             position: absolute;
             right: 10px;
@@ -40,11 +45,13 @@
             font-weight: bold;
             cursor: pointer;
         }
+
         .close:hover {
             color: black;
         }
     </style>
 </head>
+
 <body class="bg-gray-50 ">
     <!-- Login Form -->
     <div id="loginForm" class="min-h-screen flex items-center justify-center">
@@ -70,8 +77,10 @@
                 <div class="flex justify-between items-center py-4">
                     <div class="text-xl font-bold">لوحة تحكم الإدارة</div>
                     <div class="space-x-4">
-                        <button onclick="logout()" class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg ml-4">تسجيل الخروج</button>
-                        <a href="/" class="bg-green-700 hover:bg-green-800 px-4 py-2 rounded-lg">العودة للصفحة الرئيسية</a>
+                        <button onclick="logout()" class="bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg ml-4">تسجيل
+                            الخروج</button>
+                        <a href="/" class="bg-green-700 hover:bg-green-800 px-4 py-2 rounded-lg">العودة للصفحة
+                            الرئيسية</a>
                     </div>
                 </div>
             </div>
@@ -79,7 +88,7 @@
 
         <div class=" px-4 py-8">
             <h1 class="text-3xl font-bold text-center mb-8 text-green-600">نظام إدارة تعليم القرآن للشيخ إبراهيم</h1>
-            
+
             <!-- إضافة طالب جديد -->
             <div class="bg-white rounded-lg shadow-md p-6 mb-8">
                 <h2 class="text-xl font-semibold mb-4">إضافة طالب جديد</h2>
@@ -90,12 +99,13 @@
                             <input type="text" name="name" required class="w-full p-2 border rounded-md">
                         </div>
                         <div>
-                            <label for="password" class="block text-sm font-medium text-gray-700 mb-1">الرقم السري للطالب</label>
+                            <label for="password" class="block text-sm font-medium text-gray-700 mb-1">الرقم السري
+                                للطالب</label>
                             <div class="relative">
                                 <input type="password" id="password" name="password" required
                                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-green-500"
                                     placeholder="أدخل الرقم السري">
-                                <button type="button" id="togglePassword" 
+                                <button type="button" id="togglePassword"
                                     class="absolute left-2 top-1/2 transform -translate-y-1/2 text-gray-500 hover:text-gray-700">
                                     <i class="fas fa-eye"></i>
                                 </button>
@@ -103,14 +113,29 @@
                         </div>
                     </div>
                     <div>
-        
-                        <div>
-                            <label class="block text-sm mb-1">السورة الحالية</label>
-                            <input type="text" name="currentSurah" required class="w-full p-2 border rounded-md">
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                            <div>
+                                <label class="block text-sm mb-1">السورة الحالية</label>
+                                <input type="text" name="currentSurah" required class="w-full p-2 border rounded-md">
+                            </div>
+                            <div>
+                                <label class="block text-sm mb-1"> تقييم السورة الحالية </label>
+                                <input type="text" name="currentSurahRate" required
+                                    class="w-full p-2 border rounded-md">
+                            </div>
                         </div>
-                        <div>
-                            <label class="block text-sm mb-1"> المراجعه</label>
-                            <input type="text" name="lastSurah" required class="w-full p-2 border rounded-md">
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-sm mb-1"> المراجعه</label>
+                                <input type="text" name="lastSurah" required class="w-full p-2 border rounded-md">
+                            </div>
+                            <div>
+                                <label class="block text-sm mb-1"> تقييم المراجعه</label>
+                                <input type="text" name="lastSurahRate" required class="w-full p-2 border rounded-md">
+                            </div>
                         </div>
                         <div>
                             <label class="block text-sm mb-1">نوع الدفع</label>
@@ -125,11 +150,12 @@
                         </div>
                         <div>
                             <label class="block text-sm mb-1">شهادات الطالب</label>
-                            <input type="file" name="certificates" accept="image/*" multiple class="w-full p-2 border rounded-md">
+                            <input type="file" name="certificates" accept="image/*" multiple
+                                class="w-full p-2 border rounded-md">
                             <p class="text-sm text-gray-500 mt-1">يمكنك اختيار عدة صور للشهادات</p>
                         </div>
                     </div>
-                    
+
                     <div>
                         <label class="block text-sm mb-1">المواعيد</label>
                         <div id="scheduleContainer" class="space-y-2">
@@ -153,7 +179,8 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="button" onclick="addScheduleItem()" class="mt-2 text-green-600 hover:text-green-800 text-sm">
+                        <button type="button" onclick="addScheduleItem()"
+                            class="mt-2 text-green-600 hover:text-green-800 text-sm">
                             + إضافة موعد آخر
                         </button>
                     </div>
@@ -161,6 +188,10 @@
                     <div>
                         <label class="block text-sm mb-1">ملاحظات</label>
                         <textarea name="notes" class="w-full p-2 border rounded-md" rows="3"></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-sm mb-1">النقاط</label>
+                        <textarea name="points" class="w-full p-2 border rounded-md" rows="3"></textarea>
                     </div>
 
                     <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700">
@@ -172,21 +203,40 @@
             <!-- قائمة الطلاب -->
             <div class="bg-white rounded-lg shadow-md p-6 w-screen m-auto">
                 <h2 class="text-xl font-semibold mb-4">قائمة الطلاب</h2>
-                <input type="text" id="studentSearch" class="w-full p-2 border rounded-md mb-4" placeholder="ابحث عن اسم الطالب">
+                <input type="text" id="studentSearch" class="w-full p-2 border rounded-md mb-4"
+                    placeholder="ابحث عن اسم الطالب">
                 <div class=" max-w-full">
                     <div class="inline-block min-w-full shadow-md rounded-lg ">
                         <table class="min-w-full divide-y divide-gray-200">
                             <thead class="bg-gray-50">
                                 <tr>
-                                    <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider sticky right-0 bg-gray-50">الصورة</th>
-                                    <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">الاسم</th>
-                                    <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">السورة الحالية</th>
-                                    <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">المواعيد</th>
-                                    <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">عدد الحلقات</th>
-                                    <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">نوع الدفع</th>
-                                    <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">حالة الدفع</th>
-                                    <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">التقييم</th>
-                                    <th class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider sticky left-0 bg-gray-50">إجراءات</th>
+                                    <th
+                                        class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider sticky right-0 bg-gray-50">
+                                        الصورة</th>
+                                    <th
+                                        class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        الاسم</th>
+                                    <th
+                                        class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        السورة الحالية</th>
+                                    <th
+                                        class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        المواعيد</th>
+                                    <th
+                                        class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        عدد الحلقات</th>
+                                    <th
+                                        class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        نوع الدفع</th>
+                                    <th
+                                        class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        حالة الدفع</th>
+                                    <th
+                                        class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                        التقييم</th>
+                                    <th
+                                        class="px-6 py-3 text-right text-xs font-medium text-gray-500 uppercase tracking-wider sticky left-0 bg-gray-50">
+                                        إجراءات</th>
                                 </tr>
                             </thead>
                             <tbody id="studentsList" class="bg-white divide-y divide-gray-200">
@@ -211,15 +261,30 @@
                     </div>
                     <div>
                         <label class="block text-sm mb-1">كلمة المرور</label>
-                        <input type="password" name="password" class="w-full p-2 border rounded-md" placeholder="اتركه فارغاً للاحتفاظ بكلمة المرور الحالية">
+                        <input type="password" name="password" class="w-full p-2 border rounded-md"
+                            placeholder="اتركه فارغاً للاحتفاظ بكلمة المرور الحالية">
                     </div>
-                    <div>
-                        <label class="block text-sm mb-1">السورة الحالية</label>
-                        <input type="text" name="currentSurah" required class="w-full p-2 border rounded-md">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm mb-1">السورة الحالية</label>
+                            <input type="text" name="currentSurah" required class="w-full p-2 border rounded-md">
+                        </div>
+                        <div>
+                            <label class="block text-sm mb-1"> تقييم السورة الحالية </label>
+                            <input type="text" name="currentSurahRate" required class="w-full p-2 border rounded-md">
+                        </div>
                     </div>
-                    <div>
-                        <label class="block text-sm mb-1">المراجعة</label>
-                        <input type="text" name="lastSurah" required class="w-full p-2 border rounded-md">
+
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-sm mb-1">المراجعة</label>
+                            <input type="text" name="lastSurah" required class="w-full p-2 border rounded-md">
+                        </div>
+                        <div>
+                            <label class="block text-sm mb-1">تقييم المراجعه</label>
+                            <input type="text" name="lastSurahRate" required class="w-full p-2 border rounded-md">
+                        </div>
                     </div>
                     <div>
                         <label class="block text-sm mb-1">التقييم</label>
@@ -232,8 +297,13 @@
                         </select>
                     </div>
                     <div>
+                        <label class="block text-sm mb-1">النقاط</label>
+                        <textarea name="points" class="w-full p-2 border rounded-md" rows="3"></textarea>
+                    </div>
+                    <div>
                         <label class="block text-sm mb-1">نوع الدفع</label>
-                        <select name="paymentType" class="w-full p-2 border rounded-md" onchange="toggleEditPaymentStatus(this)">
+                        <select name="paymentType" class="w-full p-2 border rounded-md"
+                            onchange="toggleEditPaymentStatus(this)">
                             <option value="perSession">بالحلقه </option>
                             <option value="perMonth">بالشهر</option>
                         </select>
@@ -243,7 +313,8 @@
                         <div id="editScheduleContainer" class="space-y-4">
                             <!-- Schedule items will be added here -->
                         </div>
-                        <button type="button" onclick="addEditScheduleItem()" class="mt-2 text-green-600 hover:text-green-800 text-sm">
+                        <button type="button" onclick="addEditScheduleItem()"
+                            class="mt-2 text-green-600 hover:text-green-800 text-sm">
                             إضافة موعد جديد
                         </button>
                     </div>
@@ -251,6 +322,7 @@
                         <label class="block text-sm mb-1">ملاحظات</label>
                         <textarea name="notes" class="w-full p-2 border rounded-md" rows="3"></textarea>
                     </div>
+
                     <div>
                         <label class="block text-sm mb-1">الصورة الحالية</label>
                         <img id="currentPhoto" src="" alt="صورة الطالب" class="max-w-xs mt-2 hidden">
@@ -259,7 +331,8 @@
                     <div>
                         <label class="block text-sm mb-1">شهادات الطالب</label>
                         <div id="certificateImages" class="mt-2 flex flex-wrap gap-2"></div>
-                        <input type="file" id="editCertificateImages" name="certificates" accept="image/*" multiple class="w-full p-2 border rounded-md">
+                        <input type="file" id="editCertificateImages" name="certificates" accept="image/*" multiple
+                            class="w-full p-2 border rounded-md">
                         <p class="text-sm text-gray-500 mt-1">يمكنك اختيار عدة صور للشهادات</p>
                     </div>
                     <button type="submit" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700">
@@ -280,5 +353,6 @@
         </div>
 
         <script src="/js/main.js"></script>
-    </body>
+</body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,23 +9,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+
         body {
             font-family: 'Tajawal', sans-serif;
         }
+
         .hover-scale {
             transition: transform 0.3s ease;
         }
+
         .hover-scale:hover {
             transform: scale(1.05);
         }
     </style>
 </head>
+
 <body class="bg-gradient-to-br from-green-50 to-green-100">
     <!-- Navigation (Unchanged) -->
     <nav class="bg-green-600 text-white shadow-lg">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center py-4">
-                <a href="/" class="text-xl font-bold"><img src="/images/logo.png" alt="شعار حلقات تحفيظ القرآن" class="h-28">  </a>
+                <a href="/" class="text-xl font-bold"><img src="/images/logo.png" alt="شعار حلقات تحفيظ القرآن"
+                        class="h-28"> </a>
                 <button id="logout-button" class="hover:text-green-200">
                     <i class="fas fa-sign-out-alt ml-2"></i>
                     تسجيل الخروج
@@ -43,8 +49,8 @@
         <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-4xl mx-auto">
             <!-- Student Profile Header -->
             <div class="flex items-center mb-8 bg-green-50 p-6 rounded-lg flex-col flex-wrap gap-4">
-                <img id="student-image" src="/images/default-avatar.png" alt="صورة الطالب" 
-                     class="w-32 h-32 rounded-full object-cover border-4 border-green-500 shadow-lg">
+                <img id="student-image" src="/images/default-avatar.png" alt="صورة الطالب"
+                    class="w-32 h-32 rounded-full object-cover border-4 border-green-500 shadow-lg">
                 <div class="mr-6">
                     <h1 id="student-name" class="text-2xl font-bold text-green-800 mb-2 "></h1>
                     <p class="text-gray-600 flex items-center">
@@ -55,33 +61,62 @@
             </div>
 
             <!-- Student Details Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-1 gap-6">
                 <!-- Academic Info -->
                 <div class="bg-green-50 rounded-lg p-6 hover-scale shadow-md">
                     <h2 class="text-xl font-bold text-green-800 mb-4 flex items-center">
                         <i class="fas fa-book-open ml-2 text-green-600"></i>
                         المعلومات الأكاديمية
                     </h2>
+                    <h2 class="text-lg font-bold text-green-800 mb-4 flex items-center">
+                        سور الجديد و المراجعه
+                    </h2>
+
                     <div class="space-y-4">
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-x-4 gap-y-5">
                             <div>
-                                <p class="text-gray-600"><i class="fas fa-quran ml-1 text-green-500"></i> السورة الحالية</p>
+                                <p class="text-gray-600"><i class="fas fa-quran ml-1 text-green-500"></i> السورة الحالية
+                                </p>
                                 <p id="current-surah" class="font-semibold text-gray-800"></p>
                             </div>
+                            <div>
+                                <p class="text-gray-600"> <i class="fas fa-quran ml-1 text-green-500"></i>التقييم
+                                </p>
+                                </p>
+                                <p id="current-surah-rate" class="font-semibold text-gray-800"> </p>
+                            </div>
+
+
                             <div>
                                 <p class="text-gray-600"><i class="fas fa-redo ml-1 text-green-500"></i> المراجعة</p>
                                 <p id="last-surah" class="font-semibold text-gray-800"></p>
                             </div>
                             <div>
-                                <p class="text-gray-600"><i class="fas fa-star ml-1 text-green-500"></i> التقييم</p>
-                                <p id="evaluation" class="font-semibold text-gray-800"></p>
+                                <p class="text-gray-600"><i class="fas fa-redo ml-1 text-green-500"></i> تقييم
+                                </p>
+                                <p id="last-surah-rate" class="font-semibold text-gray-800"></p>
                             </div>
+
                         </div>
-                        <div>
-                            <p class="text-gray-600"><i class="fas fa-chalkboard-teacher ml-1 text-green-500"></i> عدد الحصص</p>
-                            <p id="sessions-attended" class="font-semibold text-gray-800"> حلقه</p>
-                        </div>
+
                     </div>
+                </div>
+
+                <!-- Evaluation Info -->
+                <div class="bg-green-50 rounded-lg p-6  hover-scale shadow-md">
+                    <div>
+                        <p class="text-gray-600"><i class="fas fa-star ml-1 text-green-500"></i> التقييم الكلي </p>
+                        <p id="evaluation" class="font-semibold text-gray-800"></p>
+                    </div>
+                </div>
+
+                <!--Points Section -->
+                <div class=" bg-green-50 rounded-lg p-6 hover-scale shadow-md">
+                    <h2 class="text-xl font-bold text-green-800 mb-4 flex items-center">
+                        <i class="fas fa-sticky-note ml-2 text-green-600"></i>
+                        النقاط
+                    </h2>
+                    <p id="points" class="text-gray-700"></p>
                 </div>
 
                 <!-- Payment Info -->
@@ -92,29 +127,42 @@
                     </h2>
                     <div class="space-y-4">
                         <div>
-                            <p class="text-gray-600"><i class="fas fa-credit-card ml-1 text-green-500"></i> نوع الدفع</p>
+                            <p class="text-gray-600"><i class="fas fa-credit-card ml-1 text-green-500"></i> نوع الدفع
+                            </p>
                             <p id="payment-type" class="font-semibold text-gray-800"></p>
                         </div>
                         <div>
-                            <p class="text-gray-600"><i class="fas fa-calendar-check ml-1 text-green-500"></i> الشهر الحالي مدفوع</p>
-                            <p id="current-month-paid" class="font-semibold text-gray-800"></p>
+                            <p class="text-gray-600"><i class="fas fa-chalkboard-teacher ml-1 text-green-500"></i> عدد
+                                الحصص</p>
+                            <p id="sessions-attended" class="font-semibold text-gray-800"> حلقه</p>
                         </div>
                         <div>
-                            <p class="text-gray-600"><i class="fas fa-calendar ml-1 text-green-500"></i> تاريخ آخر دفعة</p>
+                            <p class="text-gray-600"><i class="fas fa-calendar-check ml-1 text-green-500"></i> الشهر
+                                الحالي مدفوع</p>
+                            <p id="current-month-paid" class="font-semibold text-gray-800"></p>
+                        </div>
+
+                        <div>
+                            <p class="text-gray-600"><i class="fas fa-calendar ml-1 text-green-500"></i> تاريخ آخر دفعة
+                            </p>
                             <p id="last-payment-date" class="font-semibold text-gray-800"></p>
                         </div>
+
                     </div>
                 </div>
             </div>
 
+
+
             <!-- Schedule Section -->
             <div class="bg-green-50 rounded-lg p-6 my-4 hover-scale shadow-md">
+
                 <h2 class="text-xl font-bold text-green-800 mb-4 flex items-center">
                     <i class="fas fa-calendar-alt ml-2 text-green-600"></i>
-                    جدول الحلقات 
+                    جدول الحلقات
                 </h2>
                 <ul id="student-schedule" class="text-gray-700">
-                    
+
                 </ul>
             </div>
 
@@ -127,6 +175,7 @@
                 <p id="notes" class="text-gray-700"></p>
             </div>
 
+
             <!-- Certificate Section -->
             <div class="mt-8 bg-green-50 rounded-lg p-6 hover-scale shadow-md">
                 <h2 class="text-xl font-bold text-green-800 mb-4 flex items-center">
@@ -137,12 +186,13 @@
                     <i class="fas fa-heart ml-2 text-red-500"></i>
                     بارك الله فيكم وفي ابويكم
                 </p>
-                
+
                 <div id="certificates" class="flex flex-wrap gap-4"></div>
-            </div>            
+            </div>
         </div>
     </div>
 
     <script src="./js/student-details.js"></script>
 </body>
+
 </html>

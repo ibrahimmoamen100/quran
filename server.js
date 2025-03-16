@@ -230,10 +230,13 @@ app.post('/api/students', upload.fields([
             name: req.body.name,
             password: req.body.password,
             currentSurah: req.body.currentSurah,
+            currentSurahRate: req.body.currentSurahRate,
             lastSurah: req.body.lastSurah,
+            lastSurahRate: req.body.lastSurahRate,
             paymentType: req.body.paymentType,
             schedule: JSON.parse(req.body.schedule || '[]'),
             notes: req.body.notes,
+            points: req.body.points,
             photo: photoPath,
             certificates: certificatePaths,
             sessionCount: 0
@@ -263,7 +266,9 @@ app.post('/api/students/new', upload.single('photo'), (req, res) => {
             name: req.body.name,
             password: req.body.password, // في الإنتاج يجب تشفير كلمة المرور
             currentSurah: req.body.currentSurah,
+            currentSurahRate: req.body.currentSurahRate,
             lastSurah: req.body.lastSurah,
+            lastSurahRate: req.body.lastSurahRate,
             schedule: [{
                 day: req.body.day,
                 time: req.body.time
@@ -272,6 +277,7 @@ app.post('/api/students/new', upload.single('photo'), (req, res) => {
             sessionsAttended: 0,
             paymentType: req.body.paymentType,
             notes: req.body.notes,
+            points: req.body.points,
             photo: req.file ? `/uploads/${req.file.filename}` : null,
             currentMonthPaid: false,
             lastPaymentDate: null,
@@ -324,10 +330,13 @@ app.put('/api/students/:id', upload.single('photo'), (req, res) => {
                 ...updatedStudent,
                 name: req.body.name || updatedStudent.name,
                 currentSurah: req.body.currentSurah || updatedStudent.currentSurah,
+                currentSurahRate: req.body.currentSurahRate || updatedStudent.currentSurahRate,
                 lastSurah: req.body.lastSurah || updatedStudent.lastSurah,
+                lastSurahRate: req.body.lastSurahRate || updatedStudent.lastSurahRate,
                 evaluation: req.body.evaluation || updatedStudent.evaluation,
                 paymentType: req.body.paymentType || updatedStudent.paymentType,
-                notes: req.body.notes || updatedStudent.notes
+                notes: req.body.notes || updatedStudent.notes,
+                points: req.body.points || updatedStudent.points
             };
 
             // Handle password update
@@ -511,13 +520,15 @@ app.get('/api/outstanding-students', (req, res) => {
                 id: student.id,
                 name: student.name,
                 currentSurah: student.currentSurah,
+                currentSurahRate: student.currentSurahRate,
                 lastSurah: student.lastSurah,
+                lastSurahRate: student.lastSurahRate,
                 evaluation: student.evaluation,
                 paymentType: student.paymentType,
                 notes: student.notes,
+                points: student.points,
                 sessionsAttended: student.sessionsAttended,
                 certificates: student.certificates,
-
                 photo: student.photo
             }));
 
@@ -595,6 +606,7 @@ app.get('/api/outstanding-students', (req, res) => {
                 id: student.id,
                 name: student.name,
                 currentSurah: student.currentSurah,
+                currentSurahRate: student.currentSurahRate,
                 photo: student.photo
             }));
 

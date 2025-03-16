@@ -422,10 +422,13 @@ async function openEditModal(studentId) {
         document.getElementById('editStudentId').value = student.id;
         form.querySelector('input[name="name"]').value = student.name;
         form.querySelector('input[name="currentSurah"]').value = student.currentSurah;
+        form.querySelector('input[name="currentSurahRate"]').value = student.currentSurahRate;
         form.querySelector('input[name="lastSurah"]').value = student.lastSurah || '';
+        form.querySelector('input[name="lastSurahRate"]').value = student.lastSurahRate || '';
         form.querySelector('select[name="evaluation"]').value = student.evaluation || '';
         form.querySelector('select[name="paymentType"]').value = student.paymentType || 'بالشهر';
         form.querySelector('textarea[name="notes"]').value = student.notes || '';
+        form.querySelector('textarea[name="points"]').value = student.points || '';
         
         // Clear existing schedule items
         const scheduleContainer = document.getElementById('editScheduleContainer');

@@ -75,13 +75,16 @@ function updateStudentInfo(student) {
     document.getElementById('student-name').textContent = student.name || 'غير محدد';
     document.getElementById('student-id').textContent = student.id || 'غير محدد';
     document.getElementById('current-surah').textContent = student.currentSurah || 'غير محدد';
+    document.getElementById('current-surah-rate').textContent =  `${student.currentSurahRate +'/' + '10'}` || 'غير محدد';
     document.getElementById('last-surah').textContent = student.lastSurah || 'غير محدد';
+    document.getElementById('last-surah-rate').textContent =  `${student.lastSurahRate +'/' + '10'}` || 'غير محدد';
     document.getElementById('evaluation').textContent = student.evaluation || 'غير محدد';
     document.getElementById('sessions-attended').textContent = `${student.sessionsAttended || 0} من 8 حلقات`;
     document.getElementById('payment-type').textContent = student.paymentType === 'perSession' ? 'بالحلقه' : 'بالشهر';
-    document.getElementById('current-month-paid').textContent = student.currentMonthPaid ? 'نعم' : 'لا';
+    document.getElementById('current-month-paid').textContent = student.paymentType === 'perSession' ? ' الدفع بالحلقه' : (student.currentMonthPaid ?  'نعم' : 'لا');
     document.getElementById('last-payment-date').textContent = student.lastPaymentDate || 'غير محدد';
     document.getElementById('notes').textContent = student.notes || 'لا توجد ملاحظات';
+    document.getElementById('points').textContent = student.points || 'لا توجد نقاط';
 
     const studentImage = document.getElementById('student-image');
     studentImage.src = student.photo || '/images/default-avatar.png';

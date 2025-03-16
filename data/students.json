@@ -4,7 +4,7 @@
       "id": "1734167825077",
       "name": "معاذ محمد",
       "password": "1234",
-      "currentSurah": "يس 10\\9",
+      "currentSurah": "يس ",
       "schedule": [
         {
           "day": "السبت",
@@ -16,7 +16,7 @@
         }
       ],
       "evaluation": "ممتاز",
-      "sessionsAttended": 0,
+      "sessionsAttended": 1,
       "paymentType": "perSession",
       "notes": "الورد اليومي 50 سبحان الله وبحمده سبحان الله العظيم",
       "photo": "/uploads/1741259806379-103673962.jpg",
@@ -27,13 +27,15 @@
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T09:17:05.078Z",
-      "lastSurah": "الجاثيه 8.5/10 + الزمر 9/10"
+      "lastSurah": "الجاثيه",
+      "currentSurahRate": "9",
+      "lastSurahRate": "8.5"
     },
     {
       "id": "1734168086134",
       "name": "مالك محمد",
       "password": "1234",
-      "currentSurah": "المؤمنون 8/10",
+      "currentSurah": "المؤمنون ",
       "schedule": [
         {
           "day": "السبت",
@@ -56,13 +58,15 @@
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T09:21:26.135Z",
-      "lastSurah": "يس 9/10  + الاحزاب 10\\9.5"
+      "lastSurah": "يس ",
+      "currentSurahRate": "8",
+      "lastSurahRate": "9"
     },
     {
       "id": "1734215942371",
       "name": "محمد احمد",
       "password": "1234",
-      "currentSurah": "الحجرات 8/10",
+      "currentSurah": "الحجرات ",
       "schedule": [
         {
           "day": "السبت",
@@ -84,13 +88,15 @@
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T22:39:02.371Z",
-      "lastSurah": "التغابن 9/10 | المزمل 7.5/10"
+      "lastSurah": "التغابن",
+      "currentSurahRate": "8",
+      "lastSurahRate": "9"
     },
     {
       "id": "1734216159737",
       "name": "ادم احمد",
       "password": "1234",
-      "currentSurah": "الحديد 6.5/10",
+      "currentSurah": "الحديد ",
       "schedule": [
         {
           "day": "السبت",
@@ -112,13 +118,15 @@
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T22:42:39.737Z",
-      "lastSurah": "الطلاق 7.5/10 + الجن 8.5/10"
+      "lastSurah": "الطلاق ",
+      "currentSurahRate": "6.5",
+      "lastSurahRate": "7"
     },
     {
       "id": "1734216333655",
       "name": "سامر وليد",
       "password": "1234",
-      "currentSurah": "الجن 7/10",
+      "currentSurah": "الجن ",
       "schedule": [
         {
           "day": "الجمعة",
@@ -136,7 +144,9 @@
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T22:45:33.655Z",
-      "lastSurah": "البلد"
+      "lastSurah": "البلد",
+      "currentSurahRate": "8",
+      "lastSurahRate": "6"
     },
     {
       "id": "1734216497238",
@@ -190,7 +200,7 @@
       "id": "1734217017651",
       "name": "سليمان علي",
       "password": "1234",
-      "currentSurah": "الانسان 7.5/10",
+      "currentSurah": "الانسان ",
       "schedule": [
         {
           "day": "السبت",
@@ -212,13 +222,15 @@
       "currentMonthPaid": true,
       "lastPaymentDate": "2025-03-05T11:12:42.648Z",
       "createdAt": "2024-12-14T22:56:57.651Z",
-      "lastSurah": "النازعات"
+      "lastSurah": "النازعات",
+      "currentSurahRate": "7.5",
+      "lastSurahRate": "7"
     },
     {
       "id": "1734217143624",
       "name": "يحيي علي ",
       "password": "1234",
-      "currentSurah": "الانسان 7/10",
+      "currentSurah": "الانسان ",
       "schedule": [
         {
           "day": "السبت",
@@ -240,13 +252,15 @@
       "currentMonthPaid": true,
       "lastPaymentDate": "2025-03-05T11:12:43.896Z",
       "createdAt": "2024-12-14T22:59:03.625Z",
-      "lastSurah": "النازعات"
+      "lastSurah": "النازعات",
+      "currentSurahRate": "7",
+      "lastSurahRate": "6"
     },
     {
       "id": "1734217237180",
       "name": "معاذ ياسر",
       "password": "1234",
-      "currentSurah": "الانسان 8.5/10",
+      "currentSurah": "الانسان ",
       "schedule": [
         {
           "day": "السبت",
@@ -265,16 +279,18 @@
       "certificates": [
         "/certificates/ama.png"
       ],
-      "currentMonthPaid": false,
-      "lastPaymentDate": null,
+      "currentMonthPaid": true,
+      "lastPaymentDate": "2025-03-16T03:58:50.660Z",
       "createdAt": "2024-12-14T23:00:37.180Z",
-      "lastSurah": "الغاشيه"
+      "lastSurah": "الغاشيه",
+      "currentSurahRate": "8.5",
+      "lastSurahRate": "7"
     },
     {
       "id": "1734217497335",
       "name": "عمار ياسر",
       "password": "1234",
-      "currentSurah": "ق 7.5/10",
+      "currentSurah": "الحجرات",
       "schedule": [
         {
           "day": "السبت",
@@ -296,13 +312,15 @@
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T23:04:57.335Z",
-      "lastSurah": "القمر 9/10"
+      "lastSurah": "القمر ",
+      "currentSurahRate": "10",
+      "lastSurahRate": "7"
     },
     {
       "id": "1734217861054",
       "name": "حفصه ياسر",
       "password": "1234",
-      "currentSurah": "محمد 8.5/10",
+      "currentSurah": "محمد ",
       "schedule": [
         {
           "day": "السبت",
@@ -325,13 +343,15 @@
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T23:11:01.054Z",
-      "lastSurah": "القمر 7/10"
+      "lastSurah": "القمر ",
+      "currentSurahRate": "10",
+      "lastSurahRate": "7"
     },
     {
       "id": "1734218030299",
       "name": "حمزه مصطفي",
       "password": "1234",
-      "currentSurah": "الحاقه 7/10",
+      "currentSurah": "الحاقه ",
       "schedule": [
         {
           "day": "السبت",
@@ -353,13 +373,15 @@
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T23:13:50.300Z",
-      "lastSurah": "التكوير"
+      "lastSurah": "التكوير",
+      "currentSurahRate": "8",
+      "lastSurahRate": "7"
     },
     {
       "id": "1734262969541",
       "name": "البراء احمد",
       "password": "1234",
-      "currentSurah": "محمد 8.5\\10",
+      "currentSurah": "محمد ",
       "schedule": [
         {
           "day": "الأحد",
@@ -381,13 +403,15 @@
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-15T11:42:49.542Z",
-      "lastSurah": "النجم    | الانسان"
+      "lastSurah": "النجم",
+      "currentSurahRate": "8.5",
+      "lastSurahRate": "7"
     },
     {
       "id": "1734263567588",
       "name": "حمزه احمد",
       "password": "1234",
-      "currentSurah": "الطور 7.5/10",
+      "currentSurah": "الطور ",
       "schedule": [
         {
           "day": "الأحد",
@@ -409,7 +433,9 @@
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-15T11:52:47.589Z",
-      "lastSurah": "المدثر 7\\10"
+      "lastSurah": "المدثر ",
+      "currentSurahRate": "7.5",
+      "lastSurahRate": "7"
     },
     {
       "id": "1734866751045",
@@ -439,8 +465,8 @@
       "id": "1735150017483",
       "name": "اسما اسامه",
       "password": "1234",
-      "currentSurah": "الاحزاب 7.5/10",
-      "lastSurah": "غافر 8/10 + تبارك 7/10",
+      "currentSurah": "الاحزاب",
+      "lastSurah": "غافر ",
       "paymentType": "perMonth",
       "schedule": [
         {
@@ -461,14 +487,16 @@
       "sessionsAttended": 8,
       "evaluation": "جيد",
       "currentMonthPaid": true,
-      "lastPaymentDate": "2025-03-12T00:48:46.791Z"
+      "lastPaymentDate": "2025-03-12T00:48:46.791Z",
+      "currentSurahRate": "7.5",
+      "lastSurahRate": "8"
     },
     {
       "id": "1735150087390",
       "name": "ديما محمد",
       "password": "1234",
-      "currentSurah": "الاحزاب 7/10",
-      "lastSurah": "غافر 8/10 + تبارك 8/10",
+      "currentSurah": "الاحزاب ",
+      "lastSurah": "غافر ",
       "paymentType": "perMonth",
       "schedule": [
         {
@@ -489,14 +517,16 @@
       "sessionsAttended": 8,
       "evaluation": "جيد",
       "currentMonthPaid": true,
-      "lastPaymentDate": "2025-03-12T00:48:47.502Z"
+      "lastPaymentDate": "2025-03-12T00:48:47.502Z",
+      "currentSurahRate": "7.5",
+      "lastSurahRate": "8"
     },
     {
       "id": "1736660274707",
       "name": "محمد اشرف",
       "password": "1234",
-      "currentSurah": "العلق 8.5/10",
-      "lastSurah": "القدر 7/10",
+      "currentSurah": "العلق ",
+      "lastSurah": "القدر ",
       "paymentType": "perMonth",
       "schedule": [
         {
@@ -515,14 +545,16 @@
       "sessionsAttended": 4,
       "evaluation": "جيد جداً",
       "currentMonthPaid": true,
-      "lastPaymentDate": "2025-03-05T11:14:02.532Z"
+      "lastPaymentDate": "2025-03-05T11:14:02.532Z",
+      "currentSurahRate": "8.5",
+      "lastSurahRate": "7"
     },
     {
       "id": "1738581464811",
       "name": "عبدالرحمن محمد",
       "password": "1234",
-      "currentSurah": "الصف 8",
-      "lastSurah": "الطلاق + النبأ",
+      "currentSurah": "الصف",
+      "lastSurah": "الطلاق",
       "paymentType": "perMonth",
       "schedule": [
         {
@@ -541,7 +573,9 @@
       "sessionsAttended": 5,
       "evaluation": "جيد جداً",
       "currentMonthPaid": false,
-      "lastPaymentDate": null
+      "lastPaymentDate": null,
+      "currentSurahRate": "8",
+      "lastSurahRate": "7"
     },
     {
       "id": "1738581724489",
@@ -805,7 +839,8 @@
       "sessionsAttended": 5,
       "evaluation": "جيد جداً",
       "currentMonthPaid": false,
-      "lastPaymentDate": null
+      "lastPaymentDate": null,
+      "points": "10 نقاط"
     }
   ]
 }
