@@ -570,19 +570,20 @@
       "photo": "/uploads/1741260219228-147089369.jpg",
       "certificates": [],
       "sessionCount": 0,
-      "sessionsAttended": 5,
+      "sessionsAttended": 6,
       "evaluation": "جيد جداً",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "currentSurahRate": "8",
-      "lastSurahRate": "7"
+      "lastSurahRate": "7",
+      "points": "نقاط الاسأله و التفاعل : 20 نقطه"
     },
     {
       "id": "1738581724489",
       "name": "يوسف محمد",
       "password": "1234",
-      "currentSurah": "الغاشيه 9/10",
-      "lastSurah": "الكوثر + الماعون + قريس",
+      "currentSurah": "الغاشيه ",
+      "lastSurah": "الكافرون - المسد - النصر",
       "paymentType": "perMonth",
       "schedule": [
         {
@@ -598,10 +599,12 @@
       "photo": "/uploads/1741260226939-190348928.jpg",
       "certificates": [],
       "sessionCount": 0,
-      "sessionsAttended": 5,
+      "sessionsAttended": 6,
       "evaluation": "جيد جداً",
       "currentMonthPaid": false,
-      "lastPaymentDate": null
+      "lastPaymentDate": null,
+      "currentSurahRate": "7",
+      "lastSurahRate": "10"
     },
     {
       "id": "1741550230876",

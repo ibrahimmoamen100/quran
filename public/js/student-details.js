@@ -79,9 +79,22 @@ function updateStudentInfo(student) {
     document.getElementById('last-surah').textContent = student.lastSurah || 'غير محدد';
     document.getElementById('last-surah-rate').textContent =  `${student.lastSurahRate +'/' + '10'}` || 'غير محدد';
     document.getElementById('evaluation').textContent = student.evaluation || 'غير محدد';
-    document.getElementById('sessions-attended').textContent = `${student.sessionsAttended || 0} من 8 حلقات`;
+
+
+
+
     document.getElementById('payment-type').textContent = student.paymentType === 'perSession' ? 'بالحلقه' : 'بالشهر';
-    document.getElementById('current-month-paid').textContent = student.paymentType === 'perSession' ? ' الدفع بالحلقه' : (student.currentMonthPaid ?  'نعم' : 'لا');
+
+    if(student.paymentType === 'perSession'){
+        document.getElementById('last-payment-date').textContent = student.lastPaymentDate || ' ';
+        document.getElementById('current-month-paid').textContent =    '';
+        document.getElementById('last-payment-date').textContent = student.lastPaymentDate || ' ';
+        
+        
+    }
+    document.getElementById('last-payment-date').textContent = student.lastPaymentDate || 'غير محدد';
+    document.getElementById('current-month-paid').textContent =  student.currentMonthPaid ?  'نعم' : 'لا';
+    document.getElementById('sessions-attended').textContent = `${student.sessionsAttended || 0} من 8 حلقات`;
     document.getElementById('last-payment-date').textContent = student.lastPaymentDate || 'غير محدد';
     document.getElementById('notes').textContent = student.notes || 'لا توجد ملاحظات';
     document.getElementById('points').textContent = student.points || 'لا توجد نقاط';
