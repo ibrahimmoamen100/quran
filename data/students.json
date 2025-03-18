@@ -828,6 +828,35 @@
       "points": "10 نقاط",
       "currentSurahRate": "8.5",
       "lastSurahRate": "7"
+    },
+    {
+      "id": "1742333465842",
+      "name": "عمر احمد",
+      "password": "1234",
+      "currentSurah": "الجن",
+      "currentSurahRate": "9.5",
+      "lastSurah": "الانسان",
+      "lastSurahRate": "6.5",
+      "paymentType": "perMonth",
+      "schedule": [
+        {
+          "day": "الإثنين",
+          "time": "13:30"
+        },
+        {
+          "day": "الخميس",
+          "time": "13:30"
+        }
+      ],
+      "notes": "الورد اليومي :  50 صلاه علي النبي ",
+      "points": "نقاط الاسأله و التفاعل : 20 نقطه",
+      "photo": "/uploads/1742333465830-452967661.jpg",
+      "certificates": [],
+      "sessionCount": 0,
+      "sessionsAttended": 6,
+      "evaluation": "جيد جداً",
+      "currentMonthPaid": false,
+      "lastPaymentDate": null
     }
   ]
 }
