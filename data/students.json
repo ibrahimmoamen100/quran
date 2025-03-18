@@ -636,7 +636,7 @@
       "id": "1741550329538",
       "name": "يوسف عيد",
       "password": "1234",
-      "currentSurah": "الجن 9/10",
+      "currentSurah": "الجن ",
       "lastSurah": "القيامه + المدثر",
       "paymentType": "perSession",
       "schedule": [
@@ -654,7 +654,9 @@
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 1,
-      "evaluation": "ممتاز"
+      "evaluation": "ممتاز",
+      "currentSurahRate": "9",
+      "lastSurahRate": "9"
     },
     {
       "id": "1741550481996",
