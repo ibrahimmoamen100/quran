@@ -20,9 +20,7 @@
       "paymentType": "perSession",
       "notes": "الورد اليومي 50 سبحان الله وبحمده سبحان الله العظيم",
       "photo": "/uploads/1741259806379-103673962.jpg",
-      "certificates": [
-
-      ],
+      "certificates": [],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T09:17:05.078Z",
@@ -50,9 +48,7 @@
       "paymentType": "perSession",
       "notes": "الورد اليومي 50 مره سبحان الله وبحمده سبحان الله العظيم",
       "photo": "/uploads/1741259813457-168981177.jpg",
-      "certificates": [
-
-      ],
+      "certificates": [],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T09:21:26.135Z",
@@ -80,8 +76,7 @@
       "paymentType": "perSession",
       "notes": "الورد اليومي 50 صلاه علي النبي \r\n",
       "photo": "/uploads/1741259826670-758555645.jpg",
-      "certificates": [
-      ],
+      "certificates": [],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T22:39:02.371Z",
@@ -109,8 +104,7 @@
       "paymentType": "perSession",
       "notes": "الورد اليومي 50 صلاه علي النبي ",
       "photo": "/uploads/1741259836717-990701566.jpg",
-      "certificates": [
-      ],
+      "certificates": [],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T22:42:39.737Z",
@@ -134,8 +128,7 @@
       "paymentType": "perSession",
       "notes": "الورد اليومي 50 صلاه علي النبي ",
       "photo": "/uploads/1741259847602-104373592.jpg",
-      "certificates": [
-      ],
+      "certificates": [],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T22:45:33.655Z",
@@ -159,8 +152,7 @@
       "paymentType": "perSession",
       "notes": "مستواه تطور من اخر مره \r\nالورد اليومي 50 صلاه علي النبي ",
       "photo": "/uploads/1741259855152-187967639.jpg",
-      "certificates": [
-      ],
+      "certificates": [],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T22:48:17.238Z",
@@ -182,8 +174,7 @@
       "paymentType": "perSession",
       "notes": "ارجو الحضور المره القادمه يا سيف \r\nالورد اليومي 50 صلاه علي النبي \r\n",
       "photo": "/uploads/1741259868949-328427016.jpg",
-      "certificates": [
-      ],
+      "certificates": [],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T22:54:16.227Z",
@@ -205,17 +196,16 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 6,
+      "sessionsAttended": 1,
       "paymentType": "perMonth",
       "notes": "الورد اليومي 20 مره سبحان الله",
       "photo": "/uploads/1741259878151-447750460.jpg",
-      "certificates": [
-      ],
-      "currentMonthPaid": true,
-      "lastPaymentDate": "2025-03-05T11:12:42.648Z",
+      "certificates": [],
+      "currentMonthPaid": false,
+      "lastPaymentDate": null,
       "createdAt": "2024-12-14T22:56:57.651Z",
       "lastSurah": "النازعات",
-      "currentSurahRate": "7.5",
+      "currentSurahRate": "6.5",
       "lastSurahRate": "7",
       "points": "نقاط الاسأله و التفاعل : 32 نقطه"
     },
@@ -235,18 +225,18 @@
         }
       ],
       "evaluation": "جيد",
-      "sessionsAttended": 6,
+      "sessionsAttended": 1,
       "paymentType": "perMonth",
       "notes": "حفظ عم \r\nالمراجعه : المطففين الي 13 + الناس + الفلق + الاخلاص",
       "photo": "/uploads/1741259892124-281938485.jpg",
-      "certificates": [
-      ],
-      "currentMonthPaid": true,
-      "lastPaymentDate": "2025-03-05T11:12:43.896Z",
+      "certificates": [],
+      "currentMonthPaid": false,
+      "lastPaymentDate": null,
       "createdAt": "2024-12-14T22:59:03.625Z",
       "lastSurah": "النازعات",
-      "currentSurahRate": "7",
-      "lastSurahRate": "6"
+      "currentSurahRate": "3",
+      "lastSurahRate": "6",
+      "points": "نقاط الاسأله و التفاعل : 28 نقطه"
     },
     {
       "id": "1734217237180",
@@ -268,14 +258,14 @@
       "paymentType": "perMonth",
       "notes": "الورد اليومي 50 صلاه علي النبي ",
       "photo": "/uploads/1741259900909-461609995.jpg",
-      "certificates": [
-      ],
+      "certificates": [],
       "currentMonthPaid": true,
       "lastPaymentDate": "2025-03-16T03:58:50.660Z",
       "createdAt": "2024-12-14T23:00:37.180Z",
       "lastSurah": "الغاشيه",
-      "currentSurahRate": "8.5",
-      "lastSurahRate": "7"
+      "currentSurahRate": "7.5",
+      "lastSurahRate": "7",
+      "points": "نقاط الاسأله و التفاعل : 20 نقطه"
     },
     {
       "id": "1734217497335",
@@ -297,14 +287,14 @@
       "paymentType": "perMonth",
       "notes": "الورد اليومي 50 صلاه علي النبي ",
       "photo": "/uploads/1741259907934-680779524.jpg",
-      "certificates": [
-      ],
-      "currentMonthPaid": false,
-      "lastPaymentDate": null,
+      "certificates": [],
+      "currentMonthPaid": true,
+      "lastPaymentDate": "2025-03-18T21:19:26.985Z",
       "createdAt": "2024-12-14T23:04:57.335Z",
       "lastSurah": "القمر ",
       "currentSurahRate": "10",
-      "lastSurahRate": "7"
+      "lastSurahRate": "7",
+      "points": "نقاط الاسأله و التفاعل : 30 نقطه"
     },
     {
       "id": "1734217861054",
@@ -326,11 +316,9 @@
       "paymentType": "perMonth",
       "notes": "الورد اليومي 50 مره سبحان الله وبحمده سبحان الله العظيم",
       "photo": "/uploads/1741259917211-307531427.jpg",
-      "certificates": [
-
-      ],
-      "currentMonthPaid": false,
-      "lastPaymentDate": null,
+      "certificates": [],
+      "currentMonthPaid": true,
+      "lastPaymentDate": "2025-03-18T21:19:25.850Z",
       "createdAt": "2024-12-14T23:11:01.054Z",
       "lastSurah": "القمر ",
       "currentSurahRate": "10",
@@ -356,8 +344,7 @@
       "paymentType": "perMonth",
       "notes": "الورد اليومي يا حمزه 50 صلاه علي النبي ",
       "photo": "/uploads/1741259950607-702439824.jpg",
-      "certificates": [
-      ],
+      "certificates": [],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T23:13:50.300Z",
@@ -385,8 +372,7 @@
       "paymentType": "perMonth",
       "notes": "الورد اليومي 20 سبحان الله وبحمده سبحان الله العظيم",
       "photo": "/uploads/1741259963522-663333336.jpg",
-      "certificates": [
-      ],
+      "certificates": [],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-15T11:42:49.542Z",
@@ -414,9 +400,7 @@
       "paymentType": "perMonth",
       "notes": "الورد اليومي : 50 صلاه علي النبي يوميا ",
       "photo": "/uploads/1741259997808-772880897.jpg",
-      "certificates": [
-        
-      ],
+      "certificates": [],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-15T11:52:47.589Z",
@@ -440,8 +424,7 @@
       "paymentType": "perSession",
       "notes": "الورد اليومي 50 صلاه علي النبي يا سجدة",
       "photo": "/uploads/1741260024883-472178111.jpg",
-      "certificates": [
-      ],
+      "certificates": [],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-22T11:25:51.046Z",
@@ -466,8 +449,7 @@
       ],
       "notes": "تكرار كل ايه اخذناها 5 مرات ",
       "photo": "/uploads/1741260175274-882063432.jpg",
-      "certificates": [
-      ],
+      "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 8,
       "evaluation": "جيد",
@@ -495,8 +477,7 @@
       ],
       "notes": "يجب تكرار كل ايه اخذناها 5 مرات",
       "photo": "/uploads/1741260182767-718683861.jpg",
-      "certificates": [
-      ],
+      "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 8,
       "evaluation": "جيد",
@@ -510,7 +491,7 @@
       "name": "محمد اشرف",
       "password": "1234",
       "currentSurah": "العلق ",
-      "lastSurah": "القدر ",
+      "lastSurah": "الهمزه + التكاثر",
       "paymentType": "perMonth",
       "schedule": [
         {
@@ -531,7 +512,8 @@
       "currentMonthPaid": true,
       "lastPaymentDate": "2025-03-05T11:14:02.532Z",
       "currentSurahRate": "8.5",
-      "lastSurahRate": "7"
+      "lastSurahRate": "7",
+      "points": "نقاط الاسأله و التفاعل : 30 نقطه"
     },
     {
       "id": "1738581464811",
@@ -588,7 +570,8 @@
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "currentSurahRate": "7",
-      "lastSurahRate": "10"
+      "lastSurahRate": "10",
+      "points": "نقاط الاسأله و التفاعل : 30 نقطه"
     },
     {
       "id": "1741550230876",
@@ -646,7 +629,7 @@
       "id": "1741550481996",
       "name": "لوجين سيد",
       "password": "1234",
-      "currentSurah": "الجن 7/10",
+      "currentSurah": "الجن ",
       "lastSurah": "القيامه + المدثر",
       "paymentType": "perSession",
       "schedule": [
@@ -664,13 +647,15 @@
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 1,
-      "evaluation": "جيد"
+      "evaluation": "جيد",
+      "currentSurahRate": "7",
+      "lastSurahRate": "7"
     },
     {
       "id": "1741550602527",
       "name": "حسين احمد",
       "password": "1234",
-      "currentSurah": "الجن 10/10",
+      "currentSurah": "الجن ",
       "lastSurah": "الانفطار",
       "paymentType": "perSession",
       "schedule": [
@@ -688,13 +673,16 @@
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 1,
-      "evaluation": "جيد جداً"
+      "evaluation": "جيد جداً",
+      "currentSurahRate": "8.5",
+      "lastSurahRate": "7",
+      "points": "نقاط الاسأله و التفاعل : 30 نقطه"
     },
     {
       "id": "1741550754593",
       "name": "حسن احمد",
       "password": "1234",
-      "currentSurah": "الفتح 7/10",
+      "currentSurah": "الفتح ",
       "lastSurah": "الوجه الاول من سوره ق",
       "paymentType": "perSession",
       "schedule": [
@@ -712,7 +700,9 @@
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 1,
-      "evaluation": "جيد"
+      "evaluation": "جيد",
+      "currentSurahRate": "8.5",
+      "lastSurahRate": "7"
     },
     {
       "id": "1741551772759",
@@ -738,7 +728,7 @@
       "id": "1741551950082",
       "name": "انس محمد",
       "password": "1234",
-      "currentSurah": "النازعات 8/10",
+      "currentSurah": "النازعات ",
       "lastSurah": "الغاشيه + الهمزه",
       "paymentType": "perSession",
       "schedule": [
@@ -752,13 +742,15 @@
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 1,
-      "evaluation": "جيد جداً"
+      "evaluation": "جيد جداً",
+      "currentSurahRate": "8",
+      "lastSurahRate": "7"
     },
     {
       "id": "1741552261863",
       "name": "معاذ عبدالرحمن",
       "password": "1234",
-      "currentSurah": "الزخرف 8/10",
+      "currentSurah": "الزخرف ",
       "lastSurah": "المرسلات",
       "paymentType": "perMonth",
       "schedule": [
@@ -778,7 +770,9 @@
       "sessionsAttended": 5,
       "evaluation": "جيد",
       "currentMonthPaid": false,
-      "lastPaymentDate": null
+      "lastPaymentDate": null,
+      "currentSurahRate": "8",
+      "lastSurahRate": "7"
     },
     {
       "id": "1741656076145",
@@ -810,7 +804,7 @@
       "id": "1741968262844",
       "name": "ساره عبدالرحمن",
       "password": "1234",
-      "currentSurah": "الزخرف 8.5/10",
+      "currentSurah": "الزخرف ",
       "lastSurah": "المرسلات",
       "paymentType": "perMonth",
       "schedule": [
@@ -831,7 +825,9 @@
       "evaluation": "جيد جداً",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "points": "10 نقاط"
+      "points": "10 نقاط",
+      "currentSurahRate": "8.5",
+      "lastSurahRate": "7"
     }
   ]
 }
