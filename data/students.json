@@ -610,7 +610,7 @@
       "id": "1741550230876",
       "name": "محمد مكشه",
       "password": "1234",
-      "currentSurah": "الجن 8.5/10",
+      "currentSurah": "الجن ",
       "lastSurah": "القيامه + المدثر",
       "paymentType": "perSession",
       "schedule": [
@@ -628,7 +628,9 @@
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 1,
-      "evaluation": "ممتاز"
+      "evaluation": "ممتاز",
+      "currentSurahRate": "9",
+      "lastSurahRate": "9"
     },
     {
       "id": "1741550329538",
