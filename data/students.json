@@ -498,7 +498,7 @@
       "name": "عبدالرحمن محمد",
       "password": "1234",
       "currentSurah": "الصف",
-      "lastSurah": "الطلاق",
+      "lastSurah": "المنافقون",
       "paymentType": "perMonth",
       "schedule": [
         {
@@ -510,24 +510,24 @@
           "time": "16:00"
         }
       ],
-      "notes": "الورد اليومي 50 صلاه علي النبي يا عبدالرحمن ما تنساش ",
+      "notes": "حفظ الممتحنه الي 3 + المرسلات + المنافقون ",
       "photo": "/uploads/1741260219228-147089369.jpg",
       "certificates": [],
       "sessionCount": 0,
-      "sessionsAttended": 6,
+      "sessionsAttended": 7,
       "evaluation": "جيد جداً",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "currentSurahRate": "8",
-      "lastSurahRate": "7",
-      "points": "نقاط الاسأله و التفاعل : 20 نقطه"
+      "currentSurahRate": "9.5",
+      "lastSurahRate": "7.5",
+      "points": "نقاط الاسأله و التفاعل : 40 نقطه"
     },
     {
       "id": "1738581724489",
       "name": "يوسف محمد",
       "password": "1234",
       "currentSurah": "الغاشيه ",
-      "lastSurah": "الكافرون - المسد - النصر",
+      "lastSurah": "الكوثر + الماعون +قريش",
       "paymentType": "perMonth",
       "schedule": [
         {
@@ -539,17 +539,17 @@
           "time": "16:00"
         }
       ],
-      "notes": "اللهم بارك قرأته للقرأن ممتازه مقارنتا بسنه \r\nوحفظه اتحسن ربنا يحفظه و يبارك فيه",
+      "notes": "حفظ الاعلي الي 5  + الفيل + الهمزه + العصر",
       "photo": "/uploads/1741260226939-190348928.jpg",
       "certificates": [],
       "sessionCount": 0,
-      "sessionsAttended": 6,
+      "sessionsAttended": 7,
       "evaluation": "جيد جداً",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "currentSurahRate": "7",
-      "lastSurahRate": "10",
-      "points": "نقاط الاسأله و التفاعل : 30 نقطه"
+      "currentSurahRate": "9.5",
+      "lastSurahRate": "7.5",
+      "points": "نقاط الاسأله و التفاعل : 42 نقطه"
     },
     {
       "id": "1741550230876",
@@ -832,6 +832,35 @@
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 6,
+      "evaluation": "جيد جداً",
+      "currentMonthPaid": false,
+      "lastPaymentDate": null
+    },
+    {
+      "id": "1742394729419",
+      "name": "سيد محسن",
+      "password": "1234",
+      "currentSurah": "الجن",
+      "currentSurahRate": "9.5",
+      "lastSurah": "الانسان",
+      "lastSurahRate": "6.5",
+      "paymentType": "perMonth",
+      "schedule": [
+        {
+          "day": "الأحد",
+          "time": "12:45"
+        },
+        {
+          "day": "الخميس",
+          "time": "14:12"
+        }
+      ],
+      "notes": "ارجو الاتزام بالمواعيد",
+      "points": "نقاط الاسأله و التفاعل : 20 نقطه",
+      "photo": "/uploads/1742394729395-807881604.png",
+      "certificates": [],
+      "sessionCount": 0,
+      "sessionsAttended": 5,
       "evaluation": "جيد جداً",
       "currentMonthPaid": false,
       "lastPaymentDate": null
