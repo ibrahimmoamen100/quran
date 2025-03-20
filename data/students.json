@@ -18,7 +18,7 @@
       "evaluation": "ممتاز",
       "sessionsAttended": 1,
       "paymentType": "perSession",
-      "notes": "الورد اليومي 50 سبحان الله وبحمده سبحان الله العظيم",
+      "notes": "حفظ يس + الجاثيه ",
       "photo": "/uploads/1741259806379-103673962.jpg",
       "certificates": [],
       "currentMonthPaid": false,
@@ -26,7 +26,8 @@
       "createdAt": "2024-12-14T09:17:05.078Z",
       "lastSurah": "الجاثيه",
       "currentSurahRate": "9",
-      "lastSurahRate": "8.5"
+      "lastSurahRate": "8.5",
+      "points": "نقاط الاسأله و التفاعل : 55 نقطه"
     },
     {
       "id": "1734168086134",
@@ -46,7 +47,7 @@
       "evaluation": "ممتاز",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "الورد اليومي 50 مره سبحان الله وبحمده سبحان الله العظيم",
+      "notes": "حفظ المؤمنون + يس",
       "photo": "/uploads/1741259813457-168981177.jpg",
       "certificates": [],
       "currentMonthPaid": false,
@@ -54,7 +55,8 @@
       "createdAt": "2024-12-14T09:21:26.135Z",
       "lastSurah": "يس ",
       "currentSurahRate": "8",
-      "lastSurahRate": "9"
+      "lastSurahRate": "9",
+      "points": "نقاط الاسأله و التفاعل : 50 نقطه"
     },
     {
       "id": "1734215942371",
@@ -74,7 +76,7 @@
       "evaluation": "جيد جداً",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "الورد اليومي 50 صلاه علي النبي \r\n",
+      "notes": "حفظ الحجرات + التغابن ",
       "photo": "/uploads/1741259826670-758555645.jpg",
       "certificates": [],
       "currentMonthPaid": false,
@@ -82,7 +84,8 @@
       "createdAt": "2024-12-14T22:39:02.371Z",
       "lastSurah": "التغابن",
       "currentSurahRate": "8",
-      "lastSurahRate": "9"
+      "lastSurahRate": "9",
+      "points": "نقاط الاسأله و التفاعل : 45 نقطه"
     },
     {
       "id": "1734216159737",
@@ -102,7 +105,7 @@
       "evaluation": "جيد",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "الورد اليومي 50 صلاه علي النبي ",
+      "notes": "حفظ الحديد + الطلاق ",
       "photo": "/uploads/1741259836717-990701566.jpg",
       "certificates": [],
       "currentMonthPaid": false,
@@ -110,7 +113,8 @@
       "createdAt": "2024-12-14T22:42:39.737Z",
       "lastSurah": "الطلاق ",
       "currentSurahRate": "6.5",
-      "lastSurahRate": "7"
+      "lastSurahRate": "7",
+      "points": "نقاط الاسأله و التفاعل : 40 نقطه"
     },
     {
       "id": "1734216333655",
@@ -198,7 +202,7 @@
       "evaluation": "جيد جداً",
       "sessionsAttended": 1,
       "paymentType": "perMonth",
-      "notes": "الورد اليومي 20 مره سبحان الله",
+      "notes": "حفظ الانسان + الغاشيه",
       "photo": "/uploads/1741259878151-447750460.jpg",
       "certificates": [],
       "currentMonthPaid": false,
@@ -227,7 +231,7 @@
       "evaluation": "جيد",
       "sessionsAttended": 1,
       "paymentType": "perMonth",
-      "notes": "حفظ عم \r\nالمراجعه : المطففين الي 13 + الناس + الفلق + الاخلاص",
+      "notes": "حفظ الانسان + الغاشيه",
       "photo": "/uploads/1741259892124-281938485.jpg",
       "certificates": [],
       "currentMonthPaid": false,
@@ -256,7 +260,7 @@
       "evaluation": "جيد جداً",
       "sessionsAttended": 3,
       "paymentType": "perMonth",
-      "notes": "الورد اليومي 50 صلاه علي النبي ",
+      "notes": "حفظ الانسان + الغاشيه",
       "photo": "/uploads/1741259900909-461609995.jpg",
       "certificates": [],
       "currentMonthPaid": true,
@@ -285,7 +289,7 @@
       "evaluation": "جيد جداً",
       "sessionsAttended": 3,
       "paymentType": "perMonth",
-      "notes": "الورد اليومي 50 صلاه علي النبي ",
+      "notes": "حفظ الحجرات + الرحمن",
       "photo": "/uploads/1741259907934-680779524.jpg",
       "certificates": [],
       "currentMonthPaid": true,
@@ -314,7 +318,7 @@
       "evaluation": "ممتاز",
       "sessionsAttended": 3,
       "paymentType": "perMonth",
-      "notes": "الورد اليومي 50 مره سبحان الله وبحمده سبحان الله العظيم",
+      "notes": "حفظ محمد + القمر",
       "photo": "/uploads/1741259917211-307531427.jpg",
       "certificates": [],
       "currentMonthPaid": true,
@@ -322,7 +326,8 @@
       "createdAt": "2024-12-14T23:11:01.054Z",
       "lastSurah": "القمر ",
       "currentSurahRate": "10",
-      "lastSurahRate": "7"
+      "lastSurahRate": "7",
+      "points": "نقاط الاسأله و التفاعل : 55 نقطه"
     },
     {
       "id": "1734218030299",
@@ -481,7 +486,7 @@
           "time": "14:00"
         }
       ],
-      "notes": "مستواه ممتاز  اللهم بارك مقارنتا بسنه ",
+      "notes": "حفظ التين + القارعه + العصر",
       "photo": "/uploads/1741260193915-610638951.jpg",
       "certificates": [],
       "sessionCount": 0,
@@ -556,7 +561,7 @@
       "name": "محمد مكشه",
       "password": "1234",
       "currentSurah": "الجن ",
-      "lastSurah": "القيامه + المدثر",
+      "lastSurah": "المدثر",
       "paymentType": "perSession",
       "schedule": [
         {
@@ -568,21 +573,22 @@
           "time": "21:30"
         }
       ],
-      "notes": "لا تنسي الورد اليومي من الذكر 50 صلاه علي النبي ",
+      "notes": "حفظ الجن الي 10 + المدثر",
       "photo": "/uploads/1741550230851-343685626.jpg",
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 1,
       "evaluation": "ممتاز",
       "currentSurahRate": "9",
-      "lastSurahRate": "9"
+      "lastSurahRate": "9",
+      "points": "نقاط الاسأله و التفاعل : 55 نقطه"
     },
     {
       "id": "1741550329538",
       "name": "يوسف عيد",
       "password": "1234",
       "currentSurah": "الجن ",
-      "lastSurah": "القيامه + المدثر",
+      "lastSurah": "المدثر",
       "paymentType": "perSession",
       "schedule": [
         {
@@ -594,14 +600,15 @@
           "time": "21:30"
         }
       ],
-      "notes": "لا تنسي الورد اليومي من الذكر 50 استغفر الله العظيم",
+      "notes": "حفظ سوره الجن الي 10 + المدثر",
       "photo": "/uploads/1741550329524-779073564.jpg",
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 1,
       "evaluation": "ممتاز",
       "currentSurahRate": "9",
-      "lastSurahRate": "9"
+      "lastSurahRate": "9",
+      "points": "نقاط الاسأله و التفاعل : 55 نقطه"
     },
     {
       "id": "1741550481996",
@@ -620,14 +627,15 @@
           "time": "21:30"
         }
       ],
-      "notes": "لوجين ساعات مش بتكون مركزه كويس في الحلقه \r\nلا تنسي الورد اليومي من الذكر 20 مره الحمد لله",
+      "notes": "حفظ الجن الي  7 + المدثر",
       "photo": "/uploads/1741550481972-378201477.jpg",
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 1,
       "evaluation": "جيد",
       "currentSurahRate": "7",
-      "lastSurahRate": "7"
+      "lastSurahRate": "7",
+      "points": "نقاط الاسأله و التفاعل : 25 نقطه"
     },
     {
       "id": "1741550602527",
@@ -646,7 +654,7 @@
           "time": "21:30"
         }
       ],
-      "notes": "لا تنسي الورد اليومي 40 صلاه علي النبي ",
+      "notes": "حفظ الجن الي 10 + الانشقاق",
       "photo": "/uploads/1741550602507-584581518.jpg",
       "certificates": [],
       "sessionCount": 0,
@@ -654,7 +662,7 @@
       "evaluation": "جيد جداً",
       "currentSurahRate": "8.5",
       "lastSurahRate": "7",
-      "points": "نقاط الاسأله و التفاعل : 30 نقطه"
+      "points": "نقاط الاسأله و التفاعل : 52 نقطه"
     },
     {
       "id": "1741550754593",
@@ -673,14 +681,15 @@
           "time": "21:30"
         }
       ],
-      "notes": "للأسف مستواه بيقل جدا بسبب عدم الحفظ \r\nلا تنسي الورد اليومي 50 صلاه علي النبي ",
+      "notes": "حفظ الفتح + وجه من سوره ق",
       "photo": "/uploads/1741550754567-124615421.jpg",
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 1,
       "evaluation": "جيد",
       "currentSurahRate": "8.5",
-      "lastSurahRate": "7"
+      "lastSurahRate": "7",
+      "points": "نقاط الاسأله و التفاعل : 45 نقطه"
     },
     {
       "id": "1741551772759",
@@ -757,7 +766,7 @@
       "name": "مكه احمد",
       "password": "1234",
       "currentSurah": "الفجر ",
-      "lastSurah": "التين + العلق",
+      "lastSurah": "العلق",
       "paymentType": "perSession",
       "schedule": [
         {
@@ -769,14 +778,17 @@
           "time": "21:30"
         }
       ],
-      "notes": "الصلاه يا مكه ",
+      "notes": "حفظ الفجر الي 10 + العلق",
       "photo": "/uploads/1741656076104-669378880.jpg",
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 1,
       "evaluation": "جيد",
       "currentMonthPaid": false,
-      "lastPaymentDate": null
+      "lastPaymentDate": null,
+      "currentSurahRate": "8",
+      "lastSurahRate": "7",
+      "points": "نقاط الاسأله و التفاعل : 33 نقطه"
     },
     {
       "id": "1741968262844",
