@@ -16,7 +16,7 @@
         }
       ],
       "evaluation": "ممتاز",
-      "sessionsAttended": 1,
+      "sessionsAttended": 0,
       "paymentType": "perSession",
       "notes": "حفظ يس + الجاثيه ",
       "photo": "/uploads/1741259806379-103673962.jpg",
@@ -604,11 +604,13 @@
       "photo": "/uploads/1741550329524-779073564.jpg",
       "certificates": [],
       "sessionCount": 0,
-      "sessionsAttended": 1,
+      "sessionsAttended": 0,
       "evaluation": "ممتاز",
       "currentSurahRate": "9",
       "lastSurahRate": "9",
-      "points": "نقاط الاسأله و التفاعل : 55 نقطه"
+      "points": "نقاط الاسأله و التفاعل : 55 نقطه",
+      "currentMonthPaid": false,
+      "lastPaymentDate": null
     },
     {
       "id": "1741550481996",
@@ -631,11 +633,13 @@
       "photo": "/uploads/1741550481972-378201477.jpg",
       "certificates": [],
       "sessionCount": 0,
-      "sessionsAttended": 1,
+      "sessionsAttended": 0,
       "evaluation": "جيد",
       "currentSurahRate": "7",
       "lastSurahRate": "7",
-      "points": "نقاط الاسأله و التفاعل : 25 نقطه"
+      "points": "نقاط الاسأله و التفاعل : 25 نقطه",
+      "currentMonthPaid": false,
+      "lastPaymentDate": null
     },
     {
       "id": "1741550602527",
@@ -658,11 +662,13 @@
       "photo": "/uploads/1741550602507-584581518.jpg",
       "certificates": [],
       "sessionCount": 0,
-      "sessionsAttended": 1,
+      "sessionsAttended": 0,
       "evaluation": "جيد جداً",
       "currentSurahRate": "8.5",
       "lastSurahRate": "7",
-      "points": "نقاط الاسأله و التفاعل : 52 نقطه"
+      "points": "نقاط الاسأله و التفاعل : 52 نقطه",
+      "currentMonthPaid": false,
+      "lastPaymentDate": null
     },
     {
       "id": "1741550754593",
@@ -685,11 +691,13 @@
       "photo": "/uploads/1741550754567-124615421.jpg",
       "certificates": [],
       "sessionCount": 0,
-      "sessionsAttended": 1,
+      "sessionsAttended": 0,
       "evaluation": "جيد جداً",
       "currentSurahRate": "8.5",
       "lastSurahRate": "7",
-      "points": "نقاط الاسأله و التفاعل : 45 نقطه"
+      "points": "نقاط الاسأله و التفاعل : 45 نقطه",
+      "currentMonthPaid": false,
+      "lastPaymentDate": null
     },
     {
       "id": "1741551772759",
@@ -708,8 +716,10 @@
       "photo": "/uploads/1741551772736-256670928.jpg",
       "certificates": [],
       "sessionCount": 0,
-      "sessionsAttended": 1,
-      "evaluation": "جيد"
+      "sessionsAttended": 0,
+      "evaluation": "جيد",
+      "currentMonthPaid": false,
+      "lastPaymentDate": null
     },
     {
       "id": "1741551950082",
@@ -728,10 +738,12 @@
       "photo": "/uploads/1741551950062-584193205.jpg",
       "certificates": [],
       "sessionCount": 0,
-      "sessionsAttended": 1,
+      "sessionsAttended": 0,
       "evaluation": "جيد جداً",
       "currentSurahRate": "8",
-      "lastSurahRate": "7"
+      "lastSurahRate": "7",
+      "currentMonthPaid": false,
+      "lastPaymentDate": null
     },
     {
       "id": "1741552261863",
@@ -782,7 +794,7 @@
       "photo": "/uploads/1741656076104-669378880.jpg",
       "certificates": [],
       "sessionCount": 0,
-      "sessionsAttended": 1,
+      "sessionsAttended": 0,
       "evaluation": "جيد",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
