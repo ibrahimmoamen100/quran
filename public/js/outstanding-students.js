@@ -1,12 +1,14 @@
 // دالة لجلب وعرض الطلاب المتميزين
 async function loadOutstandingStudents() {
-    try {
-        const response = await fetch('/api/outstanding-students');
-        const students = await response.json();
-        console.log(students);
-        
-        const container = document.getElementById('outstanding-students');
-        container.innerHTML = students.map(student => `
+  try {
+    const response = await fetch("/api/outstanding-students");
+    const students = await response.json();
+    console.log(students);
+
+    const container = document.getElementById("outstanding-students");
+    container.innerHTML = students
+      .map(
+        (student) => `
 <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:translate-y-1 transition-all duration-300 relative">
 <!-- Top curved design element -->
 <div class="absolute top-0 left-0 right-0 h-32 bg-green-600 rounded-br-full rounded-bl-full transform scale-125"></div>
@@ -14,7 +16,7 @@ async function loadOutstandingStudents() {
 <!-- Circular Student Photo -->
 <div class="relative pt-8 pb-5 flex justify-center z-10">
 <div class="w-48 h-48 rounded-full border-4 border-white shadow-xl overflow-hidden">
-    <img src="${student.photo || '/images/default-avatar.png'}"
+    <img src="${student.photo || "/images/default-avatar.png"}"
         alt="${student.name}"
         class="h-full w-full object-cover">
 </div>
@@ -29,15 +31,31 @@ async function loadOutstandingStudents() {
 </div>
 
 <!-- Student Information -->
-<div class="px-6 pb-4 text-center relative z-10">
-<h3 class="text-2xl font-bold mb-2 text-gray-800">${student.name}</h3>
-<div class="inline-flex items-center justify-center px-3 py-1 bg-green-50 text-green-700 rounded-lg mb-3">
-    <i class="fas fa-book-quran text-green-600 text-2xl ml-2"></i>
-    <span class="ml-2 text-xl" >وصل إلى سورة <span class="font-bold"> { ${student.currentSurah + student.currentSurahRate+ '/10' } } </span> </span>
-</div>
+<div class="px-6 pb-6 text-center relative z-10 bg-white shadow-lg rounded-lg p-6">
+    <h3 class="text-2xl font-bold mb-3 text-gray-900">${student.name}</h3>
+
+    <!-- Progress Container -->
+    <div class="flex flex-col items-center bg-gradient-to-r from-green-100 to-green-50 p-3 rounded-lg shadow-md w-full max-w-sm mx-auto">
+        <div class="flex items-center mb-2">
+            <i class="fas fa-book-quran text-green-600 text-3xl mr-2"> </i>
+            <span class="text-sm text-gray-800"> وصل إلى سورة <span class="font-bold text-lg"> ${
+              student.currentSurah
+            } </span></span>
+        </div>
+
+        <!-- Progress Bar -->
+        <div class="w-full bg-gray-200 rounded-full h-auto">
+            <div class="bg-green-500 h-auto rounded-full transition-all duration-300" style="width: ${
+              student.currentSurahRate * 10
+            }%">         <span class="mt-1 text-sm text-gray-700 font-medium">${
+          student.currentSurahRate
+        }/10</span></div>
+        </div>
 
 
+    </div>
 </div>
+
 
 
 <!-- Certificates Section -->
@@ -47,8 +65,12 @@ async function loadOutstandingStudents() {
     الشهادات
 </h4>
 <div class="grid grid-cols-3 gap-3">
-    ${student.certificates && student.certificates.length > 0 ?
-        student.certificates.slice(0, 3).map(cert => `
+    ${
+      student.certificates && student.certificates.length > 0
+        ? student.certificates
+            .slice(0, 3)
+            .map(
+              (cert) => `
             <div class="aspect-square relative rounded-lg overflow-hidden shadow-sm group">
                 <img src="${cert}"
                     alt="شهادة ${student.name}"
@@ -57,30 +79,26 @@ async function loadOutstandingStudents() {
                     <span class="text-white text-xs truncate">شهادة تقدير</span>
                 </div>
             </div>
-        `).join('') :
-        '<p class="text-gray-500 text-center col-span-3">لا توجد شهادات بعد</p>'
+        `
+            )
+            .join("")
+        : '<p class="text-gray-500 text-center col-span-3">لا توجد شهادات بعد</p>'
     }
 </div>
 </div>
 </div>
-        `).join('');
+        `
+      )
+      .join("");
 
-        // Add fade-in animation to elements
+    // Add fade-in animation to elements
 
-
-
-        // Add rose petals animation
-        const section = document.getElementById('outstanding-section');
-
-
-
-
-
-
-    } catch (error) {
-        console.error('Error loading outstanding students:', error);
-    }
+    // Add rose petals animation
+    const section = document.getElementById("outstanding-section");
+  } catch (error) {
+    console.error("Error loading outstanding students:", error);
+  }
 }
 
 // تحميل الطلاب المتميزين عند تحميل الصفحة
-window.addEventListener('DOMContentLoaded', loadOutstandingStudents);
+window.addEventListener("DOMContentLoaded", loadOutstandingStudents);
