@@ -573,15 +573,15 @@
           "time": "21:30"
         }
       ],
-      "notes": "حفظ الجن الي 10 + المدثر",
+      "notes": "حفظ الجن الي 13 + المدثر من 30 الي 47",
       "photo": "/uploads/1741550230851-343685626.jpg",
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 1,
       "evaluation": "ممتاز",
-      "currentSurahRate": "9",
-      "lastSurahRate": "9",
-      "points": "نقاط الاسأله و التفاعل : 55 نقطه"
+      "currentSurahRate": "9.5",
+      "lastSurahRate": "10",
+      "points": "نقاط الاسأله و التفاعل : 85 نقطه"
     },
     {
       "id": "1741550329538",
@@ -600,7 +600,7 @@
           "time": "21:30"
         }
       ],
-      "notes": "حفظ سوره الجن الي 10 + المدثر",
+      "notes": "حفظ الجن الي 13 + المدثر من 30 الي 47",
       "photo": "/uploads/1741550329524-779073564.jpg",
       "certificates": [],
       "sessionCount": 0,
@@ -654,7 +654,7 @@
           "time": "21:30"
         }
       ],
-      "notes": "حفظ الجن الي 10 + الانشقاق",
+      "notes": "حفظ الجن الي 13 + المدثر من 30 الي 47",
       "photo": "/uploads/1741550602507-584581518.jpg",
       "certificates": [],
       "sessionCount": 0,
@@ -686,7 +686,7 @@
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 1,
-      "evaluation": "جيد",
+      "evaluation": "جيد جداً",
       "currentSurahRate": "8.5",
       "lastSurahRate": "7",
       "points": "نقاط الاسأله و التفاعل : 45 نقطه"
@@ -766,7 +766,7 @@
       "name": "مكه احمد",
       "password": "1234",
       "currentSurah": "الفجر ",
-      "lastSurah": "العلق",
+      "lastSurah": "الضحي",
       "paymentType": "perSession",
       "schedule": [
         {
@@ -778,7 +778,7 @@
           "time": "21:30"
         }
       ],
-      "notes": "حفظ الفجر الي 10 + العلق",
+      "notes": "حفظ الفجر الي 12 + الشمس",
       "photo": "/uploads/1741656076104-669378880.jpg",
       "certificates": [],
       "sessionCount": 0,
@@ -786,9 +786,9 @@
       "evaluation": "جيد",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "currentSurahRate": "8",
-      "lastSurahRate": "7",
-      "points": "نقاط الاسأله و التفاعل : 33 نقطه"
+      "currentSurahRate": "6.5",
+      "lastSurahRate": "7.5",
+      "points": "نقاط الاسأله و التفاعل : 50 نقطه"
     },
     {
       "id": "1741968262844",
