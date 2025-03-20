@@ -864,6 +864,29 @@
       "evaluation": "جيد جداً",
       "currentMonthPaid": false,
       "lastPaymentDate": null
+    },
+    {
+      "id": "1742475514799",
+      "name": "سيد محمد",
+      "password": "1234",
+      "currentSurah": "الجن",
+      "currentSurahRate": "9.5",
+      "lastSurah": "الانسان",
+      "lastSurahRate": "6.5",
+      "paymentType": "perSession",
+      "schedule": [
+        {
+          "day": "الإثنين",
+          "time": "12:24"
+        }
+      ],
+      "notes": "ارجو الاتزام بالمواعيد",
+      "points": "نقاط الاسأله و التفاعل : 20 نقطه",
+      "photo": "/uploads/1742475514783-590772878.jpg",
+      "certificates": [],
+      "sessionCount": 0,
+      "sessionsAttended": 1,
+      "evaluation": "جيد جداً"
     }
   ]
 }

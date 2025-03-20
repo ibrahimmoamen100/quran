@@ -1,4 +1,5 @@
 // Student authentication API
+
 async function loginStudent(studentName, password) {
   try {
     const response = await fetch("/api/auth/login", {
