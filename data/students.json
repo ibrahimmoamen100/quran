@@ -118,7 +118,7 @@
     },
     {
       "id": "1734216333655",
-      "name": "سامر وليد",
+      "name": "سامر سامح",
       "password": "1234",
       "currentSurah": "الجن ",
       "schedule": [
@@ -168,9 +168,9 @@
     },
     {
       "id": "1734216856227",
-      "name": "سيف محمد",
+      "name": "سيف سامح",
       "password": "1234",
-      "currentSurah": "الجن 7/10",
+      "currentSurah": "الجن ",
       "schedule": [
         {
           "day": "الجمعة",
@@ -180,13 +180,16 @@
       "evaluation": "ضعيف",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "ارجو الحضور المره القادمه يا سيف \r\nالورد اليومي 50 صلاه علي النبي \r\n",
+      "notes": "حفظ الجن كامله + الفجر\r\nوارجو يا سيف التسميع المره القادمه ",
       "photo": "/uploads/1741259868949-328427016.jpg",
       "certificates": [],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T22:54:16.227Z",
-      "lastSurah": "الفجر"
+      "lastSurah": "الفجر",
+      "currentSurahRate": "0",
+      "lastSurahRate": "0",
+      "points": "نقاط الأسأله و التفاعل : 35 نقطه"
     },
     {
       "id": "1734217017651",
