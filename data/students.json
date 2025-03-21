@@ -130,7 +130,7 @@
       "evaluation": "جيد جداً",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "الورد اليومي 50 صلاه علي النبي ",
+      "notes": "حفظ الجن كامله + البلد ",
       "photo": "/uploads/1741259847602-104373592.jpg",
       "certificates": [],
       "currentMonthPaid": false,
@@ -138,13 +138,14 @@
       "createdAt": "2024-12-14T22:45:33.655Z",
       "lastSurah": "البلد",
       "currentSurahRate": "8",
-      "lastSurahRate": "6"
+      "lastSurahRate": "6",
+      "points": "نقاط الاسأله و التفاعل : 35 نقطه"
     },
     {
       "id": "1734216497238",
       "name": "محمد اسامه",
       "password": "1234",
-      "currentSurah": "الجن 7/10",
+      "currentSurah": "الجن ",
       "schedule": [
         {
           "day": "الجمعة",
@@ -154,13 +155,16 @@
       "evaluation": "جيد جداً",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "مستواه تطور من اخر مره \r\nالورد اليومي 50 صلاه علي النبي ",
+      "notes": "حفظ الجن كامله + البلد",
       "photo": "/uploads/1741259855152-187967639.jpg",
       "certificates": [],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T22:48:17.238Z",
-      "lastSurah": "البلد"
+      "lastSurah": "البلد",
+      "currentSurahRate": "5.5",
+      "lastSurahRate": "7",
+      "points": "نقاط الاسأله و التفاعل : 35 نقطه"
     },
     {
       "id": "1734216856227",
@@ -703,7 +707,7 @@
       "id": "1741551772759",
       "name": "سيف اسامه",
       "password": "1234",
-      "currentSurah": "الهمزه",
+      "currentSurah": "التكاثر ",
       "lastSurah": "قريش + الماعون",
       "paymentType": "perSession",
       "schedule": [
@@ -712,20 +716,23 @@
           "time": "14:00"
         }
       ],
-      "notes": "نطقه للأيات صعب قليلا\r\nولكن يحب الحفظ وحريص اللهم بارك علي الصلاه ويحب القرأن",
+      "notes": "حفظ التكاثر الي ايه 6 + الكوثر + النصر + المسد",
       "photo": "/uploads/1741551772736-256670928.jpg",
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 0,
       "evaluation": "جيد",
       "currentMonthPaid": false,
-      "lastPaymentDate": null
+      "lastPaymentDate": null,
+      "currentSurahRate": "6.5",
+      "lastSurahRate": "6",
+      "points": "نقاط الاسأله و التفاعل : 34 نقطه"
     },
     {
       "id": "1741551950082",
       "name": "انس محمد",
       "password": "1234",
-      "currentSurah": "النازعات ",
+      "currentSurah": "النبأ",
       "lastSurah": "الغاشيه + الهمزه",
       "paymentType": "perSession",
       "schedule": [
@@ -734,16 +741,17 @@
           "time": "14:00"
         }
       ],
-      "notes": "مستواه كويس جدا اللهم بارك \r\nولكن يحب دائما اظهار اعمال الخير الذي يفعلها هذا طبيعي في هذا السن ولكن الافضل ان يخفي هذه الاعمال ويجعلها سرا بينه وبين الله ",
+      "notes": "حفظ النبأ + الغاشيه  + التكاثر",
       "photo": "/uploads/1741551950062-584193205.jpg",
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 0,
       "evaluation": "جيد جداً",
-      "currentSurahRate": "8",
-      "lastSurahRate": "7",
+      "currentSurahRate": "10",
+      "lastSurahRate": "5",
       "currentMonthPaid": false,
-      "lastPaymentDate": null
+      "lastPaymentDate": null,
+      "points": "نقاط الاسأله و التفاعل : 30 نقطه"
     },
     {
       "id": "1741552261863",
