@@ -18,15 +18,17 @@
       "evaluation": "ممتاز",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "الزمر : 9/10\r\nحفظ يس + الجاثيه + الزمر",
+      "notes": "حفظ يس + الجاثيه + الزمر",
       "photo": "/uploads/1741259806379-103673962.jpg",
       "certificates": [],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T09:17:05.078Z",
-      "lastSurah": "الجاثيه",
       "currentSurahRate": "10",
+      "lastSurah": "الجاثيه",
       "lastSurahRate": "9.5",
+      "lastSurah2": "الزمر",
+      "lastSurahRate2": "9",
       "points": "نقاط الاسأله و التفاعل : 55 نقطه"
     },
     {
@@ -47,15 +49,17 @@
       "evaluation": "ممتاز",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "الاحزاب : 10/10\r\nحفظ المؤمنون + يس + الاحزاب",
+      "notes": "حفظ المؤمنون + يس + الاحزاب",
       "photo": "/uploads/1741259813457-168981177.jpg",
       "certificates": [],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T09:21:26.135Z",
       "lastSurah": "يس ",
-      "currentSurahRate": "9.5",
+      "currentSurahRate": "10",
       "lastSurahRate": "10",
+      "lastSurah2": "الاحزاب",
+      "lastSurahRate2": "10",
       "points": "نقاط الاسأله و التفاعل : 70 نقطه"
     },
     {
@@ -76,7 +80,7 @@
       "evaluation": "جيد جداً",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "المزمل : 8/10\r\nحفظ الفتح + المنافقون + الجن ",
+      "notes": "حفظ الفتح + المنافقون + الجن ",
       "photo": "/uploads/1741259826670-758555645.jpg",
       "certificates": [],
       "currentMonthPaid": false,
@@ -85,6 +89,8 @@
       "lastSurah": "المنافقون",
       "currentSurahRate": "9.5",
       "lastSurahRate": "10",
+      "lastSurah2": "",
+      "lastSurahRate2": "0",
       "points": "نقاط الاسأله و التفاعل : 65 نقطه"
     },
     {
@@ -114,6 +120,8 @@
       "lastSurah": "المنافقون",
       "currentSurahRate": "7",
       "lastSurahRate": "5",
+      "lastSurah2": "المزمل",
+      "lastSurahRate2": "0",
       "points": "نقاط الاسأله و التفاعل : 50 نقطه"
     },
     {
@@ -139,6 +147,8 @@
       "lastSurah": "البلد",
       "currentSurahRate": "8",
       "lastSurahRate": "6",
+      "lastSurah2": "",
+      "lastSurahRate2": "0",
       "points": "نقاط الاسأله و التفاعل : 35 نقطه"
     },
     {
@@ -164,6 +174,8 @@
       "lastSurah": "البلد",
       "currentSurahRate": "5.5",
       "lastSurahRate": "7",
+      "lastSurah2": "",
+      "lastSurahRate2": "0",
       "points": "نقاط الاسأله و التفاعل : 35 نقطه"
     },
     {
@@ -189,6 +201,8 @@
       "lastSurah": "الفجر",
       "currentSurahRate": "0",
       "lastSurahRate": "0",
+      "lastSurah2": "",
+      "lastSurahRate2": "0",
       "points": "نقاط الأسأله و التفاعل : 35 نقطه"
     },
     {
@@ -218,6 +232,8 @@
       "lastSurah": "النازعات",
       "currentSurahRate": "6.5",
       "lastSurahRate": "7",
+      "lastSurah2": "",
+      "lastSurahRate2": "0",
       "points": "نقاط الاسأله و التفاعل : 32 نقطه"
     },
     {
@@ -247,6 +263,8 @@
       "lastSurah": "النازعات",
       "currentSurahRate": "3",
       "lastSurahRate": "6",
+      "lastSurah2": "",
+      "lastSurahRate2": "0",
       "points": "نقاط الاسأله و التفاعل : 28 نقطه"
     },
     {
@@ -276,6 +294,8 @@
       "lastSurah": "الغاشيه",
       "currentSurahRate": "7.5",
       "lastSurahRate": "7",
+      "lastSurah2": "",
+      "lastSurahRate2": "0",
       "points": "نقاط الاسأله و التفاعل : 20 نقطه"
     },
     {
@@ -305,6 +325,8 @@
       "lastSurah": "القمر ",
       "currentSurahRate": "10",
       "lastSurahRate": "7",
+      "lastSurah2": "",
+      "lastSurahRate2": "0",
       "points": "نقاط الاسأله و التفاعل : 30 نقطه"
     },
     {
@@ -334,6 +356,8 @@
       "lastSurah": "القمر ",
       "currentSurahRate": "10",
       "lastSurahRate": "7",
+      "lastSurah2": "",
+      "lastSurahRate2": "0",
       "points": "نقاط الاسأله و التفاعل : 55 نقطه"
     },
     {
@@ -362,7 +386,9 @@
       "createdAt": "2024-12-14T23:13:50.300Z",
       "lastSurah": "التكوير",
       "currentSurahRate": "8",
-      "lastSurahRate": "7"
+      "lastSurahRate": "7",
+      "lastSurah2": "",
+      "lastSurahRate2": "0"
     },
     {
       "id": "1734262969541",
@@ -390,7 +416,9 @@
       "createdAt": "2024-12-15T11:42:49.542Z",
       "lastSurah": "النجم",
       "currentSurahRate": "8.5",
-      "lastSurahRate": "7"
+      "lastSurahRate": "7",
+      "lastSurah2": "",
+      "lastSurahRate2": "0"
     },
     {
       "id": "1734263567588",
@@ -418,7 +446,9 @@
       "createdAt": "2024-12-15T11:52:47.589Z",
       "lastSurah": "المدثر ",
       "currentSurahRate": "7.5",
-      "lastSurahRate": "7"
+      "lastSurahRate": "7",
+      "lastSurah2": "",
+      "lastSurahRate2": "0"
     },
     {
       "id": "1735150017483",
@@ -446,7 +476,9 @@
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "currentSurahRate": "7.5",
-      "lastSurahRate": "8"
+      "lastSurahRate": "8",
+      "lastSurah2": "",
+      "lastSurahRate2": "0"
     },
     {
       "id": "1735150087390",
@@ -474,7 +506,9 @@
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "currentSurahRate": "7.5",
-      "lastSurahRate": "8"
+      "lastSurahRate": "8",
+      "lastSurah2": "",
+      "lastSurahRate2": "0"
     },
     {
       "id": "1736660274707",
@@ -503,6 +537,8 @@
       "lastPaymentDate": "2025-03-05T11:14:02.532Z",
       "currentSurahRate": "8.5",
       "lastSurahRate": "7",
+      "lastSurah2": "",
+      "lastSurahRate2": "0",
       "points": "نقاط الاسأله و التفاعل : 30 نقطه"
     },
     {
@@ -532,6 +568,8 @@
       "lastPaymentDate": null,
       "currentSurahRate": "9.5",
       "lastSurahRate": "7.5",
+      "lastSurah2": "",
+      "lastSurahRate2": "0",
       "points": "نقاط الاسأله و التفاعل : 40 نقطه"
     },
     {
@@ -561,6 +599,8 @@
       "lastPaymentDate": null,
       "currentSurahRate": "9.5",
       "lastSurahRate": "7.5",
+      "lastSurah2": "",
+      "lastSurahRate2": "0",
       "points": "نقاط الاسأله و التفاعل : 42 نقطه"
     },
     {
@@ -588,6 +628,8 @@
       "evaluation": "ممتاز",
       "currentSurahRate": "9.5",
       "lastSurahRate": "10",
+      "lastSurah2": "",
+      "lastSurahRate2": "0",
       "points": "نقاط الاسأله و التفاعل : 85 نقطه"
     },
     {
@@ -615,6 +657,8 @@
       "evaluation": "ممتاز",
       "currentSurahRate": "9",
       "lastSurahRate": "9",
+      "lastSurah2": "",
+      "lastSurahRate2": "0",
       "points": "نقاط الاسأله و التفاعل : 55 نقطه",
       "currentMonthPaid": false,
       "lastPaymentDate": null
@@ -644,6 +688,8 @@
       "evaluation": "جيد",
       "currentSurahRate": "7",
       "lastSurahRate": "7",
+      "lastSurah2": "",
+      "lastSurahRate2": "0",
       "points": "نقاط الاسأله و التفاعل : 25 نقطه",
       "currentMonthPaid": false,
       "lastPaymentDate": null
@@ -673,6 +719,8 @@
       "evaluation": "جيد جداً",
       "currentSurahRate": "8.5",
       "lastSurahRate": "7",
+      "lastSurah2": "",
+      "lastSurahRate2": "0",
       "points": "نقاط الاسأله و التفاعل : 52 نقطه",
       "currentMonthPaid": false,
       "lastPaymentDate": null
@@ -702,6 +750,8 @@
       "evaluation": "جيد جداً",
       "currentSurahRate": "8.5",
       "lastSurahRate": "7",
+      "lastSurah2": "",
+      "lastSurahRate2": "0",
       "points": "نقاط الاسأله و التفاعل : 45 نقطه",
       "currentMonthPaid": false,
       "lastPaymentDate": null
@@ -729,6 +779,8 @@
       "lastPaymentDate": null,
       "currentSurahRate": "6.5",
       "lastSurahRate": "6",
+      "lastSurah2": "",
+      "lastSurahRate2": "0",
       "points": "نقاط الاسأله و التفاعل : 34 نقطه"
     },
     {
@@ -752,6 +804,8 @@
       "evaluation": "جيد جداً",
       "currentSurahRate": "10",
       "lastSurahRate": "5",
+      "lastSurah2": "",
+      "lastSurahRate2": "0",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "points": "نقاط الاسأله و التفاعل : 30 نقطه"
@@ -782,7 +836,9 @@
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "currentSurahRate": "8",
-      "lastSurahRate": "7"
+      "lastSurahRate": "7",
+      "lastSurah2": "",
+      "lastSurahRate2": "0"
     },
     {
       "id": "1741656076145",
@@ -811,6 +867,8 @@
       "lastPaymentDate": null,
       "currentSurahRate": "6.5",
       "lastSurahRate": "7.5",
+      "lastSurah2": "",
+      "lastSurahRate2": "0",
       "points": "نقاط الاسأله و التفاعل : 50 نقطه"
     },
     {
@@ -840,7 +898,9 @@
       "lastPaymentDate": null,
       "points": "10 نقاط",
       "currentSurahRate": "8.5",
-      "lastSurahRate": "7"
+      "lastSurahRate": "7",
+      "lastSurah2": "",
+      "lastSurahRate2": "0"
     },
     {
       "id": "1742333465842",
@@ -850,6 +910,8 @@
       "currentSurahRate": "9.5",
       "lastSurah": "الانسان",
       "lastSurahRate": "6.5",
+      "lastSurah2": "",
+      "lastSurahRate2": "0",
       "paymentType": "perMonth",
       "schedule": [
         {
@@ -879,6 +941,8 @@
       "currentSurahRate": "9.5",
       "lastSurah": "الانسان",
       "lastSurahRate": "6.5",
+      "lastSurah2": "",
+      "lastSurahRate2": "0",
       "paymentType": "perMonth",
       "schedule": [
         {
@@ -908,6 +972,8 @@
       "currentSurahRate": "9.5",
       "lastSurah": "الانسان",
       "lastSurahRate": "6.5",
+      "lastSurah2": "",
+      "lastSurahRate2": "0",
       "paymentType": "perSession",
       "schedule": [
         {

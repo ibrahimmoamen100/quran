@@ -246,6 +246,8 @@ app.post(
         currentSurahRate: req.body.currentSurahRate,
         lastSurah: req.body.lastSurah,
         lastSurahRate: req.body.lastSurahRate,
+        lastSurah2: req.body.lastSurah2,
+        lastSurahRate2: req.body.lastSurahRate2,
         paymentType: req.body.paymentType,
         schedule: JSON.parse(req.body.schedule || "[]"),
         notes: req.body.notes,
@@ -283,6 +285,8 @@ app.post("/api/students/new", upload.single("photo"), (req, res) => {
       currentSurahRate: req.body.currentSurahRate,
       lastSurah: req.body.lastSurah,
       lastSurahRate: req.body.lastSurahRate,
+      lastSurah2: req.body.lastSurah2,
+      lastSurahRate2: req.body.lastSurahRate2,
       schedule: [
         {
           day: req.body.day,
@@ -357,6 +361,9 @@ app.put("/api/students/:id", upload.single("photo"), (req, res) => {
           req.body.currentSurahRate || updatedStudent.currentSurahRate,
         lastSurah: req.body.lastSurah || updatedStudent.lastSurah,
         lastSurahRate: req.body.lastSurahRate || updatedStudent.lastSurahRate,
+        lastSurah2: req.body.lastSurah2 || updatedStudent.lastSurah2,
+        lastSurahRate2:
+          req.body.lastSurahRate2 || updatedStudent.lastSurahRate2,
         evaluation: req.body.evaluation || updatedStudent.evaluation,
         paymentType: req.body.paymentType || updatedStudent.paymentType,
         notes: req.body.notes || updatedStudent.notes,
@@ -559,6 +566,8 @@ app.get("/api/outstanding-students", (req, res) => {
         currentSurahRate: student.currentSurahRate,
         lastSurah: student.lastSurah,
         lastSurahRate: student.lastSurahRate,
+        lastSurah2: student.lastSurah2,
+        lastSurahRate2: student.lastSurahRate2,
         evaluation: student.evaluation,
         paymentType: student.paymentType,
         notes: student.notes,
