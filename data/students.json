@@ -18,7 +18,7 @@
       "evaluation": "ممتاز",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "حفظ يس + الجاثيه ",
+      "notes": "حفظ يس + الجاثيه + الزمر",
       "photo": "/uploads/1741259806379-103673962.jpg",
       "certificates": [],
       "currentMonthPaid": false,
@@ -26,8 +26,10 @@
       "createdAt": "2024-12-14T09:17:05.078Z",
       "lastSurah": "الجاثيه",
       "currentSurahRate": "9",
-      "lastSurahRate": "8.5",
-      "points": "نقاط الاسأله و التفاعل : 55 نقطه"
+      "lastSurahRate": "7.5",
+      "points": "نقاط الاسأله و التفاعل : 55 نقطه",
+      "lastSurah2": "الزمر",
+      "lastSurahRate2": "9"
     },
     {
       "id": "1734168086134",
@@ -47,16 +49,18 @@
       "evaluation": "ممتاز",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "حفظ المؤمنون + يس",
+      "notes": "حفظ المؤمنون + يس + الاحزاب",
       "photo": "/uploads/1741259813457-168981177.jpg",
       "certificates": [],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T09:21:26.135Z",
       "lastSurah": "يس ",
-      "currentSurahRate": "8",
-      "lastSurahRate": "9",
-      "points": "نقاط الاسأله و التفاعل : 50 نقطه"
+      "currentSurahRate": "9",
+      "lastSurahRate": "10",
+      "points": "نقاط الاسأله و التفاعل : 50 نقطه",
+      "lastSurah2": "الاحزاب",
+      "lastSurahRate2": "10"
     },
     {
       "id": "1734215942371",
@@ -204,7 +208,7 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 1,
+      "sessionsAttended": 2,
       "paymentType": "perMonth",
       "notes": "حفظ الانسان + الغاشيه",
       "photo": "/uploads/1741259878151-447750460.jpg",
@@ -233,7 +237,7 @@
         }
       ],
       "evaluation": "جيد",
-      "sessionsAttended": 1,
+      "sessionsAttended": 2,
       "paymentType": "perMonth",
       "notes": "حفظ الانسان + الغاشيه",
       "photo": "/uploads/1741259892124-281938485.jpg",
@@ -262,7 +266,7 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 3,
+      "sessionsAttended": 4,
       "paymentType": "perMonth",
       "notes": "حفظ الانسان + الغاشيه",
       "photo": "/uploads/1741259900909-461609995.jpg",
@@ -291,7 +295,7 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 3,
+      "sessionsAttended": 4,
       "paymentType": "perMonth",
       "notes": "حفظ الحجرات + الرحمن",
       "photo": "/uploads/1741259907934-680779524.jpg",
@@ -320,7 +324,7 @@
         }
       ],
       "evaluation": "ممتاز",
-      "sessionsAttended": 3,
+      "sessionsAttended": 4,
       "paymentType": "perMonth",
       "notes": "حفظ محمد + القمر",
       "photo": "/uploads/1741259917211-307531427.jpg",
@@ -349,7 +353,7 @@
         }
       ],
       "evaluation": "جيد",
-      "sessionsAttended": 3,
+      "sessionsAttended": 1,
       "paymentType": "perMonth",
       "notes": "الورد اليومي يا حمزه 50 صلاه علي النبي ",
       "photo": "/uploads/1741259950607-702439824.jpg",
