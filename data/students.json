@@ -272,16 +272,18 @@
       "evaluation": "جيد جداً",
       "sessionsAttended": 4,
       "paymentType": "perMonth",
-      "notes": "حفظ الانسان + الغاشيه",
+      "notes": "حفظ الانسان + الغاشيه +العلق",
       "photo": "/uploads/1741259900909-461609995.jpg",
       "certificates": [],
       "currentMonthPaid": true,
       "lastPaymentDate": "2025-03-16T03:58:50.660Z",
       "createdAt": "2024-12-14T23:00:37.180Z",
       "lastSurah": "الغاشيه",
-      "currentSurahRate": "7.5",
+      "currentSurahRate": "8.5",
       "lastSurahRate": "7",
-      "points": "نقاط الاسأله و التفاعل : 20 نقطه"
+      "points": "نقاط الاسأله و التفاعل : 20 نقطه",
+      "lastSurah2": "العلق",
+      "lastSurahRate2": "0"
     },
     {
       "id": "1734217497335",
@@ -361,13 +363,13 @@
         }
       ],
       "evaluation": "جيد",
-      "sessionsAttended": 2,
+      "sessionsAttended": 1,
       "paymentType": "perMonth",
       "notes": "الورد اليومي يا حمزه 50 صلاه علي النبي ",
       "photo": "/uploads/1741259950607-702439824.jpg",
       "certificates": [],
       "currentMonthPaid": true,
-      "lastPaymentDate": "2025-03-26T16:36:04.235Z",
+      "lastPaymentDate": "2025-03-26T16:49:22.086Z",
       "createdAt": "2024-12-14T23:13:50.300Z",
       "lastSurah": "التكوير",
       "currentSurahRate": "8",
@@ -458,7 +460,9 @@
       "lastPaymentDate": null,
       "currentSurahRate": "7.5",
       "lastSurahRate": "8",
-      "points": "نقاط الاسأله والتفاعل : 55 نقطه"
+      "points": "نقاط الاسأله والتفاعل : 55 نقطه",
+      "lastSurah2": "الزمر",
+      "lastSurahRate2": "0"
     },
     {
       "id": "1735150087390",
@@ -487,7 +491,9 @@
       "lastPaymentDate": null,
       "currentSurahRate": "7.5",
       "lastSurahRate": "8",
-      "points": "نقاط الاسأله و التفاعل : 50 نقطه"
+      "points": "نقاط الاسأله و التفاعل : 50 نقطه",
+      "lastSurah2": "الزمر",
+      "lastSurahRate2": "0"
     },
     {
       "id": "1736660274707",
@@ -607,7 +613,9 @@
       "evaluation": "ممتاز",
       "currentSurahRate": "9.5",
       "lastSurahRate": "10",
-      "points": "نقاط الاسأله و التفاعل : 85 نقطه"
+      "points": "نقاط الاسأله و التفاعل : 85 نقطه",
+      "lastSurah2": "العلق",
+      "lastSurahRate2": "0"
     },
     {
       "id": "1741550329538",
@@ -632,11 +640,13 @@
       "sessionCount": 0,
       "sessionsAttended": 0,
       "evaluation": "ممتاز",
-      "currentSurahRate": "8.5",
+      "currentSurahRate": "8",
       "lastSurahRate": "8.5",
       "points": "نقاط الاسأله و التفاعل : 80 نقطه",
       "currentMonthPaid": false,
-      "lastPaymentDate": null
+      "lastPaymentDate": null,
+      "lastSurah2": "العلق",
+      "lastSurahRate2": "0"
     },
     {
       "id": "1741550481996",
@@ -694,7 +704,9 @@
       "lastSurahRate": "10",
       "points": "نقاط الاسأله و التفاعل : 52 نقطه",
       "currentMonthPaid": false,
-      "lastPaymentDate": null
+      "lastPaymentDate": null,
+      "lastSurah2": "العلق",
+      "lastSurahRate2": "0"
     },
     {
       "id": "1741550754593",
