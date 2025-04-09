@@ -330,7 +330,7 @@
         }
       ],
       "evaluation": "ممتاز",
-      "sessionsAttended": 4,
+      "sessionsAttended": 6,
       "paymentType": "perMonth",
       "notes": "حفظ محمد + الحجرات + الانسان",
       "photo": "/uploads/1741259917211-307531427.jpg",
@@ -798,8 +798,8 @@
       "sessionCount": 0,
       "sessionsAttended": 7,
       "evaluation": "جيد",
-      "currentMonthPaid": false,
-      "lastPaymentDate": null,
+      "currentMonthPaid": true,
+      "lastPaymentDate": "2025-04-09T03:26:07.364Z",
       "currentSurahRate": "8",
       "lastSurahRate": "7"
     },
@@ -855,8 +855,8 @@
       "sessionCount": 0,
       "sessionsAttended": 7,
       "evaluation": "جيد جداً",
-      "currentMonthPaid": false,
-      "lastPaymentDate": null,
+      "currentMonthPaid": true,
+      "lastPaymentDate": "2025-04-09T03:26:08.530Z",
       "points": "10 نقاط",
       "currentSurahRate": "8.5",
       "lastSurahRate": "7"
