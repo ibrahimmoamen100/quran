@@ -18,13 +18,13 @@
       "evaluation": "ممتاز",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "حفظ يس + الجاثيه + الزمر",
+      "notes": "حفظ يس + الدخان + الزمر",
       "photo": "/uploads/1741259806379-103673962.jpg",
       "certificates": [],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T09:17:05.078Z",
-      "lastSurah": "الجاثيه",
+      "lastSurah": "الدخان",
       "currentSurahRate": "9",
       "lastSurahRate": "10",
       "points": "نقاط الاسأله و التفاعل : 55 نقطه",
@@ -49,7 +49,7 @@
       "evaluation": "ممتاز",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "حفظ المؤمنون + يس + الاحزاب",
+      "notes": "حفظ المؤمنون + يس + السجده",
       "photo": "/uploads/1741259813457-168981177.jpg",
       "certificates": [],
       "currentMonthPaid": false,
@@ -587,7 +587,7 @@
       "name": "محمد مكشه",
       "password": "1234",
       "currentSurah": "الجن ",
-      "lastSurah": "المزمل",
+      "lastSurah": "المرسلات",
       "paymentType": "perSession",
       "schedule": [
         {
@@ -605,8 +605,8 @@
       "sessionCount": 0,
       "sessionsAttended": 1,
       "evaluation": "ممتاز",
-      "currentSurahRate": "9.5",
-      "lastSurahRate": "10",
+      "currentSurahRate": "8.5",
+      "lastSurahRate": "9.5",
       "points": "نقاط الاسأله و التفاعل : 85 نقطه"
     },
     {
@@ -614,7 +614,7 @@
       "name": "يوسف عيد",
       "password": "1234",
       "currentSurah": "الجن ",
-      "lastSurah": "المزمل",
+      "lastSurah": "المرسلات ",
       "paymentType": "perSession",
       "schedule": [
         {
@@ -626,14 +626,14 @@
           "time": "21:30"
         }
       ],
-      "notes": "حفظ الجن الي 17+ المدثر من 30 الي 47",
+      "notes": "حفظ الجن الي 23 + المرسلات الي 16",
       "photo": "/uploads/1741550329524-779073564.jpg",
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 0,
       "evaluation": "ممتاز",
       "currentSurahRate": "8.5",
-      "lastSurahRate": "8.5",
+      "lastSurahRate": "7.5",
       "points": "نقاط الاسأله و التفاعل : 80 نقطه",
       "currentMonthPaid": false,
       "lastPaymentDate": null
@@ -672,7 +672,7 @@
       "name": "حسين احمد",
       "password": "1234",
       "currentSurah": "الجن ",
-      "lastSurah": "المطففين",
+      "lastSurah": "الغاشيه",
       "paymentType": "perSession",
       "schedule": [
         {
@@ -684,14 +684,14 @@
           "time": "21:30"
         }
       ],
-      "notes": "حفظ الجن الي 17 + المدثر من 30 الي 47",
+      "notes": "حفظ الجن الي 23 + الغاشيه ",
       "photo": "/uploads/1741550602507-584581518.jpg",
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 0,
       "evaluation": "جيد جداً",
       "currentSurahRate": "8",
-      "lastSurahRate": "10",
+      "lastSurahRate": "18",
       "points": "نقاط الاسأله و التفاعل : 52 نقطه",
       "currentMonthPaid": false,
       "lastPaymentDate": null
@@ -713,7 +713,7 @@
           "time": "21:30"
         }
       ],
-      "notes": "حفظ الفتح + وجه من سوره ق",
+      "notes": "حفظ محمد الي 3  + وجه من سوره ق",
       "photo": "/uploads/1741550754567-124615421.jpg",
       "certificates": [],
       "sessionCount": 0,
