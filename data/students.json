@@ -4,7 +4,7 @@
       "id": "1734167825077",
       "name": "معاذ محمد",
       "password": "1234",
-      "currentSurah": "يس ",
+      "currentSurah": "يس",
       "schedule": [
         {
           "day": "السبت",
@@ -18,15 +18,15 @@
       "evaluation": "ممتاز",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "حفظ يس + الدخان + الزمر",
+      "notes": "حفظ فاطر  + الدخان + الزمر",
       "photo": "/uploads/1741259806379-103673962.jpg",
       "certificates": [],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T09:17:05.078Z",
       "lastSurah": "الدخان",
-      "currentSurahRate": "9",
-      "lastSurahRate": "10",
+      "currentSurahRate": "8",
+      "lastSurahRate": "9",
       "points": "نقاط الاسأله و التفاعل : 55 نقطه",
       "lastSurah2": "الزمر",
       "lastSurahRate2": "9.5"
@@ -35,7 +35,7 @@
       "id": "1734168086134",
       "name": "مالك محمد",
       "password": "1234",
-      "currentSurah": "المؤمنون ",
+      "currentSurah": "الحج",
       "schedule": [
         {
           "day": "السبت",
@@ -49,24 +49,24 @@
       "evaluation": "ممتاز",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "حفظ المؤمنون + يس + السجده",
+      "notes": "حفظ الحج + يس + السجده",
       "photo": "/uploads/1741259813457-168981177.jpg",
       "certificates": [],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T09:21:26.135Z",
       "lastSurah": "يس ",
-      "currentSurahRate": "9",
+      "currentSurahRate": "10",
       "lastSurahRate": "9",
       "points": "نقاط الاسأله و التفاعل : 50 نقطه",
-      "lastSurah2": "الاحزاب",
-      "lastSurahRate2": "10"
+      "lastSurah2": "السجده",
+      "lastSurahRate2": "9.5"
     },
     {
       "id": "1734215942371",
       "name": "محمد احمد",
       "password": "1234",
-      "currentSurah": "الحجرات ",
+      "currentSurah": "الفتح",
       "schedule": [
         {
           "day": "السبت",
@@ -80,16 +80,18 @@
       "evaluation": "جيد جداً",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "حفظ الحجرات + التغابن ",
-      "photo": "/uploads/1741259826670-758555645.jpg",
+      "notes": "حفظ الفتح + نوح + الصف ",
+      "photo": "/uploads/1744561816325-551395101.jpg",
       "certificates": [],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T22:39:02.371Z",
-      "lastSurah": "التغابن",
-      "currentSurahRate": "8",
-      "lastSurahRate": "9",
-      "points": "نقاط الاسأله و التفاعل : 45 نقطه"
+      "lastSurah": "الجمعه",
+      "currentSurahRate": "7.5",
+      "lastSurahRate": "7",
+      "points": "نقاط الاسأله و التفاعل : 45 نقطه",
+      "lastSurah2": "نوح",
+      "lastSurahRate2": "7.5"
     },
     {
       "id": "1734216159737",
@@ -109,16 +111,18 @@
       "evaluation": "جيد",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "حفظ الحديد + الطلاق ",
+      "notes": "حفظ الحديد + نوح + المنافقون",
       "photo": "/uploads/1741259836717-990701566.jpg",
       "certificates": [],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T22:42:39.737Z",
-      "lastSurah": "الطلاق ",
-      "currentSurahRate": "6.5",
-      "lastSurahRate": "7",
-      "points": "نقاط الاسأله و التفاعل : 40 نقطه"
+      "lastSurah": "نوح",
+      "currentSurahRate": "7",
+      "lastSurahRate": "6",
+      "points": "نقاط الاسأله و التفاعل : 40 نقطه",
+      "lastSurah2": "المنافقون",
+      "lastSurahRate2": "0"
     },
     {
       "id": "1734216333655",
@@ -174,7 +178,7 @@
       "id": "1734216856227",
       "name": "سيف محمد",
       "password": "1234",
-      "currentSurah": "الجن 7/10",
+      "currentSurah": "الجن ",
       "schedule": [
         {
           "day": "الجمعة",
@@ -184,13 +188,17 @@
       "evaluation": "ضعيف",
       "sessionsAttended": 0,
       "paymentType": "perSession",
-      "notes": "ارجو الحضور المره القادمه يا سيف \r\nالورد اليومي 50 صلاه علي النبي \r\n",
+      "notes": "حفظ الجن + الفجر",
       "photo": "/uploads/1741259868949-328427016.jpg",
       "certificates": [],
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "createdAt": "2024-12-14T22:54:16.227Z",
-      "lastSurah": "الفجر"
+      "lastSurah": "الفجر",
+      "currentSurahRate": "0",
+      "lastSurahRate": "0",
+      "lastSurahRate2": "0",
+      "points": "0 نقاط"
     },
     {
       "id": "1734217017651",
@@ -208,7 +216,7 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 4,
+      "sessionsAttended": 5,
       "paymentType": "perMonth",
       "notes": "حفظ الانسان + الغاشيه + العلق",
       "photo": "/uploads/1741259878151-447750460.jpg",
@@ -239,7 +247,7 @@
         }
       ],
       "evaluation": "جيد",
-      "sessionsAttended": 4,
+      "sessionsAttended": 5,
       "paymentType": "perMonth",
       "notes": "حفظ الانسان + الغاشيه +العلق",
       "photo": "/uploads/1741259892124-281938485.jpg",
@@ -270,7 +278,7 @@
         }
       ],
       "evaluation": "جيد جداً",
-      "sessionsAttended": 6,
+      "sessionsAttended": 7,
       "paymentType": "perMonth",
       "notes": "حفظ الانسان + الغاشيه",
       "photo": "/uploads/1741259900909-461609995.jpg",
@@ -299,7 +307,7 @@
         }
       ],
       "evaluation": "جيد",
-      "sessionsAttended": 6,
+      "sessionsAttended": 7,
       "paymentType": "perMonth",
       "notes": "حفظ الحجرات + الرحمن +الانسان",
       "photo": "/uploads/1741259907934-680779524.jpg",
@@ -330,16 +338,16 @@
         }
       ],
       "evaluation": "ممتاز",
-      "sessionsAttended": 6,
+      "sessionsAttended": 7,
       "paymentType": "perMonth",
       "notes": "حفظ محمد + الحجرات + الانسان",
-      "photo": "/uploads/1741259917211-307531427.jpg",
+      "photo": "/uploads/1744561706551-11030941.jpg",
       "certificates": [],
       "currentMonthPaid": true,
       "lastPaymentDate": "2025-03-18T21:19:25.850Z",
       "createdAt": "2024-12-14T23:11:01.054Z",
       "lastSurah": "الرحمن",
-      "currentSurahRate": "10",
+      "currentSurahRate": "9",
       "lastSurahRate": "7",
       "points": "نقاط الاسأله و التفاعل : 55 نقطه",
       "lastSurah2": "الانسان",
@@ -349,7 +357,7 @@
       "id": "1734218030299",
       "name": "حمزه مصطفي",
       "password": "1234",
-      "currentSurah": "الحاقه ",
+      "currentSurah": "القلم",
       "schedule": [
         {
           "day": "السبت",
@@ -363,15 +371,16 @@
       "evaluation": "جيد",
       "sessionsAttended": 3,
       "paymentType": "perMonth",
-      "notes": "الورد اليومي يا حمزه 50 صلاه علي النبي ",
-      "photo": "/uploads/1741259950607-702439824.jpg",
+      "notes": "القلم + عبسي",
+      "photo": "/uploads/1744561407940-503830135.jpg",
       "certificates": [],
       "currentMonthPaid": true,
       "lastPaymentDate": "2025-03-26T16:36:04.235Z",
       "createdAt": "2024-12-14T23:13:50.300Z",
-      "lastSurah": "التكوير",
-      "currentSurahRate": "8",
-      "lastSurahRate": "7"
+      "lastSurah": "عبسي",
+      "currentSurahRate": "7",
+      "lastSurahRate": "7",
+      "points": "20 نقطه"
     },
     {
       "id": "1734262969541",
@@ -448,17 +457,19 @@
           "time": "13:40"
         }
       ],
-      "notes": "حفظ الاحزاب + غافر + الزمر",
-      "photo": "/uploads/1741260175274-882063432.jpg",
+      "notes": "حفظ الاحزاب + غافر + الطلاق",
+      "photo": "/uploads/1744561619667-801173778.jpg",
       "certificates": [],
       "sessionCount": 0,
-      "sessionsAttended": 6,
+      "sessionsAttended": 7,
       "evaluation": "جيد",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "currentSurahRate": "7.5",
-      "lastSurahRate": "8",
-      "points": "نقاط الاسأله والتفاعل : 55 نقطه"
+      "currentSurahRate": "6.5",
+      "lastSurahRate": "7",
+      "points": "نقاط الاسأله والتفاعل : 55 نقطه",
+      "lastSurah2": "الطلاق",
+      "lastSurahRate2": "7"
     },
     {
       "id": "1735150087390",
@@ -477,24 +488,26 @@
           "time": "13:40"
         }
       ],
-      "notes": "حفظ الاحزاب + غافر + الزمر",
-      "photo": "/uploads/1741260182767-718683861.jpg",
+      "notes": "حفظ الاحزاب + غافر + الطلاق",
+      "photo": "/uploads/1744561652808-532854789.jpg",
       "certificates": [],
       "sessionCount": 0,
-      "sessionsAttended": 6,
+      "sessionsAttended": 7,
       "evaluation": "جيد",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "currentSurahRate": "7.5",
-      "lastSurahRate": "8",
-      "points": "نقاط الاسأله و التفاعل : 50 نقطه"
+      "currentSurahRate": "6.5",
+      "lastSurahRate": "7",
+      "points": "نقاط الاسأله و التفاعل : 50 نقطه",
+      "lastSurah2": "الطلاق",
+      "lastSurahRate2": "7"
     },
     {
       "id": "1736660274707",
       "name": "محمد اشرف",
       "password": "1234",
-      "currentSurah": "الشرح",
-      "lastSurah": "العلق",
+      "currentSurah": "الضحي",
+      "lastSurah": "التكاثر",
       "paymentType": "perMonth",
       "schedule": [
         {
@@ -506,8 +519,8 @@
           "time": "14:00"
         }
       ],
-      "notes": "حفظ الشرح كامله + العلق التكاقلا",
-      "photo": "/uploads/1741260193915-610638951.jpg",
+      "notes": "حفظ الضحي كامله + الفيل + قريش",
+      "photo": "/uploads/1744561270653-802492986.jpg",
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 8,
@@ -517,7 +530,7 @@
       "currentSurahRate": "8.5",
       "lastSurahRate": "7",
       "points": "نقاط الاسأله و التفاعل : 30 نقطه",
-      "lastSurah2": "العصر",
+      "lastSurah2": "الهمزه",
       "lastSurahRate2": "7.5"
     },
     {
@@ -525,7 +538,7 @@
       "name": "عبدالرحمن محمد",
       "password": "1234",
       "currentSurah": "الممتحنه ",
-      "lastSurah": "المنافقون",
+      "lastSurah": "الجمعه",
       "paymentType": "perMonth",
       "schedule": [
         {
@@ -537,19 +550,19 @@
           "time": "16:00"
         }
       ],
-      "notes": "حفظ الممتحنه + المرسلات + الجمعه",
+      "notes": "حفظ الممتحنه كامله + الانسان + الصف",
       "photo": "/uploads/1741260219228-147089369.jpg",
       "certificates": [],
       "sessionCount": 0,
-      "sessionsAttended": 1,
+      "sessionsAttended": 2,
       "evaluation": "جيد جداً",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
       "currentSurahRate": "8.5",
-      "lastSurahRate": "7.5",
-      "points": "نقاط الاسأله و التفاعل : 40 نقطه",
+      "lastSurahRate": "8.5",
+      "points": "نقاط الاسأله و التفاعل :  50 نقطه",
       "lastSurah2": "المرسلات",
-      "lastSurahRate2": "0"
+      "lastSurahRate2": "9"
     },
     {
       "id": "1738581724489",
@@ -572,7 +585,7 @@
       "photo": "/uploads/1741260226939-190348928.jpg",
       "certificates": [],
       "sessionCount": 0,
-      "sessionsAttended": 1,
+      "sessionsAttended": 2,
       "evaluation": "جيد جداً",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
@@ -599,7 +612,7 @@
           "time": "21:30"
         }
       ],
-      "notes": "حفظ الجن الي 17 + المدثر من 30 الي 47",
+      "notes": "حفظ الجن + المرسلات",
       "photo": "/uploads/1741550230851-343685626.jpg",
       "certificates": [],
       "sessionCount": 0,
@@ -626,7 +639,7 @@
           "time": "21:30"
         }
       ],
-      "notes": "حفظ الجن الي 23 + المرسلات الي 16",
+      "notes": "حفظ الجن + المرسلات الي 16",
       "photo": "/uploads/1741550329524-779073564.jpg",
       "certificates": [],
       "sessionCount": 0,
@@ -643,7 +656,7 @@
       "name": "لوجين سيد",
       "password": "1234",
       "currentSurah": "الجن ",
-      "lastSurah": "القيامه + المدثر",
+      "lastSurah": "المرسلات",
       "paymentType": "perSession",
       "schedule": [
         {
@@ -655,7 +668,7 @@
           "time": "21:30"
         }
       ],
-      "notes": "حفظ الجن الي  7 + المدثر",
+      "notes": "حفظ الجن الي  7 + المرسلات",
       "photo": "/uploads/1741550481972-378201477.jpg",
       "certificates": [],
       "sessionCount": 0,
@@ -684,14 +697,14 @@
           "time": "21:30"
         }
       ],
-      "notes": "حفظ الجن الي 23 + الغاشيه ",
+      "notes": "حفظ الجن + الغاشيه ",
       "photo": "/uploads/1741550602507-584581518.jpg",
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 0,
       "evaluation": "جيد جداً",
-      "currentSurahRate": "8",
-      "lastSurahRate": "18",
+      "currentSurahRate": "8.5",
+      "lastSurahRate": "8",
       "points": "نقاط الاسأله و التفاعل : 52 نقطه",
       "currentMonthPaid": false,
       "lastPaymentDate": null
@@ -713,13 +726,13 @@
           "time": "21:30"
         }
       ],
-      "notes": "حفظ محمد الي 3  + وجه من سوره ق",
+      "notes": "حفظ محمد  + وجه من سوره ق",
       "photo": "/uploads/1741550754567-124615421.jpg",
       "certificates": [],
       "sessionCount": 0,
       "sessionsAttended": 0,
       "evaluation": "جيد جداً",
-      "currentSurahRate": "8",
+      "currentSurahRate": "7",
       "lastSurahRate": "0",
       "points": "نقاط الاسأله و التفاعل : 65 نقطه",
       "currentMonthPaid": false,
@@ -755,7 +768,7 @@
       "name": "انس محمد",
       "password": "1234",
       "currentSurah": "النبأ",
-      "lastSurah": "الغاشيه + الهمزه",
+      "lastSurah": "الغاشيه",
       "paymentType": "perSession",
       "schedule": [
         {
@@ -769,11 +782,12 @@
       "sessionCount": 0,
       "sessionsAttended": 0,
       "evaluation": "جيد جداً",
-      "currentSurahRate": "10",
+      "currentSurahRate": "6.5",
       "lastSurahRate": "5",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "points": "نقاط الاسأله و التفاعل : 30 نقطه"
+      "points": "نقاط الاسأله و التفاعل : 30 نقطه",
+      "lastSurah2": "التكاثر"
     },
     {
       "id": "1741552261863",
