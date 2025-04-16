@@ -386,7 +386,7 @@
       "id": "1734262969541",
       "name": "البراء احمد",
       "password": "1234",
-      "currentSurah": "محمد ",
+      "currentSurah": "الاحقاف",
       "schedule": [
         {
           "day": "الأحد",
@@ -407,7 +407,7 @@
       "lastPaymentDate": null,
       "createdAt": "2024-12-15T11:42:49.542Z",
       "lastSurah": "النجم",
-      "currentSurahRate": "9",
+      "currentSurahRate": "8",
       "lastSurahRate": "0",
       "points": "نقاط الاسأله والتفاعل : 45 نقطه"
     },
@@ -415,7 +415,7 @@
       "id": "1734263567588",
       "name": "حمزه احمد",
       "password": "1234",
-      "currentSurah": "الطور ",
+      "currentSurah": "الذاريات",
       "schedule": [
         {
           "day": "الأحد",
@@ -436,7 +436,7 @@
       "lastPaymentDate": null,
       "createdAt": "2024-12-15T11:52:47.589Z",
       "lastSurah": "المدثر ",
-      "currentSurahRate": "7.5",
+      "currentSurahRate": "8",
       "lastSurahRate": "7",
       "points": "نقاط الاسأله والتفاعل : 40 نقطه"
     },
@@ -537,8 +537,8 @@
       "id": "1738581464811",
       "name": "عبدالرحمن محمد",
       "password": "1234",
-      "currentSurah": "الممتحنه ",
-      "lastSurah": "الجمعه",
+      "currentSurah": "الممتحنه كامله ",
+      "lastSurah": "الصف",
       "paymentType": "perMonth",
       "schedule": [
         {
@@ -550,19 +550,19 @@
           "time": "16:00"
         }
       ],
-      "notes": "حفظ الممتحنه كامله + الانسان + الصف",
+      "notes": "حفظ الحشر الي 5  + الانسان + الصف",
       "photo": "/uploads/1741260219228-147089369.jpg",
       "certificates": [],
       "sessionCount": 0,
-      "sessionsAttended": 2,
+      "sessionsAttended": 3,
       "evaluation": "جيد جداً",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
-      "currentSurahRate": "8.5",
-      "lastSurahRate": "8.5",
-      "points": "نقاط الاسأله و التفاعل :  50 نقطه",
-      "lastSurah2": "المرسلات",
-      "lastSurahRate2": "9"
+      "currentSurahRate": "9.5",
+      "lastSurahRate": "10",
+      "points": "نقاط الاسأله و التفاعل :  100 نقطه",
+      "lastSurah2": "الانسان",
+      "lastSurahRate2": "7.5"
     },
     {
       "id": "1738581724489",
@@ -585,7 +585,7 @@
       "photo": "/uploads/1741260226939-190348928.jpg",
       "certificates": [],
       "sessionCount": 0,
-      "sessionsAttended": 2,
+      "sessionsAttended": 3,
       "evaluation": "جيد جداً",
       "currentMonthPaid": false,
       "lastPaymentDate": null,
